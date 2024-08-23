@@ -46,6 +46,17 @@ source_urls = [
     "https://cdn.jsdelivr.net/gh/dxawi/0@main/tvlive.txt",
     "https://cdn.jsdelivr.net/gh/XiaoZhang5656/xiaozhang-5656.github.io@main/iptv-live.txt",
     "https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt"，
+    "https://iptv.b2og.com/txt/q_bj_iptv_mobile.txt",
+    "https://iptv.b2og.com/txt/cn_p.txt",
+    "https://iptv.b2og.com/txt/o_cn.txt",
+    "https://iptv.b2og.com/txt/q_bj_iptv_mobile_m.txt",
+    "https://iptv.b2og.com/txt/m_iptv.txt",
+    "https://iptv.b2og.com/txt/j_iptv.txt",
+    "https://iptv.b2og.com/txt/j_home.txt",
+    "https://iptv.b2og.com/txt/y_g.txt",
+    "https://iptv.b2og.com/txt/ycl_iptv.txt",
+    "https://iptv.b2og.com/txt/fmml_dv6.txt",
+    "https://iptv.b2og.com/txt/fmml_ipv6.txt",
 ]
 
 url_blacklist = [
