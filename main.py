@@ -4,10 +4,6 @@ import logging
 from collections import OrderedDict
 from datetime import datetime
 import config
-import asyncio
-import aiohttp
-import time
-import ipaddress
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("function.log", "w", encoding="utf-8"), logging.StreamHandler()])
 
@@ -110,30 +106,6 @@ def filter_source_urls(template_file):
 def is_ipv6(url):
     return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
 
-async def ping_url(session, url):
-    start_time = time.time()
-    try:
-        async with session.get(url, timeout=5) as response:
-            response.raise_for_status()
-            return time.time() - start_time
-    except Exception as e:
-        return float('inf')
-
-async def measure_streams_live_streams(live_streams):
-    async with aiohttp.ClientSession() as session:
-        tasks = []
-        for stream in live_streams:
-            match = re.search(r'//([^:/]+)', stream)
-            if match:
-                ip = match.group(1)
-                try:
-                    ipaddress.ip_address(ip)
-                    tasks.append(ping_url(session, stream))
-                except ValueError:
-                    continue
-        delays = await asyncio.gather(*tasks)
-        return delays
-
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
 
@@ -185,10 +157,7 @@ def updateChannelUrlsM3U(channels, template_channels):
 
             f_txt.write("\n")
 
-async def main():
+if __name__ == "__main__":
     template_file = "demo.txt"
     channels, template_channels = filter_source_urls(template_file)
-    await updateChannelUrlsM3U(channels, template_channels)
-
-if __name__ == "__main__":
-    asyncio.run(main())
+    updateChannelUrlsM3U(channels, template_channels)
