@@ -1,6 +1,15 @@
 ip_version_priority = "ipv6"
 
 source_urls = [
+    	"https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/iptv_sources.m3u8",
+	"https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/iptv_sources.m3u8",
+    "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/home_sources.m3u8",
+    "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/iptv.m3u8",
+    "https://cdn.jsdelivr.net/gh/ssili126/tv@main/itvlist.txt",
+    "https://cdn.jsdelivr.net/gh/YueChan/Live@main/IPTV.m3u",
+    "https://cdn.jsdelivr.net/gh/dxawi/0@main/tvlive.txt",
+    "https://cdn.jsdelivr.net/gh/XiaoZhang5656/xiaozhang-5656.github.io@main/iptv-live.txt",
+    "https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt",
     "https://raw.githubusercontent.com/redrainl/iptv/main/speedtest/zubo_fofa.txt", #ADDED BY LEM ON 01/08/2024
     "https://raw.githubusercontent.com/pxiptv/live/main/iptv.txt", #ADDED BY LEM ON 08/08/2024
     "http://tv.850930.xyz/kdsb.m3u", #ADDED BY LEM ON 29/07/2024
@@ -59,7 +68,7 @@ announcements = [
     {
         "channel": "🤠雷蒙影视直播",
         "entries": [
-            {"name":"雷蒙影视直播","url":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CTVThemeSong1.mp4","logo":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/ICON1.png"},
+            {"name":"雷蒙影视直播","url":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CTVThemeSong1.mp4"，"logo":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/ICON1.png"},
             {"name":"CrimeTV LIVE","url":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CTVThemeSong2.mp4","logo":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/ICON2.png"},
             {"name":"更新日期","url":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CRIMETVPV1.mkv","logo":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/ICON3.png"},
             {"name":None,"url":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CRIMETVPV2.mkv","logo":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/ICON4.png"}
