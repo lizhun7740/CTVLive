@@ -134,6 +134,12 @@ async def measure_streams_live_streams(live_streams):
         delays = await asyncio.gather(*tasks)
         return delays
 
+def get_resolution(url):
+    # 这里可以添加解析分辨率的逻辑
+    # 假设返回一个分辨率字符串，例如 "1080p", "720p", "480p" 等
+    # 这里我们简单返回一个随机分辨率作为示例
+    return "1080p"  # 需要根据实际情况实现
+
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
 
@@ -169,14 +175,23 @@ def updateChannelUrlsM3U(channels, template_channels):
                             # 测试延迟并排序
                             delays = asyncio.run(measure_streams_live_streams(filtered_urls))
                             url_delay_pairs = list(zip(filtered_urls, delays))
-                            url_delay_pairs.sort(key=lambda x: x[1])  # 按延迟排序
+                            
+                            # 过滤掉无效的直播源
+                            valid_streams = [(url, delay) for url, delay in url_delay_pairs if delay < float('inf')]
 
-                            # 分别提取前10个IPv4和IPv6的直播源
-                            ipv4_streams = [pair for pair in url_delay_pairs if not is_ipv6(pair[0])][:10]
-                            ipv6_streams = [pair for pair in url_delay_pairs if is_ipv6(pair[0])][:10]
+                            # 获取分辨率并排序
+                            resolution_delay_pairs = [(url, delay, get_resolution(url)) for url, delay in valid_streams]
+                            resolution_delay_pairs.sort(key=lambda x: (x[2], x[1]))  # 按分辨率和延迟排序
 
-                            total_urls = len(ipv4_streams) + len(ipv6_streams)
-                            for index, (url, delay) in enumerate(ipv4_streams + ipv6_streams, start=1):
+                            # 分别提取前10个IPv6和IPv4的直播源
+                            ipv6_streams = [pair for pair in resolution_delay_pairs if is_ipv6(pair[0])][:10]
+                            ipv4_streams = [pair for pair in resolution_delay_pairs if not is_ipv6(pair[0])][:10]
+
+                            # 将IPv6放在前面，IPv4放在后面
+                            combined_streams = ipv6_streams + ipv4_streams
+
+                            total_urls = len(combined_streams)
+                            for index, (url, delay, resolution) in enumerate(combined_streams, start=1):
                                 if is_ipv6(url):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
                                 else:
