@@ -1,8 +1,8 @@
 定制直播,#genre#
-影视直播,https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CTVThemeSong1.mp4
-CrimeTV LIVE,https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CTVThemeSong2.mp4
-更新日期,https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CRIMETVPV1.mkv
-2024-08-23,https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CRIMETVPV2.mkv
+影视直播,https://cors.isteed.cc
+CrimeTV LIVE,https://cors.isteed.cc
+更新日期,https://cors.isteed.cc
+2024-08-23,https://cors.isteed.cc
 🇨🇳央视,#genre#
 CCTV1,http://60.178.151.215:4022/udp/233.50.201.54:5140$•IPV4『线路1』
 CCTV1,http://113.66.41.152:10000/rtp/239.77.0.119:5146$•IPV4『线路2』
