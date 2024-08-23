@@ -134,59 +134,61 @@ def updateChannelUrlsM3U(channels, template_channels):
                             sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
                             filtered_urls = []
                             async def ping_url(session, url):
-                            start_time = time.time()
-                            try:
-                                async with session.get(url, timeout=5) as response:
-                                    response.raise_for_status()  # 抛出异常如果响应码为4xx或5xx
-                                    return time.time() - start_time  # 返回延迟
-                            except Exception as e:
-                                return float('inf')  # 返回无穷大表示超时或错误
-                                
-                                async def measure_streams_live_streams(live_streams):
-                                    async with aiohttp.ClientSession() as session:
-                                        tasks = []
-                                        for stream in live_streams:
-                                            # 提取IP地址
-                                            match = re.search(r'//([^:/]+)', stream)
-                                            if match:
-                                                ip = match.group(1)
-                                                # 检查是IPV4还是IPV6
+                                start_time = time.time()
+                                try:
+                                    # 异步发送GET请求，设置超时时间为5秒
+                                    async with session.get(url, timeout=5) as response:
+                                        response.raise_for_status()  # 抛出异常如果响应码为4xx或5xx
+                                        return time.time() - start_time  # 返回延迟
+                                except Exception as e:
+                                    return float('inf')  # 返回无穷大表示超时或错误
+
+                             # 异步函数：测量一组直播流的延迟
+                             async def measure_streams_live_streams(live_streams):
+                                async with aiohttp.ClientSession() as session:
+                                    tasks = []
+                                    for stream in live_streams:
+                                        # 提取IP地址
+                                        match = re.search(r'//([^:/]+)', stream)
+                                        if match:
+                                            ip = match.group(1)
+                                            # 检查是IPV4还是IPV6
                                             try:
                                                 ipaddress.ip_address(ip)  # 检查IP的有效性
                                                 tasks.append(ping_url(session, stream))
                                             except ValueError:
                                                 continue  # 忽略无效的IP地址
-                                        delays = await asyncio.gather(*tasks)  # 获取所有延迟
-                                        return delays
+                                    delays = await asyncio.gather(*tasks)  # 获取所有延迟
+                                    return delays
 
-                                def main():
-                                    # 测试并分类直播源
-                                    loop = asyncio.get_event_loop()
-                                    delays = loop.run_until_complete(measure_streams_live_streams(live_streams))
+                            def main():
+                                # 测试并分类直播源
+                                loop = asyncio.get_event_loop()
+                                delays = loop.run_until_complete(measure_streams_live_streams(live_streams))
 
-                                    # 创建一个字典将延迟与对应源一一对应
-                                    streams_with_delay = dict(zip(live_streams, delays))
+                                # 创建一个字典将延迟与对应源一一对应
+                                streams_with_delay = dict(zip(live_streams, delays))
 
-                                    # 按照延迟从低到高排序
-                                    sorted_streams = sorted(streams_with_delay.items(), key=lambda x: x[1])
+                                # 按照延迟从低到高排序
+                                sorted_streams = sorted(streams_with_delay.items(), key=lambda x: x[1])
 
-                                    # 分别提取IPV4和IPV6前10个
-                                    ipv6_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv6Address)]
-                                    ipv4_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv4Address)]
+                                # 分别提取IPV4和IPV6前10个
+                                ipv6_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv6Address)]
+                                ipv4_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv4Address)]
 
-                                    top_ipv4_streams = ipv6_streams[:10]
-                                    top_ipv6_streams = ipv4_streams[:10]
+                                top_ipv4_streams = ipv6_streams[:10]
+                                top_ipv6_streams = ipv4_streams[:10]
 
-                                    # 输出结果
-                                    print("Top 10 IPV4 Streams:")
-                                    for stream, delay in top_ipv6_streams:
-                                        print(f"{stream}: {delay:.2f} seconds")
+                                # 输出结果
+                                print("Top 10 IPV4 Streams:")
+                                for stream, delay in top_ipv6_streams:
+                                    print(f"{stream}: {delay:.2f} seconds")
                                         
-                                    print("\nTop 10 IPV6 Streams:")
-                                    for stream, delay in top_ipv4_streams:
-                                        print(f"{stream}: {delay:.2f} seconds") 
+                                print("\nTop 10 IPV6 Streams:")
+                                for stream, delay in top_ipv4_streams:
+                                    print(f"{stream}: {delay:.2f} seconds") 
 
-                                if __name__ == '__main__':
+                            if __name__ == '__main__':
                                     main()
                             for url in sorted_urls:
                                 if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
