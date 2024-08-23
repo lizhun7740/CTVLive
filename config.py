@@ -29,10 +29,10 @@ announcements = [
     {
         "channel": "定制直播",
         "entries": [
-            {"name":"影视直播","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
-            {"name":"CrimeTV LIVE","url":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CTVThemeSong2.mp4","logo":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/ICON2.png"},
-            {"name":"更新日期","url":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CRIMETVPV1.mkv","logo":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/ICON3.png"},
-            {"name":None,"url":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/CRIMETVPV2.mkv","logo":"https://cors.isteed.cc/https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/N3RD/W/ICON4.png"}
+            {"name":"直播","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
+            {"name":"CrimeTV LIVE","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
+            {"name":"更新日期","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
+            {"name":None,"url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"}
         ]
     }
 ]
