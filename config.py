@@ -29,7 +29,7 @@ announcements = [
     {
         "channel": "定制直播",
         "entries": [
-            {"name":"直播","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
+            {"name":"影视直播","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
             {"name":"CrimeTV LIVE","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
             {"name":"更新日期","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
             {"name":None,"url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"}
