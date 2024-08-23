@@ -25,6 +25,18 @@ url_blacklist = [
     "iptv.luas.edu.cn"
 ]
 
+announcements = [
+    {
+        "channel": "定制直播",
+        "entries": [
+            {"name":"直播",""},
+            {"name":"CrimeTV LIVE","url":""},
+            {"name":"更新日期","url":""},
+            {"name":None,"url":""}
+        ]
+    }
+]
+
 epg_urls = [
     "https://live.fanmingming.com/e.xml",
     "http://epg.51zmt.top:8000/e.xml",
