@@ -5,6 +5,23 @@ source_urls = [
     "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",
     "https://raw.githubusercontent.com/yuanzl77/IPTV/main/直播/央视频道.txt",
     "http://175.178.251.183:6689/live.txt",
+    "https://raw.githubusercontent.com/redrainl/iptv/main/speedtest/zubo_fofa.txt"， #ADDED BY LEM ON 01/08/2024
+    "https://raw.githubusercontent.com/pxiptv/live/main/iptv.txt"， #ADDED BY LEM ON 08/08/2024
+    "http://tv.850930.xyz/kdsb.m3u"， #ADDED BY LEM ON 29/07/2024
+    "http://tv.850930.xyz/kdsb2.m3u"， #ADDED BY LEM ON 31/07/2024
+    "http://tv.850930.xyz/gather.m3u"， #ADDED BY LEM ON 29/07/2024
+    "https://raw.githubusercontent.com/hus888yu/app/main/111.m3u"， #ADDED BY LEM ON 06/08/2024
+    "https://raw.githubusercontent.com/hus888yu/app/main/543.m3u"， #ADDED BY LEM ON 13/08/2024
+    "http://175.178.251.183:6689/channel.txt",
+    "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+    "https://raw.githubusercontent.com/yuanzl77/IPTV/main/直播/央视频道.txt",
+    "http://120.79.4.185/new/mdlive.txt",
+    "https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V4.txt",
+    "https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V6.txt",
+    "https://live.zhoujie218.top/tv/iptv6.txt",
+    "https://tv.youdu.fan:666/live/",
+    "http://ww.weidonglong.com/dsj.txt",
+    "http://xhztv.top/zbc.txt",
 ]
 
 url_blacklist = [
