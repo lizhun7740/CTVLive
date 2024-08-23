@@ -1,7 +1,7 @@
-2024-08-23 17:42:52,232 - INFO - url: https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u 获取成功，判断为m3u格式
-2024-08-23 17:42:52,304 - INFO - url: https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u 爬取成功✅，包含频道分类: 更新时间, 央视频道, 卫视频道, 上海频道, 体育频道, 电影频道, 电视剧频道, 明星, 主题片, 港澳台, 国际台, 纪录片, 动画片, 戏曲频道, 解说频道, 综艺频道, 音乐频道, 游戏频道, D｜浙江频道, D｜江苏频道, D｜湖南频道, D｜湖北频道, D｜安徽频道, D｜广东频道, D｜海南频道, D｜内蒙频道, D｜辽宁频道, D｜陕西频道, D｜山西频道, D｜山东频道, D｜云南频道, D｜北京频道, D｜重庆频道, D｜福建频道, D｜甘肃频道, D｜广西频道, D｜贵州频道, D｜河北频道, D｜河南频道, D｜黑龙江频道, D｜吉林频道, D｜江西频道, D｜宁夏频道, D｜青海频道, D｜四川频道, D｜天津频道, D｜新疆频道, 春晚, 直播中国, MTV, 收音机频道
-2024-08-23 17:42:52,703 - INFO - url: https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt 获取成功，判断为txt格式
-2024-08-23 17:42:52,788 - INFO - url: https://raw.githubusercontent.com/yuanzl77/IPTV/main/直播/央视频道.txt 获取成功，判断为txt格式
-2024-08-23 17:42:52,788 - INFO - url: https://raw.githubusercontent.com/yuanzl77/IPTV/main/直播/央视频道.txt 爬取成功✅，包含频道分类: 央视频道
-2024-08-23 17:42:55,518 - INFO - url: http://175.178.251.183:6689/live.txt 获取成功，判断为txt格式
-2024-08-23 17:42:55,525 - INFO - url: http://175.178.251.183:6689/live.txt 爬取成功✅，包含频道分类: 公告信息, 央视频道, 卫视频道, 港·澳·台, 少儿频道, 影视频道, 广东频道, 浙江频道
+2024-08-23 17:49:47,809 - INFO - url: https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u 获取成功，判断为m3u格式
+2024-08-23 17:49:47,886 - INFO - url: https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u 爬取成功✅，包含频道分类: 更新时间, 央视频道, 卫视频道, 上海频道, 体育频道, 电影频道, 电视剧频道, 明星, 主题片, 港澳台, 国际台, 纪录片, 动画片, 戏曲频道, 解说频道, 综艺频道, 音乐频道, 游戏频道, D｜浙江频道, D｜江苏频道, D｜湖南频道, D｜湖北频道, D｜安徽频道, D｜广东频道, D｜海南频道, D｜内蒙频道, D｜辽宁频道, D｜陕西频道, D｜山西频道, D｜山东频道, D｜云南频道, D｜北京频道, D｜重庆频道, D｜福建频道, D｜甘肃频道, D｜广西频道, D｜贵州频道, D｜河北频道, D｜河南频道, D｜黑龙江频道, D｜吉林频道, D｜江西频道, D｜宁夏频道, D｜青海频道, D｜四川频道, D｜天津频道, D｜新疆频道, 春晚, 直播中国, MTV, 收音机频道
+2024-08-23 17:49:48,607 - INFO - url: https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt 获取成功，判断为txt格式
+2024-08-23 17:49:48,861 - INFO - url: https://raw.githubusercontent.com/yuanzl77/IPTV/main/直播/央视频道.txt 获取成功，判断为txt格式
+2024-08-23 17:49:48,861 - INFO - url: https://raw.githubusercontent.com/yuanzl77/IPTV/main/直播/央视频道.txt 爬取成功✅，包含频道分类: 央视频道
+2024-08-23 17:49:54,891 - INFO - url: http://175.178.251.183:6689/live.txt 获取成功，判断为txt格式
+2024-08-23 17:49:54,898 - INFO - url: http://175.178.251.183:6689/live.txt 爬取成功✅，包含频道分类: 公告信息, 央视频道, 卫视频道, 港·澳·台, 少儿频道, 影视频道, 广东频道, 浙江频道
