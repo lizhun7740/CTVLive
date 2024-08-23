@@ -5,13 +5,13 @@ source_urls = [
     "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",
     "https://raw.githubusercontent.com/yuanzl77/IPTV/main/直播/央视频道.txt",
     "http://175.178.251.183:6689/live.txt",
-    "https://raw.githubusercontent.com/redrainl/iptv/main/speedtest/zubo_fofa.txt"， #ADDED BY LEM ON 01/08/2024
-    "https://raw.githubusercontent.com/pxiptv/live/main/iptv.txt"， #ADDED BY LEM ON 08/08/2024
-    "http://tv.850930.xyz/kdsb.m3u"， #ADDED BY LEM ON 29/07/2024
-    "http://tv.850930.xyz/kdsb2.m3u"， #ADDED BY LEM ON 31/07/2024
-    "http://tv.850930.xyz/gather.m3u"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/hus888yu/app/main/111.m3u"， #ADDED BY LEM ON 06/08/2024
-    "https://raw.githubusercontent.com/hus888yu/app/main/543.m3u"， #ADDED BY LEM ON 13/08/2024
+    "https://raw.githubusercontent.com/redrainl/iptv/main/speedtest/zubo_fofa.txt",  # ADDED BY LEM ON 01/08/2024
+    "https://raw.githubusercontent.com/pxiptv/live/main/iptv.txt",  # ADDED BY LEM ON 08/08/2024
+    "http://tv.850930.xyz/kdsb.m3u",  # ADDED BY LEM ON 29/07/2024
+    "http://tv.850930.xyz/kdsb2.m3u",  # ADDED BY LEM ON 31/07/2024
+    "http://tv.850930.xyz/gather.m3u",  # ADDED BY LEM ON 29/07/2024
+    "https://raw.githubusercontent.com/hus888yu/app/main/111.m3u",  # ADDED BY LEM ON 06/08/2024
+    "https://raw.githubusercontent.com/hus888yu/app/main/543.m3u",  # ADDED BY LEM ON 13/08/2024
     "http://175.178.251.183:6689/channel.txt",
     "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
     "http://120.79.4.185/new/mdlive.txt",
@@ -32,12 +32,12 @@ source_urls = [
     "https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/live.txt",
     "https://fm1077.serv00.net/SmartTV.m3u",
     "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt",
-    "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt"， #ADDED BY LEM ON 29/07/2024
-    "http://ttkx.live:55/lib/kx2024.txt"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/Love4vn/love4vn/main/Sport.m3u"， #奥运 ON 29/07/2024
+    "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt",  # ADDED BY LEM ON 29/07/2024
+    "https://raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt",  # ADDED BY LEM ON 29/07/2024
+    "https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",  # ADDED BY LEM ON 29/07/2024
+    "http://ttkx.live:55/lib/kx2024.txt",  # ADDED BY LEM ON 29/07/2024
+    "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",  # ADDED BY LEM ON 29/07/2024
+    "https://raw.githubusercontent.com/Love4vn/love4vn/main/Sport.m3u",  # 奥运 ON 29/07/2024
     "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/iptv_sources.m3u8",
     "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/home_sources.m3u8",
     "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/iptv.m3u8",
@@ -45,7 +45,7 @@ source_urls = [
     "https://cdn.jsdelivr.net/gh/YueChan/Live@main/IPTV.m3u",
     "https://cdn.jsdelivr.net/gh/dxawi/0@main/tvlive.txt",
     "https://cdn.jsdelivr.net/gh/XiaoZhang5656/xiaozhang-5656.github.io@main/iptv-live.txt",
-    "https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt"，
+    "https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt",  # 这里也要确保是英文逗号
     "https://iptv.b2og.com/txt/q_bj_iptv_mobile.txt",
     "https://iptv.b2og.com/txt/cn_p.txt",
     "https://iptv.b2og.com/txt/o_cn.txt",
@@ -81,10 +81,10 @@ announcements = [
     {
         "channel": "定制直播",
         "entries": [
-            {"name":"影视直播","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
-            {"name":"CrimeTV LIVE","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
-            {"name":"更新日期","url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"},
-            {"name":None,"url":"https://cors.isteed.cc","logo":"https://cors.isteed.cc"}
+            {"name": "影视直播", "url": "https://cors.isteed.cc", "logo": "https://cors.isteed.cc"},
+            {"name": "CrimeTV LIVE", "url": "https://cors.isteed.cc", "logo": "https://cors.isteed.cc"},
+            {"name": "更新日期", "url": "https://cors.isteed.cc", "logo": "https://cors.isteed.cc"},
+            {"name": None, "url": "https://cors.isteed.cc", "logo": "https://cors.isteed.cc"}
         ]
     }
 ]
