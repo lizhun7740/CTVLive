@@ -145,21 +145,21 @@ def updateChannelUrlsM3U(channels, template_channels):
 
                              # 异步函数：测量一组直播流的延迟
                              async def measure_streams_live_streams(live_streams):
-                                async with aiohttp.ClientSession() as session:
-                                    tasks = []
-                                    for stream in live_streams:
-                                        # 提取IP地址
-                                        match = re.search(r'//([^:/]+)', stream)
-                                        if match:
-                                            ip = match.group(1)
-                                            # 检查是IPV4还是IPV6
-                                            try:
+                                 async with aiohttp.ClientSession() as session:
+                                     tasks = []
+                                     for stream in live_streams:
+                                         # 提取IP地址
+                                         match = re.search(r'//([^:/]+)', stream)
+                                         if match:
+                                             ip = match.group(1)
+                                             # 检查是IPV4还是IPV6
+                                             try:
                                                 ipaddress.ip_address(ip)  # 检查IP的有效性
                                                 tasks.append(ping_url(session, stream))
-                                            except ValueError:
+                                             except ValueError:
                                                 continue  # 忽略无效的IP地址
-                                    delays = await asyncio.gather(*tasks)  # 获取所有延迟
-                                    return delays
+                                     delays = await asyncio.gather(*tasks)  # 获取所有延迟
+                                     return delays
 
                             def main():
                                 # 测试并分类直播源
