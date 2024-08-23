@@ -4,6 +4,10 @@ import logging
 from collections import OrderedDict
 from datetime import datetime
 import config
+import asyncio
+import aiohttp
+import time
+import ipaddress
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("function.log", "w", encoding="utf-8"), logging.StreamHandler()])
 
@@ -106,6 +110,30 @@ def filter_source_urls(template_file):
 def is_ipv6(url):
     return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
 
+async def ping_url(session, url):
+    start_time = time.time()
+    try:
+        async with session.get(url, timeout=5) as response:
+            response.raise_for_status()
+            return time.time() - start_time
+    except Exception as e:
+        return float('inf')
+
+async def measure_streams_live_streams(live_streams):
+    async with aiohttp.ClientSession() as session:
+        tasks = []
+        for stream in live_streams:
+            match = re.search(r'//([^:/]+)', stream)
+            if match:
+                ip = match.group(1)
+                try:
+                    ipaddress.ip_address(ip)
+                    tasks.append(ping_url(session, stream))
+                except ValueError:
+                    continue
+        delays = await asyncio.gather(*tasks)
+        return delays
+
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
 
@@ -133,69 +161,12 @@ def updateChannelUrlsM3U(channels, template_channels):
                         if channel_name in channels[category]:
                             sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
                             filtered_urls = []
-                            async def ping_url(session, url):
-                                start_time = time.time()
-                                try:
-                                    # 异步发送GET请求，设置超时时间为5秒
-                                    async with session.get(url, timeout=5) as response:
-                                        response.raise_for_status()  # 抛出异常如果响应码为4xx或5xx
-                                        return time.time() - start_time  # 返回延迟
-                                except Exception as e:
-                                    return float('inf')  # 返回无穷大表示超时或错误
-
-                             # 异步函数：测量一组直播流的延迟
-                             async def measure_streams_live_streams(live_streams):
-                                 async with aiohttp.ClientSession() as session:
-                                     tasks = []
-                                     for stream in live_streams:
-                                         # 提取IP地址
-                                         match = re.search(r'//([^:/]+)', stream)
-                                         if match:
-                                             ip = match.group(1)
-                                             # 检查是IPV4还是IPV6
-                                             try:
-                                                ipaddress.ip_address(ip)  # 检查IP的有效性
-                                                tasks.append(ping_url(session, stream))
-                                             except ValueError:
-                                                continue  # 忽略无效的IP地址
-                                     delays = await asyncio.gather(*tasks)  # 获取所有延迟
-                                     return delays
-
-                            def main():
-                                # 测试并分类直播源
-                                loop = asyncio.get_event_loop()
-                                delays = loop.run_until_complete(measure_streams_live_streams(live_streams))
-
-                                # 创建一个字典将延迟与对应源一一对应
-                                streams_with_delay = dict(zip(live_streams, delays))
-
-                                # 按照延迟从低到高排序
-                                sorted_streams = sorted(streams_with_delay.items(), key=lambda x: x[1])
-
-                                # 分别提取IPV4和IPV6前10个
-                                ipv6_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv6Address)]
-                                ipv4_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv4Address)]
-
-                                top_ipv4_streams = ipv6_streams[:10]
-                                top_ipv6_streams = ipv4_streams[:10]
-
-                                # 输出结果
-                                print("Top 10 IPV4 Streams:")
-                                for stream, delay in top_ipv6_streams:
-                                    print(f"{stream}: {delay:.2f} seconds")
-                                        
-                                print("\nTop 10 IPV6 Streams:")
-                                for stream, delay in top_ipv4_streams:
-                                    print(f"{stream}: {delay:.2f} seconds") 
-
-                            if __name__ == '__main__':
-                                    main()
                             for url in sorted_urls:
                                 if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
                                     filtered_urls.append(url)
                                     written_urls.add(url)
 
-                            total_urls = len(filtered_urls) 
+                            total_urls = len(filtered_urls)
                             for index, url in enumerate(filtered_urls, start=1):
                                 if is_ipv6(url):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
@@ -214,7 +185,10 @@ def updateChannelUrlsM3U(channels, template_channels):
 
             f_txt.write("\n")
 
-if __name__ == "__main__":
+async def main():
     template_file = "demo.txt"
     channels, template_channels = filter_source_urls(template_file)
-    updateChannelUrlsM3U(channels, template_channels)
+    await updateChannelUrlsM3U(channels, template_channels)
+
+if __name__ == "__main__":
+    asyncio.run(main())
