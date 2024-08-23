@@ -149,6 +149,8 @@ def updateChannelUrlsM3U(channels, template_channels):
                                             # 提取IP地址
                                             match = re.search(r'//([^:/]+)', stream)
                                             if match:
+                                                ip = match.group(1)
+                                                # 检查是IPV4还是IPV6
                                             try:
                                                 ipaddress.ip_address(ip)  # 检查IP的有效性
                                                 tasks.append(ping_url(session, stream))
@@ -169,8 +171,8 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     sorted_streams = sorted(streams_with_delay.items(), key=lambda x: x[1])
 
                                     # 分别提取IPV4和IPV6前10个
-                                    ipv6_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv4Address)]
-                                    ipv4_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv6Address)]
+                                    ipv6_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv6Address)]
+                                    ipv4_streams = [s for s in sorted_streams if isinstance(ipaddress.ip_address(re.search(r'//([^:/]+)', s[0]).group(1)), ipaddress.IPv4Address)]
 
                                     top_ipv4_streams = ipv6_streams[:10]
                                     top_ipv6_streams = ipv4_streams[:10]
@@ -179,11 +181,13 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     print("Top 10 IPV4 Streams:")
                                     for stream, delay in top_ipv6_streams:
                                         print(f"{stream}: {delay:.2f} seconds")
+                                        
                                     print("\nTop 10 IPV6 Streams:")
                                     for stream, delay in top_ipv4_streams:
                                         print(f"{stream}: {delay:.2f} seconds") 
-                                        
-            return time.time() - start_time  # 返回延迟  
+
+                                if __name__ == '__main__':
+                                    main()
                             for url in sorted_urls:
                                 if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
                                     filtered_urls.append(url)
