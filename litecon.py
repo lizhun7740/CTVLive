@@ -46,7 +46,7 @@ announcements = [
 ]
 
 epg_urls = [
-    "https://live.fanmingming.com/e.xml",    “https://live.fanmingming.com/e.xml”，
+    "https://live.fanmingming.com/e.xml"，
     "http://epg.51zmt.top:8000/e.xml",
     "http://epg.aptvapp.com/xml",
     "https://epg.pw/xmltv/epg_CN.xml",
