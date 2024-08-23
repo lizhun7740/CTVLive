@@ -4,6 +4,10 @@ import logging
 from collections import OrderedDict
 from datetime import datetime
 import config
+import asyncio
+import aiohttp
+import time
+import ipaddress
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("function.log", "w", encoding="utf-8"), logging.StreamHandler()])
 
@@ -106,6 +110,30 @@ def filter_source_urls(template_file):
 def is_ipv6(url):
     return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
 
+async def ping_url(session, url):
+    start_time = time.time()
+    try:
+        async with session.get(url, timeout=5) as response:
+            response.raise_for_status()
+            return time.time() - start_time
+    except Exception as e:
+        return float('inf')
+
+async def measure_streams_live_streams(live_streams):
+    async with aiohttp.ClientSession() as session:
+        tasks = []
+        for stream in live_streams:
+            match = re.search(r'//([^:/]+)', stream)
+            if match:
+                ip = match.group(1)
+                try:
+                    ipaddress.ip_address(ip)
+                    tasks.append(ping_url(session, stream))
+                except ValueError:
+                    continue
+        delays = await asyncio.gather(*tasks)
+        return delays
+
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
 
@@ -138,8 +166,17 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     filtered_urls.append(url)
                                     written_urls.add(url)
 
-                            total_urls = len(filtered_urls)
-                            for index, url in enumerate(filtered_urls, start=1):
+                            # 测试延迟并排序
+                            delays = asyncio.run(measure_streams_live_streams(filtered_urls))
+                            url_delay_pairs = list(zip(filtered_urls, delays))
+                            url_delay_pairs.sort(key=lambda x: x[1])  # 按延迟排序
+
+                            # 分别提取前10个IPv4和IPv6的直播源
+                            ipv4_streams = [pair for pair in url_delay_pairs if not is_ipv6(pair[0])][:10]
+                            ipv6_streams = [pair for pair in url_delay_pairs if is_ipv6(pair[0])][:10]
+
+                            total_urls = len(ipv4_streams) + len(ipv6_streams)
+                            for index, (url, delay) in enumerate(ipv4_streams + ipv6_streams, start=1):
                                 if is_ipv6(url):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
                                 else:
