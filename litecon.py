@@ -1,6 +1,28 @@
 ip_version_priority = "ipv6"
 
 source_urls = [
+    "https://iptv.b2og.com/txt/q_bj_iptv_mobile.txt",
+    "https://iptv.b2og.com/txt/cn_p.txt",
+    "https://iptv.b2og.com/txt/o_cn.txt",
+    "https://iptv.b2og.com/txt/q_bj_iptv_mobile_m.txt",
+    "https://iptv.b2og.com/txt/m_iptv.txt",
+    "https://iptv.b2og.com/txt/j_iptv.txt",
+    "https://iptv.b2og.com/txt/j_home.txt",
+    "https://iptv.b2og.com/txt/y_g.txt",
+    "https://iptv.b2og.com/txt/ycl_iptv.txt",
+    "https://iptv.b2og.com/txt/fmml_dv6.txt",
+    "https://iptv.b2og.com/txt/fmml_ipv6.txt",
+    "https://epg.pw/test_channels_china.txt",
+    "https://epg.pw/test_channels_unknown.txt",
+    "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/iptv_sources.m3u8",
+    "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/home_sources.m3u8",
+    "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/iptv.m3u8",
+    "https://cdn.jsdelivr.net/gh/ssili126/tv@main/itvlist.txt",
+    "https://cdn.jsdelivr.net/gh/YueChan/Live@main/IPTV.m3u",
+    "https://cdn.jsdelivr.net/gh/dxawi/0@main/tvlive.txt",
+    "https://cdn.jsdelivr.net/gh/XiaoZhang5656/xiaozhang-5656.github.io@main/iptv-live.txt",
+    "https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt",
+    "http://xhztv.top/zbc.txt"
     "https://raw.githubusercontent.com/redrainl/iptv/main/speedtest/zubo_fofa.txt", #ADDED BY LEM ON 01/08/2024
     "https://raw.githubusercontent.com/pxiptv/live/main/iptv.txt", #ADDED BY LEM ON 08/08/2024
     "http://tv.850930.xyz/kdsb.m3u", #ADDED BY LEM ON 29/07/2024
