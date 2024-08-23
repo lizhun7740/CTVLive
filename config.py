@@ -29,7 +29,7 @@ announcements = [
     {
         "channel": "定制直播",
         "entries": [
-            {"name":"直播",""},
+            {"name":"直播",,"url":""},
             {"name":"CrimeTV LIVE","url":""},
             {"name":"更新日期","url":""},
             {"name":None,"url":""}
