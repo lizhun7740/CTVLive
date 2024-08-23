@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '30 9,21 * * *'
   workflow_dispatch:
-    branches:
+    分支:
       - main
 
 jobs:
@@ -34,8 +34,6 @@ jobs:
 
     - name: Run Python main script
       run: python main.py
-    - name: Run Python litemain script
-      run: python litemain.py
 
     - name: Commit and push if changed
       run: |
