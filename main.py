@@ -193,7 +193,7 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     filtered_urls.append(url)
                                     written_urls.add(url)
 
-                            total_urls = len(filtered_urls)                            total_urls = len（filtered_urls）
+                            total_urls = len(filtered_urls) 
                             for index, url in enumerate(filtered_urls, start=1):
                                 if is_ipv6(url):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
