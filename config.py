@@ -25,9 +25,6 @@ url_blacklist = [
     "iptv.luas.edu.cn"
 ]
 
-
-]
-
 epg_urls = [
     "https://live.fanmingming.com/e.xml",
     "http://epg.51zmt.top:8000/e.xml",
