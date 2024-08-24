@@ -136,8 +136,6 @@ async def measure_streams_live_streams(live_streams):
 
 def get_resolution(url):
     # 这里可以添加解析分辨率的逻辑
-    # 假设返回一个分辨率字符串，例如 "1080p", "720p", "480p" 等
-    # 这里我们简单返回一个随机分辨率作为示例
     return "1080p"  # 需要根据实际情况实现
 
 def updateChannelUrlsM3U(channels, template_channels):
@@ -166,9 +164,19 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     filtered_urls.append(url)
                                     written_urls.add(url)
 
+                            # **有效性检查**
+                            valid_urls = []
+                            for url in filtered_urls:
+                                try:
+                                    response = requests.head(url, timeout=5)
+                                    if response.status_code == 200:
+                                        valid_urls.append(url)
+                                except requests.RequestException:
+                                    continue
+
                             # 测试延迟并排序
-                            delays = asyncio.run(measure_streams_live_streams(filtered_urls))
-                            url_delay_pairs = list(zip(filtered_urls, delays))
+                            delays = asyncio.run(measure_streams_live_streams(valid_urls))
+                            url_delay_pairs = list(zip(valid_urls, delays))
                             
                             # 过滤掉无效的直播源
                             valid_streams = [(url, delay) for url, delay in url_delay_pairs if delay < float('inf')]
