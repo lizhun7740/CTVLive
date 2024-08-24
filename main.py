@@ -107,6 +107,14 @@ def filter_source_urls(template_file):
 
     return matched_channels, template_channels
 
+def is_valid_url(url):
+    """检查直播源是否有效"""
+    try:
+        response = requests.head(url, timeout=5)
+        return response.status_code == 200
+    except requests.RequestException:
+        return False
+
 def is_ipv6(url):
     return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
 
@@ -136,8 +144,6 @@ async def measure_streams_live_streams(live_streams):
 
 def get_resolution(url):
     # 这里可以添加解析分辨率的逻辑
-    # 假设返回一个分辨率字符串，例如 "1080p", "720p", "480p" 等
-    # 这里我们简单返回一个随机分辨率作为示例
     return "1080p"  # 需要根据实际情况实现
 
 def updateChannelUrlsM3U(channels, template_channels):
@@ -163,8 +169,10 @@ def updateChannelUrlsM3U(channels, template_channels):
                             filtered_urls = []
                             for url in sorted_urls:
                                 if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
-                                    filtered_urls.append(url)
-                                    written_urls.add(url)
+                                    # 检查直播源是否有效
+                                    if is_valid_url(url):
+                                        filtered_urls.append(url)
+                                        written_urls.add(url)
 
                             # 测试延迟并排序
                             delays = asyncio.run(measure_streams_live_streams(filtered_urls))
