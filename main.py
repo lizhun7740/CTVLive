@@ -135,22 +135,16 @@ async def measure_streams_live_streams(live_streams):
         return delays
 
 def get_resolution(url):
-    # 这里可以添加解析分辨率的逻辑
-    # 假设返回一个分辨率字符串，例如 "1080p", "720p", "480p" 等
-    # 这里我们简单返回一个随机分辨率作为示例
     return "1080p"  # 需要根据实际情况实现
 
-def updateChannelUrlsM3U(channels, template_channels):
+async def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
-
-    # 只保留更新时间
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     with open("live.m3u", "w", encoding="utf-8") as f_m3u:
         f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
 
         with open("live.txt", "w", encoding="utf-8") as f_txt:
-            # 添加更新时间分类
             f_txt.write(f"更新时间: {current_date}\n")
             f_m3u.write(f"# 更新时间: {current_date}\n")
 
@@ -159,42 +153,26 @@ def updateChannelUrlsM3U(channels, template_channels):
                 if category in channels:
                     for channel_name in channel_list:
                         if channel_name in channels[category]:
-                            sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
-                            filtered_urls = []
-                            for url in sorted_urls:
-                                if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
-                                    filtered_urls.append(url)
-                                    written_urls.add(url)
+                            streams = channels[category][channel_name]
 
-                            # 测试延迟并排序
-                            delays = asyncio.run(measure_streams_live_streams(filtered_urls))
-                            url_delay_pairs = list(zip(filtered_urls, delays))
-                            
-                            # 过滤掉无效的直播源
-                            valid_streams = [(url, delay) for url, delay in url_delay_pairs if delay < float('inf')]
+                            # 测试延迟
+                            delays = await measure_streams_live_streams([url for name, url in streams])
+                            streams_with_delay = [(name, url, delay) for (name, url), delay in zip(streams, delays)]
 
-                            # 获取分辨率并排序
-                            resolution_delay_pairs = [(url, delay, get_resolution(url)) for url, delay in valid_streams]
-                            resolution_delay_pairs.sort(key=lambda x: (x[2], x[1]))  # 按分辨率和延迟排序
+                            # 分离 IPv6 和 IPv4 并排序
+                            ipv6_streams = sorted([(name, url, delay) for name, url, delay in streams_with_delay if is_ipv6(url)], key=lambda x: x[2])[:20]
+                            ipv4_streams = sorted([(name, url, delay) for name, url, delay in streams_with_delay if not is_ipv6(url)], key=lambda x: x[2])[:30]
 
-                            # 分别提取前10个IPv6和IPv4的直播源
-                            ipv6_streams = [pair for pair in resolution_delay_pairs if is_ipv6(pair[0])][:10]
-                            ipv4_streams = [pair for pair in resolution_delay_pairs if not is_ipv6(pair[0])][:10]
-
-                            # 将IPv6放在前面，IPv4放在后面
                             combined_streams = ipv6_streams + ipv4_streams
 
                             total_urls = len(combined_streams)
-                            for index, (url, delay, resolution) in enumerate(combined_streams, start=1):
+                            for index, (name, url, delay) in enumerate(combined_streams, start=1):
                                 if is_ipv6(url):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
                                 else:
                                     url_suffix = f"$IPV4" if total_urls == 1 else f"$IPV4『线路{index}』"
-                                if '$' in url:
-                                    base_url = url.split('$', 1)[0]
-                                else:
-                                    base_url = url
-
+                                
+                                base_url = url.split('$', 1)[0]
                                 new_url = f"{base_url}{url_suffix}"
 
                                 f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
@@ -206,4 +184,4 @@ def updateChannelUrlsM3U(channels, template_channels):
 if __name__ == "__main__":
     template_file = "demo.txt"
     channels, template_channels = filter_source_urls(template_file)
-    updateChannelUrlsM3U(channels, template_channels)
+    asyncio.run(updateChannelUrlsM3U(channels, template_channels))
