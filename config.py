@@ -2,7 +2,8 @@ ip_version_priority = "ipv6"
 
 source_urls = [
     "https://9295.kstore.space/ipv6.txt",
-     "https://9295.kstore.space/ipv4.txt",
+    "https://9295.kstore.space/ipv4.txt",
+    "https://raw.githubusercontent.com/LuckyLearning/TV/master/local.txt",
 ]
 
 url_blacklist = [
