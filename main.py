@@ -142,8 +142,6 @@ def get_resolution(url):
 
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
-
-    # 只保留更新时间
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     with open("live.m3u", "w", encoding="utf-8") as f_m3u:
@@ -159,33 +157,21 @@ def updateChannelUrlsM3U(channels, template_channels):
                 if category in channels:
                     for channel_name in channel_list:
                         if channel_name in channels[category]:
-                            sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
-                            filtered_urls = []
-                            for url in sorted_urls:
+                            ipv6_streams = []
+                            ipv4_streams = []
+                            for url in channels[category][channel_name]:
                                 if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
-                                    filtered_urls.append(url)
+                                    if is_ipv6(url):
+                                        ipv6_streams.append(url)
+                                    else:
+                                        ipv4_streams.append(url)
                                     written_urls.add(url)
-
-                            # 测试延迟并排序
-                            delays = asyncio.run(measure_streams_live_streams(filtered_urls))
-                            url_delay_pairs = list(zip(filtered_urls, delays))
                             
-                            # 过滤掉无效的直播源
-                            valid_streams = [(url, delay) for url, delay in url_delay_pairs if delay < float('inf')]
-
-                            # 获取分辨率并排序
-                            resolution_delay_pairs = [(url, delay, get_resolution(url)) for url, delay in valid_streams]
-                            resolution_delay_pairs.sort(key=lambda x: (x[2], x[1]))  # 按分辨率和延迟排序
-
-                            # 分别提取前10个IPv6和IPv4的直播源
-                            ipv6_streams = [pair for pair in resolution_delay_pairs if is_ipv6(pair[0])][:10]
-                            ipv4_streams = [pair for pair in resolution_delay_pairs if not is_ipv6(pair[0])][:10]
-
                             # 将IPv6放在前面，IPv4放在后面
                             combined_streams = ipv6_streams + ipv4_streams
 
                             total_urls = len(combined_streams)
-                            for index, (url, delay, resolution) in enumerate(combined_streams, start=1):
+                            for index, url in enumerate(combined_streams, start=1):
                                 if is_ipv6(url):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
                                 else:
