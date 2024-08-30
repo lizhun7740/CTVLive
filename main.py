@@ -4,9 +4,6 @@ import logging
 from collections import OrderedDict
 from datetime import datetime
 import config
-import asyncio
-import aiohttp
-import time
 import ipaddress
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("function.log", "w", encoding="utf-8"), logging.StreamHandler()])
@@ -110,41 +107,17 @@ def filter_source_urls(template_file):
 def is_ipv6(url):
     return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
 
-async def ping_url(session, url):
-    start_time = time.time()
-    try:
-        async with session.get(url, timeout=5) as response:
-            response.raise_for_status()
-            return time.time() - start_time
-    except Exception as e:
-        return float('inf')
-
-async def measure_streams_live_streams(live_streams):
-    async with aiohttp.ClientSession() as session:
-        tasks = []
-        for stream in live_streams:
-            match = re.search(r'//([^:/]+)', stream)
-            if match:
-                ip = match.group(1)
-                try:
-                    ipaddress.ip_address(ip)
-                    tasks.append(ping_url(session, stream))
-                except ValueError:
-                    continue
-        delays = await asyncio.gather(*tasks)
-        return delays
-
-def get_resolution(url):
-    return "1080p"  # 需要根据实际情况实现
-
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
+
+    # 只保留更新时间
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     with open("live.m3u", "w", encoding="utf-8") as f_m3u:
         f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
 
         with open("live.txt", "w", encoding="utf-8") as f_txt:
+            # 添加更新时间分类
             f_txt.write(f"更新时间: {current_date}\n")
             f_m3u.write(f"# 更新时间: {current_date}\n")
 
@@ -153,29 +126,24 @@ def updateChannelUrlsM3U(channels, template_channels):
                 if category in channels:
                     for channel_name in channel_list:
                         if channel_name in channels[category]:
-                            ipv6_streams = []
-                            ipv4_streams = []
-                            for url in channels[category][channel_name]:
+                            sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
+                            filtered_urls = []
+                            for url in sorted_urls:
                                 if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
-                                    if is_ipv6(url):
-                                        ipv6_streams.append(url)
-                                    else:
-                                        ipv4_streams.append(url)
+                                    filtered_urls.append(url)
                                     written_urls.add(url)
 
-                            # 组合 IPv6 和 IPv4 直播源，限制数量
-                            ipv6_streams = ipv6_streams[:20]
-                            ipv4_streams = ipv4_streams[:30]
-                            combined_streams = ipv6_streams + ipv4_streams
-
-                            total_urls = len(combined_streams)
-                            for index, url in enumerate(combined_streams, start=1):
+                            total_urls = len(filtered_urls)
+                            for index, url in enumerate(filtered_urls, start=1):
                                 if is_ipv6(url):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
                                 else:
                                     url_suffix = f"$IPV4" if total_urls == 1 else f"$IPV4『线路{index}』"
-                                
-                                base_url = url.split('$', 1)[0]
+                                if '$' in url:
+                                    base_url = url.split('$', 1)[0]
+                                else:
+                                    base_url = url
+
                                 new_url = f"{base_url}{url_suffix}"
 
                                 f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
