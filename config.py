@@ -8,6 +8,7 @@ source_urls = [
     "https://gist.githubusercontent.com/inkss/0cf33e9f52fbb1f91bc5eb0144e504cf/raw/ipv6.m3u",
     "https://mirror.ghproxy.com/https://raw.githubusercontent.com/wwb521/live/main/tv.txt",
     "https://raw.githubusercontent.com/zhumeng11/IPTV/main/IPTV.m3u",
+    "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt",
 ]
 
 url_blacklist = [
