@@ -135,6 +135,9 @@ async def measure_streams_live_streams(live_streams):
         return delays
 
 def get_resolution(url):
+    # 这里可以添加解析分辨率的逻辑
+    # 假设返回一个分辨率字符串，例如 "1080p", "720p", "480p" 等
+    # 这里我们简单返回一个随机分辨率作为示例
     return "1080p"  # 需要根据实际情况实现
 
 def updateChannelUrlsM3U(channels, template_channels):
@@ -145,6 +148,7 @@ def updateChannelUrlsM3U(channels, template_channels):
         f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
 
         with open("live.txt", "w", encoding="utf-8") as f_txt:
+            # 添加更新时间分类
             f_txt.write(f"更新时间: {current_date}\n")
             f_m3u.write(f"# 更新时间: {current_date}\n")
 
@@ -162,10 +166,8 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     else:
                                         ipv4_streams.append(url)
                                     written_urls.add(url)
-
-                            # 组合 IPv6 和 IPv4 直播源，限制数量
-                            ipv6_streams = ipv6_streams[:20]
-                            ipv4_streams = ipv4_streams[:30]
+                            
+                            # 将IPv6放在前面，IPv4放在后面
                             combined_streams = ipv6_streams + ipv4_streams
 
                             total_urls = len(combined_streams)
@@ -174,8 +176,11 @@ def updateChannelUrlsM3U(channels, template_channels):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
                                 else:
                                     url_suffix = f"$IPV4" if total_urls == 1 else f"$IPV4『线路{index}』"
-                                
-                                base_url = url.split('$', 1)[0]
+                                if '$' in url:
+                                    base_url = url.split('$', 1)[0]
+                                else:
+                                    base_url = url
+
                                 new_url = f"{base_url}{url_suffix}"
 
                                 f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
