@@ -5,6 +5,7 @@ source_urls = [
     "https://9295.kstore.space/ipv4.txt",
     "https://raw.githubusercontent.com/LuckyLearning/TV/master/local.txt",
     "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+    "https://gist.githubusercontent.com/inkss/0cf33e9f52fbb1f91bc5eb0144e504cf/raw/ipv6.m3u",
 ]
 
 url_blacklist = [
