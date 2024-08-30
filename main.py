@@ -170,6 +170,11 @@ def updateChannelUrlsM3U(channels, template_channels):
                             # 将IPv6放在前面，IPv4放在后面
                             combined_streams = ipv6_streams + ipv4_streams
 
+                            # 分别提取前20个IPv6和前30个IPv4的直播源
+                            ipv6_streams = [pair for pair in resolution_delay_pairs if is_ipv6(pair[0])][:20]
+                            ipv4_streams = [pair for pair in resolution_delay_pairs if not is_ipv6(pair[0])][:30]
+
+
                             total_urls = len(combined_streams)
                             for index, url in enumerate(combined_streams, start=1):
                                 if is_ipv6(url):
