@@ -80,13 +80,6 @@ def fetch_channels(url):
             categories = ", ".join(channels.keys())
             logging.info(f"url: {url} 爬取成功✅，包含频道分类: {categories}")
 
-        # 连通性测试
-        for category, channel_list in channels.items():
-            for channel_name, channel_url in channel_list:
-                if not check_url_accessibility(channel_url):
-                    channels[category].remove((channel_name, channel_url))
-                    logging.warning(f"URL不可达: {channel_url} 已被抛弃")
-
     except requests.RequestException as e:
         logging.error(f"url: {url} 爬取失败❌, Error: {e}")
 
@@ -102,7 +95,7 @@ def match_channels(template_channels, all_channels):
                 for online_channel_name, online_channel_url in online_channel_list:
                     if channel_name == online_channel_name:
                         matched_channels[category][channel_name].append(online_channel_url)
-
+    
     return matched_channels
 
 # 从所有配置的源抓取频道并匹配模板中的频道
@@ -118,6 +111,14 @@ def filter_source_urls(template_file):
 
     matched_channels = match_channels(template_channels, all_channels)
 
+    # 连通性测试，只对模板中的频道进行测试
+    for category, channel_list in matched_channels.items():
+        for channel_name, urls in channel_list.items():
+            for index, url in enumerate(urls):
+                if not check_url_accessibility(url):
+                    logging.warning(f"URL不可达: {url} 已被抛弃")
+                    matched_channels[category][channel_name].pop(index)
+    
     return matched_channels, template_channels
 
 # 检查URL是否为IPv6
