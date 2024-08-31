@@ -1,18 +1,18 @@
 import re
 import requests
 import logging
-from collections import OrderedDict
+from collections import defaultdict, OrderedDict
 from datetime import datetime
-import config
-import asyncio
-import aiohttp
-import time
-import ipaddress
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("function.log", "w", encoding="utf-8"), logging.StreamHandler()])
+# 配置日志记录
+logging.basicConfig(level=logging.INFO, 
+                    format='%(asctime)s - %(levelname)s - %(message)s', 
+                    handlers=[logging.FileHandler("function.log", "w", encoding="utf-8"), 
+                              logging.StreamHandler()])
 
+# 解析模板文件，获取频道分类及其对应的频道列表
 def parse_template(template_file):
-    template_channels = OrderedDict()
+    template_channels = defaultdict(list)
     current_category = None
 
     with open(template_file, "r", encoding="utf-8") as f:
@@ -21,25 +21,25 @@ def parse_template(template_file):
             if line and not line.startswith("#"):
                 if "#genre#" in line:
                     current_category = line.split(",")[0].strip()
-                    template_channels[current_category] = []
                 elif current_category:
                     channel_name = line.split(",")[0].strip()
                     template_channels[current_category].append(channel_name)
 
     return template_channels
 
+# 从指定URL中获取频道及其直播源链接
 def fetch_channels(url):
-    channels = OrderedDict()
+    channels = defaultdict(list)
 
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)
         response.raise_for_status()
         response.encoding = 'utf-8'
-        lines = response.text.split("\n")
+        lines = response.text.splitlines()
+
         current_category = None
         is_m3u = any("#EXTINF" in line for line in lines[:15])
-        source_type = "m3u" if is_m3u else "txt"
-        logging.info(f"url: {url} 获取成功，判断为{source_type}格式")
+        logging.info(f"url: {url} 获取成功，判断为{'m3u' if is_m3u else 'txt'}格式")
 
         if is_m3u:
             for line in lines:
@@ -49,8 +49,6 @@ def fetch_channels(url):
                     if match:
                         current_category = match.group(1).strip()
                         channel_name = match.group(2).strip()
-                        if current_category not in channels:
-                            channels[current_category] = []
                 elif line and not line.startswith("#"):
                     channel_url = line.strip()
                     if current_category and channel_name:
@@ -60,7 +58,6 @@ def fetch_channels(url):
                 line = line.strip()
                 if "#genre#" in line:
                     current_category = line.split(",")[0].strip()
-                    channels[current_category] = []
                 elif current_category:
                     match = re.match(r"^(.*?),(.*?)$", line)
                     if match:
@@ -69,6 +66,7 @@ def fetch_channels(url):
                         channels[current_category].append((channel_name, channel_url))
                     elif line:
                         channels[current_category].append((line, ''))
+
         if channels:
             categories = ", ".join(channels.keys())
             logging.info(f"url: {url} 爬取成功✅，包含频道分类: {categories}")
@@ -77,69 +75,53 @@ def fetch_channels(url):
 
     return channels
 
+# 根据模板文件中的频道列表过滤抓取到的频道
 def match_channels(template_channels, all_channels):
-    matched_channels = OrderedDict()
+    matched_channels = defaultdict(lambda: defaultdict(list))
 
     for category, channel_list in template_channels.items():
-        matched_channels[category] = OrderedDict()
         for channel_name in channel_list:
             for online_category, online_channel_list in all_channels.items():
                 for online_channel_name, online_channel_url in online_channel_list:
                     if channel_name == online_channel_name:
-                        matched_channels[category].setdefault(channel_name, []).append(online_channel_url)
+                        matched_channels[category][channel_name].append(online_channel_url)
 
     return matched_channels
 
+# 从所有配置的源抓取频道并匹配模板中的频道
 def filter_source_urls(template_file):
     template_channels = parse_template(template_file)
     source_urls = config.source_urls
 
-    all_channels = OrderedDict()
+    all_channels = defaultdict(list)
     for url in source_urls:
         fetched_channels = fetch_channels(url)
         for category, channel_list in fetched_channels.items():
-            if category in all_channels:
-                all_channels[category].extend(channel_list)
-            else:
-                all_channels[category] = channel_list
+            all_channels[category].extend(channel_list)
 
     matched_channels = match_channels(template_channels, all_channels)
 
     return matched_channels, template_channels
 
+# 检查URL是否为IPv6
 def is_ipv6(url):
     return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
 
-async def ping_url(session, url):
-    start_time = time.time()
-    try:
-        async with session.get(url, timeout=5) as response:
-            response.raise_for_status()
-            return time.time() - start_time
-    except Exception as e:
-        return float('inf')
-
-async def measure_streams_live_streams(live_streams):
-    async with aiohttp.ClientSession() as session:
-        tasks = []
-        for stream in live_streams:
-            tasks.append(ping_url(session, stream))
-        delays = await asyncio.gather(*tasks)
-        return delays
-
+# 将匹配的频道写入M3U和TXT文件
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
-
-    # 只保留更新时间
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
+    # 写入M3U文件
     with open("live.m3u", "w", encoding="utf-8") as f_m3u:
         f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
 
+        # 写入TXT文件
         with open("live.txt", "w", encoding="utf-8") as f_txt:
             # 添加更新时间分类
-            f_txt.write(f"更新时间: {current_date}\n")
-            f_m3u.write(f"# 更新时间: {current_date}\n")
+            f_txt.write(f"更新时间,#genre#\n")
+            f_txt.write(f"更新时间: {current_date}\n\n")
+            f_m3u.write(f"# 更新时间: {current_date}\n\n")
 
             for category, channel_list in template_channels.items():
                 f_txt.write(f"{category},#genre#\n")
@@ -147,35 +129,23 @@ def updateChannelUrlsM3U(channels, template_channels):
                     for channel_name in channel_list:
                         if channel_name in channels[category]:
                             sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
-                            filtered_urls = []
-                            for url in sorted_urls:
-                                if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist):
-                                    filtered_urls.append(url)
-                                    written_urls.add(url)
+                            filtered_urls = [url for url in sorted_urls if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist)]
+                            written_urls.update(filtered_urls)
 
-                            # 测试延迟并排序
-                            delays = asyncio.run(measure_streams_live_streams(filtered_urls))
-                            url_delay_pairs = list(zip(filtered_urls, delays))
-                            url_delay_pairs.sort(key=lambda pair: pair[1])  # 按延迟排序
-
-                            # 分别提取前20个IPv6和前20个IPv4的直播源
-                            ipv6_streams = [pair for pair in url_delay_pairs if is_ipv6(pair[0])][:20]
-                            ipv4_streams = [pair for pair in url_delay_pairs if not is_ipv6(pair[0])][:20]
+                            # 提取前20个IPv6和前20个IPv4的直播源
+                            ipv6_streams = [url for url in filtered_urls if is_ipv6(url)][:20]
+                            ipv4_streams = [url for url in filtered_urls if not is_ipv6(url)][:20]
 
                             # 将IPv6放在前面，IPv4放在后面
                             combined_streams = ipv6_streams + ipv4_streams
 
                             total_urls = len(combined_streams)
-                            for index, (url, delay) in enumerate(combined_streams, start=1):
+                            for index, url in enumerate(combined_streams, start=1):
                                 if is_ipv6(url):
                                     url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
                                 else:
                                     url_suffix = f"$IPV4" if total_urls == 1 else f"$IPV4『线路{index}』"
-                                if '$' in url:
-                                    base_url = url.split('$', 1)[0]
-                                else:
-                                    base_url = url
-
+                                base_url = url.split('$', 1)[0] if '$' in url else url
                                 new_url = f"{base_url}{url_suffix}"
 
                                 f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
@@ -184,7 +154,8 @@ def updateChannelUrlsM3U(channels, template_channels):
 
             f_txt.write("\n")
 
+# 主执行逻辑
 if __name__ == "__main__":
-    template_file = "demo.txt"
+    template_file = "dome.txt"
     channels, template_channels = filter_source_urls(template_file)
     updateChannelUrlsM3U(channels, template_channels)
