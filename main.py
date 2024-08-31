@@ -1,10 +1,9 @@
 import re
 import requests
 import logging
-from collections import defaultdict, OrderedDict
+from collections import defaultdict
 from datetime import datetime
 import config
-
 
 # 配置日志记录
 logging.basicConfig(level=logging.INFO, 
@@ -28,6 +27,14 @@ def parse_template(template_file):
                     template_channels[current_category].append(channel_name)
 
     return template_channels
+
+# 检查URL是否可达
+def check_url_accessibility(url):
+    try:
+        response = requests.head(url, timeout=5)
+        return response.status_code == 200
+    except requests.RequestException:
+        return False
 
 # 从指定URL中获取频道及其直播源链接
 def fetch_channels(url):
@@ -72,6 +79,14 @@ def fetch_channels(url):
         if channels:
             categories = ", ".join(channels.keys())
             logging.info(f"url: {url} 爬取成功✅，包含频道分类: {categories}")
+
+        # 连通性测试
+        for category, channel_list in channels.items():
+            for channel_name, channel_url in channel_list:
+                if not check_url_accessibility(channel_url):
+                    channels[category].remove((channel_name, channel_url))
+                    logging.warning(f"URL不可达: {channel_url} 已被抛弃")
+
     except requests.RequestException as e:
         logging.error(f"url: {url} 爬取失败❌, Error: {e}")
 
