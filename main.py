@@ -6,44 +6,37 @@ from datetime import datetime
 import config
 
 # 配置日志记录
-logging.basicConfig(level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s', 
-                    handlers=[logging.FileHandler("function.log", "w", encoding="utf-8"), 
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[logging.FileHandler("function.log", mode="w", encoding="utf-8"),
                               logging.StreamHandler()])
 
-# 解析模板文件，获取频道分类及其对应的频道列表
+# 解析模板文件，获取频道分类及其对应的频道名称
 def parse_template(template_file):
+    with open(template_file, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
     template_channels = defaultdict(list)
     current_category = None
 
-    with open(template_file, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith("#"):
-                if "#genre#" in line:
-                    current_category = line.split(",")[0].strip()
-                elif current_category:
-                    channel_name = line.split(",")[0].strip()
-                    template_channels[current_category].append(channel_name)
+    for line in lines:
+        line = line.strip()
+        if line and not line.startswith("#"):
+            if "#genre#" in line:
+                current_category = line.split(",")[0].strip()
+            elif current_category:
+                channel_name = line.split(",")[0].strip()
+                template_channels[current_category].append(channel_name)
 
     return template_channels
-
-# 检查URL是否可达
-def check_url_accessibility(url):
-    try:
-        response = requests.head(url, timeout=5)
-        return response.status_code == 200
-    except requests.RequestException:
-        return False
 
 # 从指定URL中获取频道及其直播源链接
 def fetch_channels(url):
     channels = defaultdict(list)
-
     try:
+        # 发送请求获取数据
         response = requests.get(url, timeout=10)
         response.raise_for_status()
-        response.encoding = 'utf-8'
         lines = response.text.splitlines()
 
         current_category = None
@@ -51,6 +44,7 @@ def fetch_channels(url):
         logging.info(f"url: {url} 获取成功，判断为{'m3u' if is_m3u else 'txt'}格式")
 
         if is_m3u:
+            # 解析m3u格式
             for line in lines:
                 line = line.strip()
                 if line.startswith("#EXTINF"):
@@ -58,11 +52,11 @@ def fetch_channels(url):
                     if match:
                         current_category = match.group(1).strip()
                         channel_name = match.group(2).strip()
-                elif line and not line.startswith("#"):
+                elif line and not line.startswith("#") and current_category:
                     channel_url = line.strip()
-                    if current_category and channel_name:
-                        channels[current_category].append((channel_name, channel_url))
+                    channels[current_category].append((channel_name, channel_url))
         else:
+            # 解析txt格式
             for line in lines:
                 line = line.strip()
                 if "#genre#" in line:
@@ -73,8 +67,6 @@ def fetch_channels(url):
                         channel_name = match.group(1).strip()
                         channel_url = match.group(2).strip()
                         channels[current_category].append((channel_name, channel_url))
-                    elif line:
-                        channels[current_category].append((line, ''))
 
         if channels:
             categories = ", ".join(channels.keys())
@@ -85,95 +77,118 @@ def fetch_channels(url):
 
     return channels
 
-# 根据模板文件中的频道列表过滤抓取到的频道
-def match_channels(template_channels, all_channels):
-    matched_channels = defaultdict(lambda: defaultdict(list))
+# 读取blacklist.txt文件中的黑名单
+def load_blacklist(blacklist_file):
+    try:
+        with open(blacklist_file, "r", encoding="utf-8") as f:
+            blacklist = {line.strip() for line in f}
+        logging.info(f"成功加载黑名单，包含 {len(blacklist)} 个URL")
+    except FileNotFoundError:
+        logging.warning(f"未找到 {blacklist_file} 文件，将创建新的黑名单")
+        blacklist = set()
+    return blacklist
 
+# 根据模板文件中的频道列表过滤抓取到的频道，并剔除黑名单中的直播源
+def match_channels(template_channels, all_channels, blacklist):
+    matched_channels = defaultdict(lambda: defaultdict(list))
     for category, channel_list in template_channels.items():
         for channel_name in channel_list:
             for online_category, online_channel_list in all_channels.items():
                 for online_channel_name, online_channel_url in online_channel_list:
-                    if channel_name == online_channel_name:
+                    if channel_name == online_channel_name and online_channel_url not in blacklist:
                         matched_channels[category][channel_name].append(online_channel_url)
-    
     return matched_channels
 
 # 从所有配置的源抓取频道并匹配模板中的频道
-def filter_source_urls(template_file):
+def filter_source_urls(template_file, blacklist_file):
     template_channels = parse_template(template_file)
-    source_urls = config.source_urls
-
+    blacklist = load_blacklist(blacklist_file)
     all_channels = defaultdict(list)
-    for url in source_urls:
-        fetched_channels = fetch_channels(url)
-        for category, channel_list in fetched_channels.items():
+
+    # 轮询所有源，抓取频道数据
+    for url in config.source_urls:
+        channels = fetch_channels(url)
+        for category, channel_list in channels.items():
             all_channels[category].extend(channel_list)
 
-    matched_channels = match_channels(template_channels, all_channels)
-
-    # 连通性测试，只对模板中的频道进行测试
-    for category, channel_list in matched_channels.items():
-        for channel_name, urls in channel_list.items():
-            for index, url in enumerate(urls):
-                if not check_url_accessibility(url):
-                    logging.warning(f"URL不可达: {url} 已被抛弃")
-                    matched_channels[category][channel_name].pop(index)
-    
+    # 过滤频道并剔除黑名单中的直播源
+    matched_channels = match_channels(template_channels, all_channels, blacklist)
     return matched_channels, template_channels
 
-# 检查URL是否为IPv6
+# 检查直播源的连通性
+def check_connectivity(url, timeout=5):
+    try:
+        response = requests.head(url, timeout=timeout)
+        return response.status_code == 200
+    except requests.RequestException:
+        return False
+
+# 判断URL是否为IPv6地址
 def is_ipv6(url):
-    return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
+    try:
+        return ":" in url.split('/')[2]
+    except IndexError:
+        return False
+
+# 对URL进行IPv6和IPv4的整理
+def sort_urls(urls):
+    ipv6_streams = [url for url in urls if is_ipv6(url)][:20]
+    ipv4_streams = [url for url in urls if not is_ipv6(url)][:20]
+    combined_streams = ipv6_streams + ipv4_streams
+
+    sorted_urls = []
+    for index, url in enumerate(combined_streams, start=1):
+        url_suffix = f"${'IPV6' if is_ipv6(url) else 'IPV4'}『线路{index}』" if len(combined_streams) > 1 else f"${'IPV6' if is_ipv6(url) else 'IPV4'}"
+        base_url = url.split('$', 1)[0] if '$' in url else url
+        sorted_urls.append(f"{base_url}{url_suffix}")
+    return sorted_urls
+
+# 更新黑名单，将无响应的URL写入blacklist.txt文件
+def update_blacklist(blacklist_file, unresponsive_urls):
+    with open(blacklist_file, "a", encoding="utf-8") as f:
+        for url in unresponsive_urls:
+            f.write(url + "\n")
+    logging.info(f"已将 {len(unresponsive_urls)} 个无响应的URL添加到黑名单")
 
 # 将匹配的频道写入M3U和TXT文件
-def updateChannelUrlsM3U(channels, template_channels):
+def updateChannelUrlsM3U(channels, template_channels, blacklist_file):
     written_urls = set()
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    unresponsive_urls = set()
 
-    # 写入M3U文件
-    with open("live.m3u", "w", encoding="utf-8") as f_m3u:
+    with open("live.m3u", "w", encoding="utf-8") as f_m3u, open("live.txt", "w", encoding="utf-8") as f_txt:
         f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
+        f_txt.write(f"更新时间,#genre#\n")
+        f_txt.write(f"更新时间: {current_date}\n\n")
+        f_m3u.write(f"# 更新时间: {current_date}\n\n")
 
-        # 写入TXT文件
-        with open("live.txt", "w", encoding="utf-8") as f_txt:
-            # 添加更新时间分类
-            f_txt.write(f"更新时间,#genre#\n")
-            f_txt.write(f"更新时间: {current_date}\n\n")
-            f_m3u.write(f"# 更新时间: {current_date}\n\n")
+        for category, channel_list in template_channels.items():
+            f_txt.write(f"{category},#genre#\n")
+            if category in channels:
+                for channel_name in channel_list:
+                    if channel_name in channels[category]:
+                        # 检查和整理URL
+                        valid_urls = [url for url in channels[category][channel_name] if check_connectivity(url)]
+                        unresponsive_urls.update(url for url in channels[category][channel_name] if not check_connectivity(url))
+                        combined_streams = sort_urls(valid_urls)
 
-            for category, channel_list in template_channels.items():
-                f_txt.write(f"{category},#genre#\n")
-                if category in channels:
-                    for channel_name in channel_list:
-                        if channel_name in channels[category]:
-                            sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
-                            filtered_urls = [url for url in sorted_urls if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist)]
-                            written_urls.update(filtered_urls)
-
-                            # 提取前20个IPv6和前20个IPv4的直播源
-                            ipv6_streams = [url for url in filtered_urls if is_ipv6(url)][:20]
-                            ipv4_streams = [url for url in filtered_urls if not is_ipv6(url)][:20]
-
-                            # 将IPv6放在前面，IPv4放在后面
-                            combined_streams = ipv6_streams + ipv4_streams
-
-                            total_urls = len(combined_streams)
-                            for index, url in enumerate(combined_streams, start=1):
-                                if is_ipv6(url):
-                                    url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
-                                else:
-                                    url_suffix = f"$IPV4" if total_urls == 1 else f"$IPV4『线路{index}』"
-                                base_url = url.split('$', 1)[0] if '$' in url else url
-                                new_url = f"{base_url}{url_suffix}"
-
-                                f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
-                                f_m3u.write(new_url + "\n")
-                                f_txt.write(f"{channel_name},{new_url}\n")
-
+                        for index, url in enumerate(combined_streams, start=1):
+                            if url not in written_urls:
+                                written_urls.add(url)
+                                f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" "
+                                            f"tvg-logo=\"https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/{channel_name}.png\" "
+                                            f"group-title=\"{category}\",{channel_name}\n")
+                                f_m3u.write(url + "\n")
+                                f_txt.write(f"{channel_name},{url}\n")
             f_txt.write("\n")
+        f_m3u.write("\n")
+
+    # 更新黑名单
+    update_blacklist(blacklist_file, unresponsive_urls)
 
 # 主执行逻辑
 if __name__ == "__main__":
     template_file = "demo.txt"
-    channels, template_channels = filter_source_urls(template_file)
-    updateChannelUrlsM3U(channels, template_channels)
+    blacklist_file = "blacklist.txt"
+    channels, template_channels = filter_source_urls(template_file, blacklist_file)
+    updateChannelUrlsM3U(channels, template_channels, blacklist_file)
