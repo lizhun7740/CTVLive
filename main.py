@@ -156,6 +156,6 @@ def updateChannelUrlsM3U(channels, template_channels):
 
 # 主执行逻辑
 if __name__ == "__main__":
-    template_file = "dome.txt"
+    template_file = "demo.txt"
     channels, template_channels = filter_source_urls(template_file)
     updateChannelUrlsM3U(channels, template_channels)
