@@ -1,10 +1,9 @@
 import re
 import requests
 import logging
-from collections import defaultdict, OrderedDict
+from collections import defaultdict
 from datetime import datetime
 import config
-
 
 # 配置日志记录
 logging.basicConfig(level=logging.INFO, 
@@ -32,7 +31,6 @@ def parse_template(template_file):
 # 从指定URL中获取频道及其直播源链接
 def fetch_channels(url):
     channels = defaultdict(list)
-
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
@@ -44,6 +42,7 @@ def fetch_channels(url):
         logging.info(f"url: {url} 获取成功，判断为{'m3u' if is_m3u else 'txt'}格式")
 
         if is_m3u:
+            channel_name = None
             for line in lines:
                 line = line.strip()
                 if line.startswith("#EXTINF"):
@@ -80,14 +79,12 @@ def fetch_channels(url):
 # 根据模板文件中的频道列表过滤抓取到的频道
 def match_channels(template_channels, all_channels):
     matched_channels = defaultdict(lambda: defaultdict(list))
-
     for category, channel_list in template_channels.items():
         for channel_name in channel_list:
             for online_category, online_channel_list in all_channels.items():
                 for online_channel_name, online_channel_url in online_channel_list:
                     if channel_name == online_channel_name:
                         matched_channels[category][channel_name].append(online_channel_url)
-
     return matched_channels
 
 # 从所有配置的源抓取频道并匹配模板中的频道
@@ -120,7 +117,6 @@ def updateChannelUrlsM3U(channels, template_channels):
 
         # 写入TXT文件
         with open("live.txt", "w", encoding="utf-8") as f_txt:
-            # 添加更新时间分类
             f_txt.write(f"更新时间,#genre#\n")
             f_txt.write(f"更新时间: {current_date}\n\n")
             f_m3u.write(f"# 更新时间: {current_date}\n\n")
@@ -130,26 +126,28 @@ def updateChannelUrlsM3U(channels, template_channels):
                 if category in channels:
                     for channel_name in channel_list:
                         if channel_name in channels[category]:
-                            sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
+                            urls = channels[category][channel_name]
+                            sorted_urls = sorted(urls, key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
                             filtered_urls = [url for url in sorted_urls if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist)]
                             written_urls.update(filtered_urls)
 
-                            # 将IPv6放在前面，IPv4放在后面
+                            ipv6_streams = [url for url in filtered_urls if is_ipv6(url)]
+                            ipv4_streams = [url for url in filtered_urls if not is_ipv6(url)]
+
                             combined_streams = ipv6_streams + ipv4_streams
 
                             total_urls = len(combined_streams)
                             for index, url in enumerate(combined_streams, start=1):
-                                if is_ipv6(url):
-                                    url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
-                                else:
-                                    url_suffix = f"$IPV4" if total_urls == 1 else f"$IPV4『线路{index}』"
+                                url_suffix = f"$IPV6" if is_ipv6(url) else f"$IPV4"
+                                if total_urls > 1:
+                                    url_suffix += f"『线路{index}』"
+
                                 base_url = url.split('$', 1)[0] if '$' in url else url
                                 new_url = f"{base_url}{url_suffix}"
 
                                 f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
                                 f_m3u.write(new_url + "\n")
                                 f_txt.write(f"{channel_name},{new_url}\n")
-
             f_txt.write("\n")
 
 # 主执行逻辑
