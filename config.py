@@ -42,7 +42,6 @@ source_urls = [
     "https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",  # ADDED BY LEM ON 29/07/2024
     "http://ttkx.live:55/lib/kx2024.txt",  # ADDED BY LEM ON 29/07/2024
     "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",  # ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/Love4vn/love4vn/main/Sport.m3u"，  # 奥运 ON 29/07/2024
     "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/iptv_sources.m3u8",
     "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/home_sources.m3u8",
     "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/iptv.m3u8",
