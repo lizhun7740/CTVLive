@@ -32,7 +32,7 @@ jobs:
       run: |
         pip install requests
         pip install aiohttp
-        pip install validators
+        pip3 install validators
 
     - name: Run Python main script
       run: python main.py
