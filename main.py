@@ -172,7 +172,7 @@ def main(urls, demo_file, blacklist_file):
     write_to_live_file('live_ipv6.txt', ipv6_tested)  # 写入IPv6结果
 
 if __name__ == "__main__":
-    urls = ["https://9295.kstore.space/ipv6.txt"，
+    urls = ["https://9295.kstore.space/ipv6.txt",
             "https://9295.kstore.space/ipv4.txt",
             "https://raw.githubusercontent.com/LuckyLearning/TV/master/local.txt",
             "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
