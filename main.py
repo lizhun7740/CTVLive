@@ -16,7 +16,6 @@ def fetch_data(url):
     "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt",
     "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u",
     "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",
-    "http://175.178.251.183:6689/live.txt",。
     try:
         response = requests.get(url)  # 发送HTTP GET请求
         response.raise_for_status()  # 检查请求是否成功
