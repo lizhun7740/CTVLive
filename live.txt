@@ -1,5 +1,5 @@
 更新时间,#genre#
-更新时间: 2024-09-12 16:31:04
+更新时间: 2024-09-12 17:38:24
 
 收藏台,#genre#
 CCTV9,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225734/index.m3u8$IPV6『线路1』
@@ -69,30 +69,31 @@ CCTV9,http://112.89.121.23:80/PLTV/88888973/224/3221225747/100001000000000600000
 快乐垂钓,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8$IPV6『线路3』
 快乐垂钓,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8$IPV6『线路4』
 快乐垂钓,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8$IPV6『线路5』
-快乐垂钓,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638729b6002c4/index.m3u8?m3u8_level=2$IPV6『线路6』
+快乐垂钓,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8$IPV6『线路6』
 快乐垂钓,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638729b6002c4/index.m3u8?m3u8_level=2$IPV6『线路7』
-快乐垂钓,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8$IPV6『线路8』
+快乐垂钓,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638729b6002c4/index.m3u8?m3u8_level=2$IPV6『线路8』
 快乐垂钓,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8$IPV6『线路9』
-快乐垂钓,http://123.182.163.173:8989/rtp/239.254.200.229:6257$IPV4『线路10』
-快乐垂钓,http://125.33.192.115:8888/rtp/239.3.1.164:8001$IPV4『线路11』
-快乐垂钓,http://114.254.39.168:9008/rtp/239.3.1.164:8001$IPV4『线路12』
-快乐垂钓,http://115.192.156.135:4022/udp/233.50.200.123:5140$IPV4『线路13』
-快乐垂钓,http://115.192.156.135:4022/udp/233.50.201.109:5140$IPV4『线路14』
-快乐垂钓,http://118.79.139.154:6000/rtp/226.0.2.214:9624$IPV4『线路15』
-快乐垂钓,http://60.168.228.180:2000/rtp/238.1.79.31:4360$IPV4『线路16』
-快乐垂钓,http://115.193.154.26:10000/udp/233.50.201.109:5140$IPV4『线路17』
-快乐垂钓,http://183.164.34.70:9088/rtp/238.1.79.31:4360$IPV4『线路18』
-快乐垂钓,http://pt.aisx.cc:99/zb/cqyx.php?id=klcd$IPV4『线路19』
-快乐垂钓,http://diyp.uk.to/zb/1725695663.php?id=klcd$IPV4『线路20』
-快乐垂钓,http://119.98.92.122:4022/udp/239.69.1.142:10488$IPV4『线路21』
-快乐垂钓,http://119.98.133.38:5555/udp/239.69.1.142:10488$IPV4『线路22』
-快乐垂钓,http://219.140.229.61:4022/udp/239.69.1.142:10488$IPV4『线路23』
-快乐垂钓,http://27.24.20.43:9999/udp/239.69.1.142:10488$IPV4『线路24』
-快乐垂钓,http://119.98.175.25:85/udp/239.69.1.142:10488$IPV4『线路25』
-快乐垂钓,http://27.30.72.53:8888/udp/239.69.1.142:10488$IPV4『线路26』
-快乐垂钓,http://27.17.151.236:9100/udp/239.69.1.142:10488$IPV4『线路27』
-快乐垂钓,http://221.232.175.194:10000/udp/239.69.1.142:10488$IPV4『线路28』
-快乐垂钓,http://219.140.108.185:8888/udp/239.69.1.142:10488$IPV4『线路29』
+快乐垂钓,http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8$IPV6『线路10』
+快乐垂钓,http://123.182.163.173:8989/rtp/239.254.200.229:6257$IPV4『线路11』
+快乐垂钓,http://125.33.192.115:8888/rtp/239.3.1.164:8001$IPV4『线路12』
+快乐垂钓,http://114.254.39.168:9008/rtp/239.3.1.164:8001$IPV4『线路13』
+快乐垂钓,http://115.192.156.135:4022/udp/233.50.200.123:5140$IPV4『线路14』
+快乐垂钓,http://115.192.156.135:4022/udp/233.50.201.109:5140$IPV4『线路15』
+快乐垂钓,http://118.79.139.154:6000/rtp/226.0.2.214:9624$IPV4『线路16』
+快乐垂钓,http://60.168.228.180:2000/rtp/238.1.79.31:4360$IPV4『线路17』
+快乐垂钓,http://115.193.154.26:10000/udp/233.50.201.109:5140$IPV4『线路18』
+快乐垂钓,http://183.164.34.70:9088/rtp/238.1.79.31:4360$IPV4『线路19』
+快乐垂钓,http://pt.aisx.cc:99/zb/cqyx.php?id=klcd$IPV4『线路20』
+快乐垂钓,http://diyp.uk.to/zb/1725695663.php?id=klcd$IPV4『线路21』
+快乐垂钓,http://119.98.92.122:4022/udp/239.69.1.142:10488$IPV4『线路22』
+快乐垂钓,http://119.98.133.38:5555/udp/239.69.1.142:10488$IPV4『线路23』
+快乐垂钓,http://219.140.229.61:4022/udp/239.69.1.142:10488$IPV4『线路24』
+快乐垂钓,http://27.24.20.43:9999/udp/239.69.1.142:10488$IPV4『线路25』
+快乐垂钓,http://119.98.175.25:85/udp/239.69.1.142:10488$IPV4『线路26』
+快乐垂钓,http://27.30.72.53:8888/udp/239.69.1.142:10488$IPV4『线路27』
+快乐垂钓,http://27.17.151.236:9100/udp/239.69.1.142:10488$IPV4『线路28』
+快乐垂钓,http://221.232.175.194:10000/udp/239.69.1.142:10488$IPV4『线路29』
+快乐垂钓,http://219.140.108.185:8888/udp/239.69.1.142:10488$IPV4『线路30』
 精品体育,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010078/1.m3u8$IPV6『线路1』
 精品体育,http://[2409:8087:1a0b:df::4004]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8$IPV6『线路2』
 精品体育,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010078/1.m3u8$IPV6『线路3』
@@ -126,12 +127,12 @@ CCTV9,http://112.89.121.23:80/PLTV/88888973/224/3221225747/100001000000000600000
 精品体育,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225674/1.m3u8$IPV4『线路31』
 精品体育,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225674/1.m3u8$IPV4『线路32』
 精品体育,http://gslbservzqhsw.itv.cmvideo.cn/1000000004000014634/1.m3u8?channel-id=ystenlive&Contentid=1000000004000014634&livemode=1&stbId=3$IPV4『线路33』
-精品体育,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225674/1.m3u8$IPV4『线路34』
-精品体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8$IPV4『线路35』
-精品体育,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225674/1.m3u8$IPV4『线路36』
-精品体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8$IPV4『线路37』
+精品体育,http://gslbservzqhsw.itv.cmvideo.cn/1000000004000014634/1.m3u8?channel-id=ystenlive&Contentid=1000000004000014634&livemode=1&stbId=3$IPV4『线路34』
+精品体育,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000004000014634/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000004000014634$IPV4『线路35』
+精品体育,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/6460382139625130259/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=6460382139625130259$IPV4『线路36』
+精品体育,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225674/1.m3u8$IPV4『线路37』
 精品体育,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225674/1.m3u8$IPV4『线路38』
-精品体育,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225674/1.m3u8$IPV4『线路39』
+精品体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8$IPV4『线路39』
 精品体育,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225674/1.m3u8$IPV4『线路40』
 睛彩竞技,http://[2409:8087:1a01:df::4009]/TVOD/88888888/224/3221225897/main.m3u8$IPV6『线路1』
 睛彩竞技,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221226046/main.m3u8$IPV6『线路2』
@@ -146,29 +147,33 @@ CCTV9,http://112.89.121.23:80/PLTV/88888973/224/3221225747/100001000000000600000
 睛彩竞技,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8$IPV6『线路11』
 睛彩竞技,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221225897/main.m3u8$IPV6『线路12』
 睛彩竞技,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221225899/main.m3u8$IPV6『线路13』
-睛彩竞技,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000270005/1.m3u8$IPV6『线路14』
-睛彩竞技,http://[2409:8087:1a01:df::4009]:80/TVOD/88888888/224/3221225897/main.m3u8$IPV6『线路15』
-睛彩竞技,http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221226046/main.m3u8$IPV6『线路16』
-睛彩竞技,http://[2409:8087:1a01:df::4061]:80/TVOD/88888888/224/3221225899/main.m3u8$IPV6『线路17』
-睛彩竞技,http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221225897/main.m3u8$IPV6『线路18』
-睛彩竞技,http://125.33.192.115:8888/rtp/239.3.1.125:8001$IPV4『线路19』
-睛彩竞技,http://114.254.39.168:9008/rtp/239.3.1.125:8001$IPV4『线路20』
-睛彩竞技,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8$IPV4『线路21』
-睛彩竞技,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8$IPV4『线路22』
-睛彩竞技,http://123.121.73.105:8686/rtp/239.3.1.125:8001$IPV4『线路23』
-睛彩竞技,http://sweetown.fun:4000/rtp/239.3.1.125:8001$IPV4『线路24』
-睛彩竞技,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8#http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8$IPV4『线路25』
-睛彩竞技,http://123.114.19.80:4000/rtp/239.3.1.125:8001$IPV4『线路26』
-睛彩竞技,http://webmail.axxe.top:4022/udp/239.3.1.125:8001$IPV4『线路27』
-睛彩竞技,http://webmail.axxe.top:4022/udp/239.3.1.126:8001$IPV4『线路28』
-睛彩竞技,http://tv.8.138.7.223/tv/zb/zjctcc.php?id=343$IPV4『线路29』
-睛彩竞技,http://122.232.188.43:1883/udp/233.50.202.26:5140$IPV4『线路30』
-睛彩竞技,http://gslbserv.itv.cmvideo.cn:80/300000001000010948/index.m3u8?channel-id=FifastbLive&Contentid=300000001000010948&livemode=1&stbId=3$IPV4『线路31』
-睛彩竞技,http://123.113.237.36:8012/rtp/239.3.1.125:8001$IPV4『线路32』
-睛彩竞技,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8$IPV4『线路33』
-睛彩竞技,rtp://239.3.1.125:8001$IPV4『线路34』
-睛彩竞技,rtp://239.3.1.125:8001$IPV4『线路35』
-睛彩竞技,rtp://239.3.1.125:8001$IPV4『线路36』
+睛彩竞技,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221225897/main.m3u8$IPV6『线路14』
+睛彩竞技,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221225899/main.m3u8$IPV6『线路15』
+睛彩竞技,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000270005/1.m3u8$IPV6『线路16』
+睛彩竞技,http://[2409:8087:1a01:df::4009]:80/TVOD/88888888/224/3221225897/main.m3u8$IPV6『线路17』
+睛彩竞技,http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221226046/main.m3u8$IPV6『线路18』
+睛彩竞技,http://[2409:8087:1a01:df::4061]:80/TVOD/88888888/224/3221225899/main.m3u8$IPV6『线路19』
+睛彩竞技,http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221225897/main.m3u8$IPV6『线路20』
+睛彩竞技,http://125.33.192.115:8888/rtp/239.3.1.125:8001$IPV4『线路21』
+睛彩竞技,http://114.254.39.168:9008/rtp/239.3.1.125:8001$IPV4『线路22』
+睛彩竞技,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8$IPV4『线路23』
+睛彩竞技,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8$IPV4『线路24』
+睛彩竞技,http://123.121.73.105:8686/rtp/239.3.1.125:8001$IPV4『线路25』
+睛彩竞技,http://sweetown.fun:4000/rtp/239.3.1.125:8001$IPV4『线路26』
+睛彩竞技,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8#http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8$IPV4『线路27』
+睛彩竞技,http://123.114.19.80:4000/rtp/239.3.1.125:8001$IPV4『线路28』
+睛彩竞技,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000006000270001/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000006000270001$IPV4『线路29』
+睛彩竞技,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000006000270003/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000006000270003$IPV4『线路30』
+睛彩竞技,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000006000270005/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000006000270005$IPV4『线路31』
+睛彩竞技,http://webmail.axxe.top:4022/udp/239.3.1.125:8001$IPV4『线路32』
+睛彩竞技,http://webmail.axxe.top:4022/udp/239.3.1.126:8001$IPV4『线路33』
+睛彩竞技,http://tv.tvbox6.icu/tv/zb/zjctcc.php?id=343$IPV4『线路34』
+睛彩竞技,http://122.232.188.43:1883/udp/233.50.202.26:5140$IPV4『线路35』
+睛彩竞技,http://gslbserv.itv.cmvideo.cn:80/300000001000010948/index.m3u8?channel-id=FifastbLive&Contentid=300000001000010948&livemode=1&stbId=3$IPV4『线路36』
+睛彩竞技,http://webmail.axxe.top:4022/udp/239.3.1.125:8001$IPV4『线路37』
+睛彩竞技,http://webmail.axxe.top:4022/udp/239.3.1.126:8001$IPV4『线路38』
+睛彩竞技,http://tv.8.138.7.223/tv/zb/zjctcc.php?id=343$IPV4『线路39』
+睛彩竞技,http://122.232.188.43:1883/udp/233.50.202.26:5140$IPV4『线路40』
 睛彩篮球,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221226027/main.m3u8$IPV6『线路1』
 睛彩篮球,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000270002/1.m3u8$IPV6『线路2』
 睛彩篮球,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221225895/main.m3u8$IPV6『线路3』
@@ -181,26 +186,32 @@ CCTV9,http://112.89.121.23:80/PLTV/88888973/224/3221225747/100001000000000600000
 睛彩篮球,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000270006/1.m3u8$IPV6『线路10』
 睛彩篮球,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226469/index.m3u8$IPV6『线路11』
 睛彩篮球,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221225895/main.m3u8$IPV6『线路12』
-睛彩篮球,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000270002/1.m3u8$IPV6『线路13』
-睛彩篮球,http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221226027/main.m3u8$IPV6『线路14』
-睛彩篮球,http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221225895/main.m3u8$IPV6『线路15』
-睛彩篮球,http://[2409:8087:1a01:df::4055]:80/TVOD/88888888/224/3221225901/main.m3u8$IPV6『线路16』
-睛彩篮球,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000270006/1.m3u8$IPV6『线路17』
-睛彩篮球,http://125.33.192.115:8888/rtp/239.3.1.126:8001$IPV4『线路18』
-睛彩篮球,http://114.254.39.168:9008/rtp/239.3.1.126:8001$IPV4『线路19』
-睛彩篮球,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226469/index.m3u8$IPV4『线路20』
-睛彩篮球,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8$IPV4『线路21』
-睛彩篮球,http://sweetown.fun:4000/rtp/239.3.1.126:8001$IPV4『线路22』
-睛彩篮球,http://nb.thkss.com:9981/stream/channelid/1563250182?profile=pass$IPV4『线路23』
-睛彩篮球,http://123.121.73.105:8686/rtp/239.3.1.126:8001$IPV4『线路24』
-睛彩篮球,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8$IPV4『线路25』
-睛彩篮球,http://tv.8.138.7.223/tv/zb/zjctcc.php?id=344$IPV4『线路26』
-睛彩篮球,http://122.232.188.43:1883/udp/233.50.202.27:5140$IPV4『线路27』
-睛彩篮球,http://gslbserv.itv.cmvideo.cn:80/300000001000007218/index.m3u8?channel-id=FifastbLive&Contentid=300000001000007218&livemode=1&stbId=3$IPV4『线路28』
-睛彩篮球,http://123.113.237.36:8012/rtp/239.3.1.126:8001$IPV4『线路29』
-睛彩篮球,rtp://239.3.1.126:8001$IPV4『线路30』
-睛彩篮球,rtp://239.3.1.126:8001$IPV4『线路31』
-睛彩篮球,rtp://239.3.1.126:8001$IPV4『线路32』
+睛彩篮球,http://[2409:8087:1a01:df::7005]/TVOD/88888888/224/3221225895/main.m3u8$IPV6『线路13』
+睛彩篮球,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000270002/1.m3u8$IPV6『线路14』
+睛彩篮球,http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221226027/main.m3u8$IPV6『线路15』
+睛彩篮球,http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221225895/main.m3u8$IPV6『线路16』
+睛彩篮球,http://[2409:8087:1a01:df::4055]:80/TVOD/88888888/224/3221225901/main.m3u8$IPV6『线路17』
+睛彩篮球,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000270006/1.m3u8$IPV6『线路18』
+睛彩篮球,http://125.33.192.115:8888/rtp/239.3.1.126:8001$IPV4『线路19』
+睛彩篮球,http://114.254.39.168:9008/rtp/239.3.1.126:8001$IPV4『线路20』
+睛彩篮球,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226469/index.m3u8$IPV4『线路21』
+睛彩篮球,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8$IPV4『线路22』
+睛彩篮球,http://sweetown.fun:4000/rtp/239.3.1.126:8001$IPV4『线路23』
+睛彩篮球,http://nb.thkss.com:9981/stream/channelid/1563250182?profile=pass$IPV4『线路24』
+睛彩篮球,http://123.121.73.105:8686/rtp/239.3.1.126:8001$IPV4『线路25』
+睛彩篮球,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8$IPV4『线路26』
+睛彩篮球,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000006000270002/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000006000270002$IPV4『线路27』
+睛彩篮球,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000006000270006/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000006000270006$IPV4『线路28』
+睛彩篮球,http://tv.tvbox6.icu/tv/zb/zjctcc.php?id=344$IPV4『线路29』
+睛彩篮球,http://122.232.188.43:1883/udp/233.50.202.27:5140$IPV4『线路30』
+睛彩篮球,http://gslbserv.itv.cmvideo.cn:80/300000001000007218/index.m3u8?channel-id=FifastbLive&Contentid=300000001000007218&livemode=1&stbId=3$IPV4『线路31』
+睛彩篮球,http://tv.8.138.7.223/tv/zb/zjctcc.php?id=344$IPV4『线路32』
+睛彩篮球,http://122.232.188.43:1883/udp/233.50.202.27:5140$IPV4『线路33』
+睛彩篮球,http://gslbserv.itv.cmvideo.cn:80/300000001000007218/index.m3u8?channel-id=FifastbLive&Contentid=300000001000007218&livemode=1&stbId=3$IPV4『线路34』
+睛彩篮球,http://123.113.237.36:8012/rtp/239.3.1.126:8001$IPV4『线路35』
+睛彩篮球,rtp://239.3.1.126:8001$IPV4『线路36』
+睛彩篮球,rtp://239.3.1.126:8001$IPV4『线路37』
+睛彩篮球,rtp://239.3.1.126:8001$IPV4『线路38』
 CHC高清电影,http://[2409:8087:4c0a:22:1::21]:6610/170000001115/UmaiCHAN6380764b172c9/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUTrwI%2B%2BngB0lPRofcD8hTNS8qWmEGeaUedzcFVVumqf9cm8lJoOcrIZueLbqOJTuoPV%2FwBk6CoHYGFV14SkLW04&$IPV6『线路1』
 CHC高清电影,http://[2409:8087:4c0a:22:1::21]:6610/170000001115/UmaiCHAN6380764b172c9/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUTrwI%2B%2BngB0lPRofcD8hTNS8qWmEGeaUedzcFVVumqf9cm8lJoOcrIZueLbqOJTuoPV%2FwBk6CoHYGFV14SkLW04&$IPV6『线路2』
 CHC高清电影,http://218.18.4.142:8888/udp/239.77.0.27:5146$IPV4『线路3』
@@ -233,29 +244,30 @@ CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb1520
 CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8$IPV6『线路8』
 CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8$IPV6『线路9』
 CHC家庭影院,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63807601b19dd/index.m3u8?m3u8_level=2$IPV6『线路10』
-CHC家庭影院,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63807601b19dd/index.m3u8?m3u8_level=2$IPV6『线路11』
-CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8$IPV6『线路12』
+CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8$IPV6『线路11』
+CHC家庭影院,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63807601b19dd/index.m3u8?m3u8_level=2$IPV6『线路12』
 CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8$IPV6『线路13』
-CHC家庭影院,http://125.46.132.75:9999/rtp/225.1.4.209:1262$IPV4『线路14』
-CHC家庭影院,http://59.172.144.204:10000/rtp/239.69.1.243:11100$IPV4『线路15』
-CHC家庭影院,http://118.79.139.154:6000/rtp/226.0.2.240:9820$IPV4『线路16』
-CHC家庭影院,http://video.qd.sdu.edu.cn/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8$IPV4『线路17』
-CHC家庭影院,http://xxw.me0.cn/api/migu.php?id=30$IPV4『线路18』
-CHC家庭影院,http://59.44.102.18:8888/newlive/live/hls/59/live.m3u8#http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8#http://110.53.52.63:8888/newlive/live/hls/51/live.m3u8#https://pi.0472.org/chc/jt.m3u8$IPV4『线路19』
-CHC家庭影院,http://218.76.32.193:9901/tsfile/live/1018_1.m3u8$IPV4『线路20』
-CHC家庭影院,http://gzly.hkychina.com:6002/udp/239.252.219.84:5140$IPV4『线路21』
-CHC家庭影院,http://171.118.111.101:8083/rtp/226.0.2.240:9820$IPV4『线路22』
-CHC家庭影院,http://58.19.38.162:9901/tsfile/live/1036_1.m3u8$IPV4『线路23』
-CHC家庭影院,http://58.19.38.162:9901/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路24』
-CHC家庭影院,http://118.254.201.41:8888/udp/239.76.245.241:1234$IPV4『线路25』
-CHC家庭影院,http://183.185.166.80:8085/rtp/226.0.2.240:9820$IPV4『线路26』
-CHC家庭影院,http://bl.dchwtq.asia:10000/rtp/239.69.1.243:11100$IPV4『线路27』
-CHC家庭影院,http://171.110.63.44:8181/tsfile/live/1011_1.m3u8$IPV4『线路28』
-CHC家庭影院,http://60.220.167.28:8084/rtp/226.0.2.240:9820$IPV4『线路29』
-CHC家庭影院,http://118.81.206.56:8085/rtp/226.0.2.240:9820$IPV4『线路30』
-CHC家庭影院,http://60.220.167.16:8084/rtp/226.0.2.240:9820$IPV4『线路31』
-CHC家庭影院,http://119.98.124.146:4022/rtp/239.69.1.243:11100$IPV4『线路32』
-CHC家庭影院,http://xuys.top:8888/udp/225.1.1.213:5002$IPV4『线路33』
+CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8$IPV6『线路14』
+CHC家庭影院,http://125.46.132.75:9999/rtp/225.1.4.209:1262$IPV4『线路15』
+CHC家庭影院,http://59.172.144.204:10000/rtp/239.69.1.243:11100$IPV4『线路16』
+CHC家庭影院,http://118.79.139.154:6000/rtp/226.0.2.240:9820$IPV4『线路17』
+CHC家庭影院,http://video.qd.sdu.edu.cn/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8$IPV4『线路18』
+CHC家庭影院,http://xxw.me0.cn/api/migu.php?id=30$IPV4『线路19』
+CHC家庭影院,http://59.44.102.18:8888/newlive/live/hls/59/live.m3u8#http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8#http://110.53.52.63:8888/newlive/live/hls/51/live.m3u8#https://pi.0472.org/chc/jt.m3u8$IPV4『线路20』
+CHC家庭影院,http://218.76.32.193:9901/tsfile/live/1018_1.m3u8$IPV4『线路21』
+CHC家庭影院,http://gzly.hkychina.com:6002/udp/239.252.219.84:5140$IPV4『线路22』
+CHC家庭影院,http://171.118.111.101:8083/rtp/226.0.2.240:9820$IPV4『线路23』
+CHC家庭影院,http://58.19.38.162:9901/tsfile/live/1036_1.m3u8$IPV4『线路24』
+CHC家庭影院,http://58.19.38.162:9901/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路25』
+CHC家庭影院,http://118.254.201.41:8888/udp/239.76.245.241:1234$IPV4『线路26』
+CHC家庭影院,http://183.185.166.80:8085/rtp/226.0.2.240:9820$IPV4『线路27』
+CHC家庭影院,http://bl.dchwtq.asia:10000/rtp/239.69.1.243:11100$IPV4『线路28』
+CHC家庭影院,http://171.110.63.44:8181/tsfile/live/1011_1.m3u8$IPV4『线路29』
+CHC家庭影院,http://60.220.167.28:8084/rtp/226.0.2.240:9820$IPV4『线路30』
+CHC家庭影院,http://118.81.206.56:8085/rtp/226.0.2.240:9820$IPV4『线路31』
+CHC家庭影院,http://60.220.167.16:8084/rtp/226.0.2.240:9820$IPV4『线路32』
+CHC家庭影院,http://119.98.124.146:4022/rtp/239.69.1.243:11100$IPV4『线路33』
+CHC家庭影院,http://xuys.top:8888/udp/225.1.1.213:5002$IPV4『线路34』
 CHC动作电影,http://[2001:250:5800:1005::155]:80/liverespath/e0096742f0c5be4c5225cf3c7ab1077177bec05f/index.m3u8$IPV6『线路1』
 CHC动作电影,http://[2001:250:5800:1005::155]:80/liverespath/e0096742f0c5be4c5225cf3c7ab1077177bec05f/index.m3u8$IPV6『线路2』
 CHC动作电影,http://[2001:250:5800:1005::155]:80/liverespath/e0096742f0c5be4c5225cf3c7ab1077177bec05f/index.m3u8$IPV6『线路3』
@@ -302,29 +314,30 @@ CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc7
 CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8$IPV6『线路4』
 CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8$IPV6『线路5』
 CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8$IPV6『线路6』
-CHC影迷电影,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380764b172c9/index.m3u8?m3u8_level=2$IPV6『线路7』
-CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8$IPV6『线路8』
+CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8$IPV6『线路7』
+CHC影迷电影,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380764b172c9/index.m3u8?m3u8_level=2$IPV6『线路8』
 CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8$IPV6『线路9』
-CHC影迷电影,https://pi.0472.org/chc/ym.m3u8$IPV4『线路10』
-CHC影迷电影,http://219.145.236.30:8999/rtp/239.112.205.206:5140$IPV4『线路11』
-CHC影迷电影,http://58.19.38.162:9901/tsfile/live/1038_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路12』
-CHC影迷电影,http://summer-xa.icopylock.com:8888/udp/239.112.205.206:5140$IPV4『线路13』
-CHC影迷电影,http://115.150.63.77:9902/tsfile/live/1031_1.m3u8$IPV4『线路14』
-CHC影迷电影,http://119.98.71.95:8888/udp/239.69.1.241:11088$IPV4『线路15』
-CHC影迷电影,http://www.8700956.top:18888/rtp/239.81.0.240:4056$IPV4『线路16』
-CHC影迷电影,https://pi.0472.org/chc/ym.m3u8$IPV4『线路17』
-CHC影迷电影,http://gzly.hkychina.com:6003/udp/239.252.219.83:5140$IPV4『线路18』
-CHC影迷电影,http://61.185.200.157:10000/rtp/239.112.205.206:5140$IPV4『线路19』
-CHC影迷电影,http://1.83.124.62:8888/rtp/239.112.205.206:5140$IPV4『线路20』
-CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8$IPV4『线路21』
-CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路22』
-CHC影迷电影,https://pi.0472.org/chc/ym.m3u8$IPV4『线路23』
-CHC影迷电影,http://119.98.71.95:8888/udp/239.69.1.241:11088$IPV4『线路24』
-CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8$IPV4『线路25』
-CHC影迷电影,http://58.59.47.242:8180/TV00000000000000000031@HHZT$IPV4『线路26』
-CHC影迷电影,http://www.8700956.top:18888/rtp/239.81.0.240:4056$IPV4『线路27』
-CHC影迷电影,http://219.145.236.30:8999/rtp/239.112.205.206:5140$IPV4『线路28』
-CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路29』
+CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8$IPV6『线路10』
+CHC影迷电影,https://pi.0472.org/chc/ym.m3u8$IPV4『线路11』
+CHC影迷电影,http://219.145.236.30:8999/rtp/239.112.205.206:5140$IPV4『线路12』
+CHC影迷电影,http://58.19.38.162:9901/tsfile/live/1038_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路13』
+CHC影迷电影,http://summer-xa.icopylock.com:8888/udp/239.112.205.206:5140$IPV4『线路14』
+CHC影迷电影,http://115.150.63.77:9902/tsfile/live/1031_1.m3u8$IPV4『线路15』
+CHC影迷电影,http://119.98.71.95:8888/udp/239.69.1.241:11088$IPV4『线路16』
+CHC影迷电影,http://www.8700956.top:18888/rtp/239.81.0.240:4056$IPV4『线路17』
+CHC影迷电影,https://pi.0472.org/chc/ym.m3u8$IPV4『线路18』
+CHC影迷电影,http://gzly.hkychina.com:6003/udp/239.252.219.83:5140$IPV4『线路19』
+CHC影迷电影,http://61.185.200.157:10000/rtp/239.112.205.206:5140$IPV4『线路20』
+CHC影迷电影,http://1.83.124.62:8888/rtp/239.112.205.206:5140$IPV4『线路21』
+CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8$IPV4『线路22』
+CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路23』
+CHC影迷电影,https://pi.0472.org/chc/ym.m3u8$IPV4『线路24』
+CHC影迷电影,http://119.98.71.95:8888/udp/239.69.1.241:11088$IPV4『线路25』
+CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8$IPV4『线路26』
+CHC影迷电影,http://58.59.47.242:8180/TV00000000000000000031@HHZT$IPV4『线路27』
+CHC影迷电影,http://www.8700956.top:18888/rtp/239.81.0.240:4056$IPV4『线路28』
+CHC影迷电影,http://219.145.236.30:8999/rtp/239.112.205.206:5140$IPV4『线路29』
+CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路30』
 超级电影,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8$IPV6『线路1』
 超级电影,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010064/1.m3u8$IPV6『线路2』
 超级电影,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8$IPV6『线路3』
@@ -355,10 +368,14 @@ CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路29』
 超级电影,http://39.134.65.3:80/wh7f454c46tw995071704_-1873696206/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8$IPV4『线路28』
 超级电影,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8$IPV4『线路29』
 超级电影,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225717/index.m3u8$IPV4『线路30』
-超级电影,http://39.134.65.164/PLTV/88888888/224/3221225644/1.m3u8$IPV4『线路31』
-超级电影,http://39.134.65.164/PLTV/88888888/224/3221225644/1.m3u8$IPV4『线路32』
-超级电影,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225717/index.m3u8$IPV4『线路33』
-超级电影,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8$IPV4『线路34』
+超级电影,http://gslbservzqhsw.itv.cmvideo.cn/1000000003000012426/1.m3u8?channel-id=ystenlive&Contentid=1000000003000012426&livemode=1&stbId=3$IPV4『线路31』
+超级电影,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000003000012426/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000003000012426$IPV4『线路32』
+超级电影,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000001000012884/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000001000012884$IPV4『线路33』
+超级电影,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000004000002120/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000004000002120$IPV4『线路34』
+超级电影,http://39.134.65.164/PLTV/88888888/224/3221225644/1.m3u8$IPV4『线路35』
+超级电影,http://39.134.65.164/PLTV/88888888/224/3221225644/1.m3u8$IPV4『线路36』
+超级电影,http://ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225717/index.m3u8$IPV4『线路37』
+超级电影,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8$IPV4『线路38』
 经典电影,http://iptv.8t.cx:8180/rtp/239.3.1.195:9024$IPV4『线路1』
 经典电影,http://iptv.8t.cx:8180/rtp/239.3.1.195:9024$IPV4『线路2』
 经典电影,http://4gtv.muni.rip:9877/201/4gtv-live021/index.m3u8$IPV4『线路3』
@@ -520,16 +537,19 @@ CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路29』
 爱奇谈,http://171.213.200.160:8123/udp/239.93.42.22:5140$IPV4『线路3』
 爱奇谈,http://171.213.137.173:8088/udp/239.93.42.22:5140$IPV4『线路4』
 爱奇谈,http://171.213.195.115:8096/udp/239.93.42.22:5140$IPV4『线路5』
+爱奇谈,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000058/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000058&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路6』
 爱科幻,http://[2409:8087:2801:22:100::1b]/wh7f454c46tw4118167838_535115963/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230025/1/index.m3u8?fmt=ts2hls&icpid=88888888&RTS=1717814942&from=5&hms_devid=1639&online=1717814942&vqe=3$IPV6『线路1』
 爱科幻,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000006000020630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000020630&livemode=1&stbId=3$IPV6『线路2』
 爱科幻,http://171.213.137.173:8088/udp/239.93.42.10:5140$IPV4『线路3』
 爱科幻,http://171.213.200.160:8123/udp/239.93.42.10:5140$IPV4『线路4』
 爱科幻,http://171.213.195.115:8096/udp/239.93.42.10:5140$IPV4『线路5』
+爱科幻,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000033/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000033&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路6』
 爱院线,http://[2409:8087:2801:20:100::47]/wh7f454c46tw4067142793_-71268132/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230019/1/index.m3u8?fmt=ts2hls&icpid=88888888&RTS=1717814891&from=5&ocs=2_2409:8087:2801:22:100::46_80&hms_devid=372&online=1717814891&vqe=3$IPV6『线路1』
 爱院线,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000006000030630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000030630&livemode=1&stbId=3$IPV6『线路2』
 爱院线,http://171.213.200.160:8123/udp/239.93.42.11:5140$IPV4『线路3』
 爱院线,http://171.213.195.115:8096/udp/239.93.42.11:5140$IPV4『线路4』
 爱院线,http://171.213.137.173:8088/udp/239.93.42.11:5140$IPV4『线路5』
+爱院线,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000034/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000034&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路6』
 爱体育,http://[2409:8087:2801:22:100::78]/wh7f454c46tw145633917_1933474269/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230103/index.m3u8?icpid=88888888&RTS=1717815265&from=5&ocs=2_2409:8087:2801:22:100::36_80&hms_devid=2528&online=1717815265&vqe=3$IPV6『线路1』
 爱体育,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000006000290630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000290630&livemode=1&stbId=3$IPV6『线路2』
 爱体育,http://125.46.132.75:9999/rtp/225.1.4.168:1220$IPV4『线路3』
@@ -554,12 +574,16 @@ CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路29』
 爱体育,http://14.145.234.231:8888/udp/239.77.1.116:5146$IPV4『线路22』
 爱历史,http://[2409:8087:2801:22:100::38]/wh7f454c46tw68680748_1062558753/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230100/index.m3u8?icpid=88888888&RTS=1717815188&from=5&ocs=2_2409:8087:2801:22:100::5e_80&hms_devid=1643&online=1717815188&vqe=3$IPV6『线路1』
 爱历史,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000006000150630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000150630&livemode=1&stbId=3$IPV6『线路2』
+爱历史,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000046/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000046&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路3』
 爱旅行,http://[2409:8087:2801:20:100::48]/wh7f454c46tw30781562_-167201032/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230052/index.m3u8?icpid=88888888&RTS=1717815150&from=5&ocs=2_2409:8087:2801:22:100::43_80&hms_devid=370&online=1717815150&vqe=3$IPV6『线路1』
 爱旅行,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000006000250630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000250630&livemode=1&stbId=3$IPV6『线路2』
+爱旅行,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000056/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000056&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路3』
 爱科学,http://[2409:8087:2801:22:100::53]/wh7f454c46tw4244677304_-919452312/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221235603/1/index.m3u8?fmt=ts2hls&icpid=88888888&RTS=1717815069&from=5&ocs=2_2409:8087:2801:22:100::68_80&hms_devid=326&online=1717815069&vqe=3$IPV6『线路1』
 爱科学,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000006000160630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000160630&livemode=1&stbId=3$IPV6『线路2』
+爱科学,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000047/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000047&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路3』
 爱赛车,http://[2409:8087:2801:22:100::1b]/wh7f454c46tw3733665_-1120959913/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230032/index.m3u8?icpid=88888888&RTS=1717815123&from=5&hms_devid=1639&online=1717815123&vqe=3$IPV6『线路1』
 爱赛车,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000006000240630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000240630&livemode=1&stbId=3$IPV6『线路2』
+爱赛车,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000055/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000055&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路3』
 茶频道,http://[2409:8087:2801:22:100::3f]/wh7f454c46tw438400842_1499272692/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221229404/1/index.m3u8?fmt=ts2hls&icpid=88888888&RTS=1717815558&from=5&hms_devid=1646&online=1717815558&vqe=3$IPV6『线路1』
 茶频道,http://123.182.163.173:8989/rtp/239.254.200.228:6258$IPV4『线路2』
 茶频道,http://125.33.192.115:8888/rtp/239.3.1.165:8001$IPV4『线路3』
@@ -588,26 +612,27 @@ CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路29』
 求索纪录,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路5』
 求索纪录,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000010/index.m3u8$IPV6『线路6』
 求索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路7』
-求索纪录,http://123.182.163.173:8989/rtp/239.254.201.176:7221$IPV4『线路8』
-求索纪录,http://pt.aisx.cc:99/zb/cqyx.php?id=qsjl$IPV4『线路9』
-求索纪录,http://diyp.uk.to/zb/1725695663.php?id=qsjl$IPV4『线路10』
-求索纪录,http://121.29.133.80:8888/udp/239.253.93.236:6414$IPV4『线路11』
-求索纪录,http://60.7.56.50:4000/udp/239.253.93.236:6414$IPV4『线路12』
-求索纪录,http://101.31.57.76:4022/udp/239.253.93.236:6414$IPV4『线路13』
-求索纪录,http://123.180.177.20:16000/udp/239.253.93.236:6414$IPV4『线路14』
-求索纪录,http://60.10.135.181:555/udp/239.253.93.236:6414$IPV4『线路15』
-求索纪录,http://27.184.66.173:1024/rtp/239.254.201.176:7221$IPV4『线路16』
-求索纪录,http://27.187.249.183:4300/rtp/239.254.201.176:7221$IPV4『线路17』
-求索纪录,http://op.sev7.net:4022/rtp/239.254.201.176:7221$IPV4『线路18』
-求索纪录,http://116.22.147.62:6868/udp/239.77.0.21:5146$IPV4『线路19』
-求索纪录,http://125.89.163.44:8888/udp/239.77.0.21:5146$IPV4『线路20』
-求索纪录,http://218.18.4.142:8888/udp/239.77.0.21:5146$IPV4『线路21』
-求索纪录,http://14.145.234.231:8888/udp/239.77.0.21:5146$IPV4『线路22』
-求索纪录,http://116.18.36.100:4000/udp/239.77.0.21:5146$IPV4『线路23』
-求索纪录,http://ott.cqccn.com/PLTV/88888888/224/3221227466/index.m3u8$IPV4『线路24』
-求索纪录,http://101.18.86.52:8888/udp/239.253.93.236:6414$IPV4『线路25』
-求索纪录,http://zmcy.gzcy020.cn:50000/udp/239.77.0.21:5146$IPV4『线路26』
-求索纪录,http://rihou.cc:567/cqyx.php?id=qsjl$IPV4『线路27』
+求索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路8』
+求索纪录,http://123.182.163.173:8989/rtp/239.254.201.176:7221$IPV4『线路9』
+求索纪录,http://pt.aisx.cc:99/zb/cqyx.php?id=qsjl$IPV4『线路10』
+求索纪录,http://diyp.uk.to/zb/1725695663.php?id=qsjl$IPV4『线路11』
+求索纪录,http://121.29.133.80:8888/udp/239.253.93.236:6414$IPV4『线路12』
+求索纪录,http://60.7.56.50:4000/udp/239.253.93.236:6414$IPV4『线路13』
+求索纪录,http://101.31.57.76:4022/udp/239.253.93.236:6414$IPV4『线路14』
+求索纪录,http://123.180.177.20:16000/udp/239.253.93.236:6414$IPV4『线路15』
+求索纪录,http://60.10.135.181:555/udp/239.253.93.236:6414$IPV4『线路16』
+求索纪录,http://27.184.66.173:1024/rtp/239.254.201.176:7221$IPV4『线路17』
+求索纪录,http://27.187.249.183:4300/rtp/239.254.201.176:7221$IPV4『线路18』
+求索纪录,http://op.sev7.net:4022/rtp/239.254.201.176:7221$IPV4『线路19』
+求索纪录,http://116.22.147.62:6868/udp/239.77.0.21:5146$IPV4『线路20』
+求索纪录,http://125.89.163.44:8888/udp/239.77.0.21:5146$IPV4『线路21』
+求索纪录,http://218.18.4.142:8888/udp/239.77.0.21:5146$IPV4『线路22』
+求索纪录,http://14.145.234.231:8888/udp/239.77.0.21:5146$IPV4『线路23』
+求索纪录,http://116.18.36.100:4000/udp/239.77.0.21:5146$IPV4『线路24』
+求索纪录,http://ott.cqccn.com/PLTV/88888888/224/3221227466/index.m3u8$IPV4『线路25』
+求索纪录,http://101.18.86.52:8888/udp/239.253.93.236:6414$IPV4『线路26』
+求索纪录,http://zmcy.gzcy020.cn:50000/udp/239.77.0.21:5146$IPV4『线路27』
+求索纪录,http://rihou.cc:567/cqyx.php?id=qsjl$IPV4『线路28』
 求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011$IPV6『线路1』
 求索科学,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000011/index.m3u8$IPV6『线路2』
 求索科学,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路3』
@@ -618,14 +643,16 @@ CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路29』
 求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路8』
 求索科学,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路9』
 求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IAShttpSessionId=OTT19019320240419154124000281$IPV6『线路10』
-求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路11』
-求索科学,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000002000032344/index.m3u8?channel-id=wasusyt&Contentid=6000000002000032344&livemode=1&stbId=3$IPV6『线路12』
-求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IAShttpSessionId=OTT19019320240419154124000281$IPV6『线路13』
-求索科学,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路14』
-求索科学,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000011/index.m3u8$IPV6『线路15』
-求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路16』
-求索科学,http://39.134.66.66/PLTV/88888888/224/3221225728/index.m3u8$IPV4『线路17』
-求索科学,http://39.134.66.66/PLTV/88888888/224/3221225728/index.m3u8$IPV4『线路18』
+求索科学,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路11』
+求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路12』
+求索科学,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000002000032344/index.m3u8?channel-id=wasusyt&Contentid=6000000002000032344&livemode=1&stbId=3$IPV6『线路13』
+求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IAShttpSessionId=OTT19019320240419154124000281$IPV6『线路14』
+求索科学,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路15』
+求索科学,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000011/index.m3u8$IPV6『线路16』
+求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路17』
+求索科学,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000011/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000011&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路18』
+求索科学,http://39.134.66.66/PLTV/88888888/224/3221225728/index.m3u8$IPV4『线路19』
+求索科学,http://39.134.66.66/PLTV/88888888/224/3221225728/index.m3u8$IPV4『线路20』
 求索动物,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009$IPV6『线路1』
 求索动物,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000009/index.m3u8$IPV6『线路2』
 求索动物,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路3』
@@ -636,14 +663,16 @@ CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路29』
 求索动物,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路8』
 求索动物,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000009/index.m3u8$IPV6『线路9』
 求索动物,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路10』
-求索动物,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路11』
-求索动物,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000002000010046/index.m3u8?channel-id=wasusyt&Contentid=6000000002000010046&livemode=1&stbId=3$IPV6『线路12』
-求索动物,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IAShttpSessionId=OTT19019320240419154124000281$IPV6『线路13』
-求索动物,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路14』
-求索动物,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000009/index.m3u8$IPV6『线路15』
-求索动物,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路16』
-求索动物,http://39.134.66.66/PLTV/88888888/224/3221225730/index.m3u8$IPV4『线路17』
-求索动物,http://39.134.66.66/PLTV/88888888/224/3221225730/index.m3u8$IPV4『线路18』
+求索动物,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路11』
+求索动物,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路12』
+求索动物,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000002000010046/index.m3u8?channel-id=wasusyt&Contentid=6000000002000010046&livemode=1&stbId=3$IPV6『线路13』
+求索动物,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IAShttpSessionId=OTT19019320240419154124000281$IPV6『线路14』
+求索动物,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路15』
+求索动物,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000009/index.m3u8$IPV6『线路16』
+求索动物,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路17』
+求索动物,http://zqhswlive.itv.cmvideo.cn/000000001000/2000000004000000009/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000009&livemode=1&stbId=4&AuthInfo=JVTQE2V417UJEJ%2BQEyqkJKH4NghzQyKkj9WSEqSx2JUX4W08E0tX%2B1jdEuQbkbVfP0%2BQVS1eLxxH%2B1%2F3Kt9dlQ%3D%3D$IPV4『线路18』
+求索动物,http://39.134.66.66/PLTV/88888888/224/3221225730/index.m3u8$IPV4『线路19』
+求索动物,http://39.134.66.66/PLTV/88888888/224/3221225730/index.m3u8$IPV4『线路20』
 求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008$IPV6『线路1』
 求索生活,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000008/index.m3u8$IPV6『线路2』
 求索生活,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路3』
@@ -654,32 +683,33 @@ CHC影迷电影,http://xuys.top:8888/udp/225.1.1.214:5002$IPV4『线路29』
 求索生活,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路8』
 求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路9』
 求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IAShttpSessionId=OTT19019320240419154124000281$IPV6『线路10』
-求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路11』
-求索生活,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000002000003382/index.m3u8?channel-id=wasusyt&Contentid=6000000002000003382&livemode=1&stbId=3$IPV6『线路12』
-求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IAShttpSessionId=OTT19019320240419154124000281$IPV6『线路13』
-求索生活,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路14』
-求索生活,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000008/index.m3u8$IPV6『线路15』
-求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路16』
-求索生活,http://116.22.147.62:6868/udp/239.77.0.153:5146$IPV4『线路17』
-求索生活,http://125.89.163.44:8888/udp/239.77.0.153:5146$IPV4『线路18』
-求索生活,http://218.18.4.142:8888/udp/239.77.0.153:5146$IPV4『线路19』
-求索生活,http://113.86.204.120:9999/udp/239.10.0.86:1025$IPV4『线路20』
-求索生活,http://14.145.234.231:8888/udp/239.77.0.153:5146$IPV4『线路21』
-求索生活,http://116.18.36.100:4000/udp/239.77.0.153:5146$IPV4『线路22』
-求索生活,http://120.237.241.82:4000/udp/239.77.0.153:5146$IPV4『线路23』
-求索生活,http://113.93.51.38:2000/udp/239.77.0.153:5146$IPV4『线路24』
-求索生活,http://125.89.163.44:8888/udp/239.77.0.153:5146$IPV4『线路25』
-求索生活,http://zmcy.gzcy020.cn:50000/udp/239.77.0.153:5146$IPV4『线路26』
-求索生活,http://113.100.72.213:8899/udp/239.77.0.153:5146$IPV4『线路27』
-求索生活,http://113.86.204.120:9999/udp/239.10.0.86:1025$IPV4『线路28』
-求索生活,http://116.22.147.124:6868/udp/239.77.0.153:5146$IPV4『线路29』
-求索生活,http://113.100.72.213:8899/udp/239.77.0.153:5146$IPV4『线路30』
-求索生活,http://125.89.163.44:8888/udp/239.77.0.153:5146$IPV4『线路31』
-求索生活,http://113.86.204.120:9999/udp/239.10.0.86:1025$IPV4『线路32』
-求索生活,http://120.237.241.82:4000/udp/239.77.0.153:5146$IPV4『线路33』
-求索生活,http://zmcy.gzcy020.cn:50000/udp/239.77.0.153:5146$IPV4『线路34』
-求索生活,http://116.22.147.124:6868/udp/239.77.0.153:5146$IPV4『线路35』
-求索生活,http://113.93.51.38:2000/udp/239.77.0.153:5146$IPV4『线路36』
+求索生活,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路11』
+求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路12』
+求索生活,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000002000003382/index.m3u8?channel-id=wasusyt&Contentid=6000000002000003382&livemode=1&stbId=3$IPV6『线路13』
+求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IAShttpSessionId=OTT19019320240419154124000281$IPV6『线路14』
+求索生活,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路15』
+求索生活,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000008/index.m3u8$IPV6『线路16』
+求索生活,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281$IPV6『线路17』
+求索生活,http://116.22.147.62:6868/udp/239.77.0.153:5146$IPV4『线路18』
+求索生活,http://125.89.163.44:8888/udp/239.77.0.153:5146$IPV4『线路19』
+求索生活,http://218.18.4.142:8888/udp/239.77.0.153:5146$IPV4『线路20』
+求索生活,http://113.86.204.120:9999/udp/239.10.0.86:1025$IPV4『线路21』
+求索生活,http://14.145.234.231:8888/udp/239.77.0.153:5146$IPV4『线路22』
+求索生活,http://116.18.36.100:4000/udp/239.77.0.153:5146$IPV4『线路23』
+求索生活,http://120.237.241.82:4000/udp/239.77.0.153:5146$IPV4『线路24』
+求索生活,http://113.93.51.38:2000/udp/239.77.0.153:5146$IPV4『线路25』
+求索生活,http://125.89.163.44:8888/udp/239.77.0.153:5146$IPV4『线路26』
+求索生活,http://zmcy.gzcy020.cn:50000/udp/239.77.0.153:5146$IPV4『线路27』
+求索生活,http://113.100.72.213:8899/udp/239.77.0.153:5146$IPV4『线路28』
+求索生活,http://113.86.204.120:9999/udp/239.10.0.86:1025$IPV4『线路29』
+求索生活,http://116.22.147.124:6868/udp/239.77.0.153:5146$IPV4『线路30』
+求索生活,http://113.100.72.213:8899/udp/239.77.0.153:5146$IPV4『线路31』
+求索生活,http://125.89.163.44:8888/udp/239.77.0.153:5146$IPV4『线路32』
+求索生活,http://113.86.204.120:9999/udp/239.10.0.86:1025$IPV4『线路33』
+求索生活,http://120.237.241.82:4000/udp/239.77.0.153:5146$IPV4『线路34』
+求索生活,http://zmcy.gzcy020.cn:50000/udp/239.77.0.153:5146$IPV4『线路35』
+求索生活,http://116.22.147.124:6868/udp/239.77.0.153:5146$IPV4『线路36』
+求索生活,http://113.93.51.38:2000/udp/239.77.0.153:5146$IPV4『线路37』
 兵器科技,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077907bdcd/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGKB9zm%2BIxepVqZYZm7RAv244Kkb0RUYfm4%2FqM8nid95yfI6je%2Fgd5aFLyZ9USd3KbA$IPV6『线路1』
 兵器科技,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077907bdcd/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGKB9zm%2BIxepVqZYZm7RAv244Kkb0RUYfm4%2FqM8nid95yfI6je%2Fgd5aFLyZ9USd3KbA$IPV6『线路2』
 兵器科技,http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226975/index.m3u8$IPV6『线路3』
@@ -3096,12 +3126,15 @@ CCTV17,http://222.70.18.26:6666/udp/239.45.3.1:5140$IPV4『线路40』
 超级体育,http://gslbservzqhsw.itv.cmvideo.cn/0000000000001000/5000000001000004876/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000001000004876$IPV4『线路22』
 超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路23』
 超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路24』
-超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路25』
-超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路26』
-超级体育,http://gslbservzqhsw.itv.cmvideo.cn/0000000000001000/5000000001000004876/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000001000004876$IPV4『线路27』
-超级体育,http://gslbservzqhsw.itv.cmvideo.cn/0000000000001000/5000000001000004876/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000001000004876$IPV4『线路28』
+超级体育,http://gslbservzqhsw.itv.cmvideo.cn/1000000001000009601/1.m3u8?channel-id=ystenlive&Contentid=1000000001000009601&livemode=1&stbId=3$IPV4『线路25』
+超级体育,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000001000009204/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000001000009204$IPV4『线路26』
+超级体育,http://gslbservzqhsw.itv.cmvideo.cn/000000001000/1000000001000009601/index.m3u8?channel-id=ystenlive&livemode=1&stbId=4&Contentid=1000000001000009601$IPV4『线路27』
+超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路28』
 超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路29』
-超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路30』
+超级体育,http://gslbservzqhsw.itv.cmvideo.cn/0000000000001000/5000000001000004876/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000001000004876$IPV4『线路30』
+超级体育,http://gslbservzqhsw.itv.cmvideo.cn/0000000000001000/5000000001000004876/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000001000004876$IPV4『线路31』
+超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路32』
+超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8$IPV4『线路33』
 纬来体育,rtmp://220.130.201.73/sat/tv721$IPV4『线路1』
 纬来体育,rtmp://f13h.mine.nu/sat/tv721$IPV4『线路2』
 纬来体育,rtmp://220.130.201.73/sat/tv721$IPV4『线路3』
@@ -3160,7 +3193,8 @@ CCTV17,http://222.70.18.26:6666/udp/239.45.3.1:5140$IPV4『线路40』
 足球高清,http://171.214.203.139:8888/udp/239.93.0.197:9040$IPV4『线路6』
 足球高清,http://171.213.207.199:8888/udp/239.93.0.197:9040$IPV4『线路7』
 足球高清,http://171.88.134.244:4022/udp/239.93.0.197:9040$IPV4『线路8』
-足球高清,http://wouu.net:9977/udp/239.93.0.197:9040$IPV4『线路9』
+足球高清,http://8.138.7.223/tv/bst8m.php?id=79$IPV4『线路9』
+足球高清,http://wouu.net:9977/udp/239.93.0.197:9040$IPV4『线路10』
 足球频道,http://121.29.133.80:8888/udp/239.253.93.229:6407$IPV4『线路1』
 足球频道,http://60.7.56.50:4000/udp/239.253.93.229:6407$IPV4『线路2』
 足球频道,http://101.31.57.76:4022/udp/239.253.93.229:6407$IPV4『线路3』
@@ -3184,9 +3218,13 @@ CCTV17,http://222.70.18.26:6666/udp/239.45.3.1:5140$IPV4『线路40』
 ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$IPV4『线路1』
 ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$IPV4『线路2』
 ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$IPV4『线路3』
+ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$IPV4『线路4』
+ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$IPV4『线路5』
 ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$IPV4『线路1』
 ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$IPV4『线路2』
 ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$IPV4『线路3』
+ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$IPV4『线路4』
+ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$IPV4『线路5』
 天元围棋,http://[2409:8087:2001:20:2800:0:df6e:eb23]/ott.mobaibox.com/PLTV/3/224/3221228513/index.m3u8$IPV6『线路1』
 天元围棋,http://139.170.104.158:8000/udp/239.120.2.227:5141$IPV4『线路2』
 天元围棋,http://123.182.163.173:8989/rtp/239.254.201.156:6270$IPV4『线路3』
@@ -3299,9 +3337,11 @@ iHOT 爱院线,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000004000000
 香港,#genre#
 凤凰中文台,http://219.137.203.101:8081/hls/19/index.m3u8$IPV4『线路1』
 凤凰中文台,http://8.138.7.223/tv/gdmzyd.php?id=4$IPV4『线路2』
-凤凰中文台,P2p://generationnexxxt.com:19806/64e1ab2a000417167359b3ca0417008f$IPV4『线路3』
-凤凰中文台,http://119.129.173.161:8081/hls/19/index.m3u8$IPV4『线路4』
-凤凰中文台,P2p://generationnexxxt.com:19806/d897c583969747fc8a362653e01faf4f#P2p://generationnexxxt.com:19806/64e1ab2a000417167359b3ca0417008f$IPV4『线路5』
+凤凰中文台,http://219.137.203.101:8081/hls/19/index.m3u8$IPV4『线路3』
+凤凰中文台,http://8.138.7.223/tv/gdmzyd.php?id=4$IPV4『线路4』
+凤凰中文台,P2p://generationnexxxt.com:19806/64e1ab2a000417167359b3ca0417008f$IPV4『线路5』
+凤凰中文台,http://119.129.173.161:8081/hls/19/index.m3u8$IPV4『线路6』
+凤凰中文台,P2p://generationnexxxt.com:19806/d897c583969747fc8a362653e01faf4f#P2p://generationnexxxt.com:19806/64e1ab2a000417167359b3ca0417008f$IPV4『线路7』
 凤凰卫视,p3p://108.181.20.159:40159/602c73500002f4d29c90fa1270f21160$IPV4『线路1』
 凤凰卫视,http://ali.hlspull.yximgs.com/live/huanqiuhklivetvjjpcpvuejljydjjyfjoxvchjwhjwdojjjhjjlsjhbjfhjw.flv$IPV4『线路2』
 凤凰卫视,http://122.152.202.33/s/81a8a44f/index.m3u8?id=15$IPV4『线路3』
@@ -3422,20 +3462,20 @@ TVB Plus,http://113.83.152.49:8181/bysid/82.m3u8$IPV4『线路3』
 TVB Plus,http://nz171l122.bb60246.ctm.net:8892/bysid/82.m3u8$IPV4『线路4』
 TVB Plus,http://124.244.149.194:65531/bysid/82.m3u8$IPV4『线路5』
 TVB Plus,http://113.83.152.49:8181/bysid/82.m3u8$IPV4『线路6』
-TVB Plus,http://154.204.178.8:345/233.php$IPV4『线路7』
-TVB Plus,http://8.138.7.223/tv/tvbplus.m3u8$IPV4『线路8』
-TVB Plus,http://8.138.7.223/tv/hk.php?id=45$IPV4『线路9』
-TVB Plus,http://live.cooltv.top/tv/tvb.php?id=2&hq$IPV4『线路10』
-TVB Plus,http://php.jdshipin.com:8880/PLTV/iptv.php?id=j2$IPV4『线路11』
-TVB Plus,http://zsntlqj.xicp.net:8896/bysid/82.m3u8$IPV4『线路12』
-TVB Plus,http://beishan008.asuscomm.com:8890/bysid/82.m3u8$IPV4『线路13』
-TVB Plus,http://grandprix2023.asuscomm.com:8892/bysid/82.m3u8$IPV4『线路14』
-TVB Plus,http://123.202.245.120:8008/bysid/82.m3u8$IPV4『线路15』
-TVB Plus,http://61.238.177.254:30261/stream/channelid/112716350$IPV4『线路16』
-TVB Plus,http://timmy789.x3322.net:9081/stream/channelid/1790978445?profile=pass$IPV4『线路17』
-TVB Plus,http://119.136.122.61:8001/bysid/82.m3u8$IPV4『线路18』
-TVB Plus,http://zsntlqj.xicp.net:8896/bysid/82.m3u8$IPV4『线路19』
-TVB Plus,http://grandprix2023.asuscomm.com:8892/bysid/82.m3u8$IPV4『线路20』
+TVB Plus,P2p://generationnexxxt.com:19806/faf51cf453a84400be019b14939e49f6$IPV4『线路7』
+TVB Plus,mitv://135.148.104.228:19806/faf51cf453a84400be019b14939e49f6$IPV4『线路8』
+TVB Plus,mitv://147.135.39.171:9906/65fd6048000be8b2a085bc4d061c504d$IPV4『线路9』
+TVB Plus,http://154.204.178.8:345/233.php$IPV4『线路10』
+TVB Plus,http://8.138.7.223/tv/tvbplus.m3u8$IPV4『线路11』
+TVB Plus,http://8.138.7.223/tv/hk.php?id=45$IPV4『线路12』
+TVB Plus,http://php.jdshipin.com:8880/PLTV/iptv.php?id=j2$IPV4『线路13』
+TVB Plus,http://zsntlqj.xicp.net:8896/bysid/82.m3u8$IPV4『线路14』
+TVB Plus,http://beishan008.asuscomm.com:8890/bysid/82.m3u8$IPV4『线路15』
+TVB Plus,http://grandprix2023.asuscomm.com:8892/bysid/82.m3u8$IPV4『线路16』
+TVB Plus,http://123.202.245.120:8008/bysid/82.m3u8$IPV4『线路17』
+TVB Plus,http://61.238.177.254:30261/stream/channelid/112716350$IPV4『线路18』
+TVB Plus,http://timmy789.x3322.net:9081/stream/channelid/1790978445?profile=pass$IPV4『线路19』
+TVB Plus,http://119.136.122.61:8001/bysid/82.m3u8$IPV4『线路20』
 TVB无线新闻台,http://extraott.com:80/live/7921751389/6097373662/62824.m3u8$IPV4『线路1』
 TVB无线新闻台,http://extraott.com:80/live/7921751389/6097373662/62824.m3u8$IPV4『线路2』
 TVB无线新闻台,http://live.cooltv.top/tv/tvb.php?id=0&hq$IPV4『线路3』
@@ -3445,8 +3485,12 @@ TVB明珠台,http://219.137.203.101:8081/hls/21/index.m3u8$IPV4『线路3』
 TVB明珠台,http://8.138.7.223/tv/gdmzyd.php?id=3$IPV4『线路4』
 TVB明珠台,http://1b6467f415.iok.la:9931/tsfile/live/1009_1.m3u8$IPV4『线路5』
 TVB明珠台,http://xjayrf.eatuo.com:9901/tsfile/live/1005_1.m3u8$IPV4『线路6』
-TVB明珠台,http://extraott.com:80/live/7921751389/6097373662/62823.m3u8$IPV4『线路7』
-TVB明珠台,http://extraott.com:80/live/7921751389/6097373662/62823.m3u8$IPV4『线路8』
+TVB明珠台,http://219.137.203.101:8081/hls/21/index.m3u8$IPV4『线路7』
+TVB明珠台,http://8.138.7.223/tv/gdmzyd.php?id=3$IPV4『线路8』
+TVB明珠台,http://1b6467f415.iok.la:9931/tsfile/live/1009_1.m3u8$IPV4『线路9』
+TVB明珠台,http://xjayrf.eatuo.com:9901/tsfile/live/1005_1.m3u8$IPV4『线路10』
+TVB明珠台,http://extraott.com:80/live/7921751389/6097373662/62823.m3u8$IPV4『线路11』
+TVB明珠台,http://extraott.com:80/live/7921751389/6097373662/62823.m3u8$IPV4『线路12』
 明珠台,http://198.16.100.90:8278/pearl_twn/playlist.m3u8?tid=MC6C7041327570413275&ct=19226&tsum=681972baf66d69caf7cccc92a90e5aad$IPV4『线路1』
 明珠台,http://nz171l122.bb60246.ctm.net:8892/bysid/2.m3u8$IPV4『线路2』
 明珠台,http://124.244.149.194:65531/bysid/2.m3u8$IPV4『线路3』
@@ -3487,112 +3531,135 @@ TVB星河,https://edge6a.v2h-cdn.com/xinghe/xinghe.stream/playlist.m3u8$IPV4『�
 TVB星河,http://php.jdshipin.com:8880/TVOD/iptv.php?id=xinghe$IPV4『线路18』
 TVB星河,http://122.152.202.33/s/81a8a44f/index.m3u8?id=13$IPV4『线路19』
 TVB星河,http://113.64.145.195:8081/hls/135/index.m3u8$IPV4『线路20』
-TVB娱乐新闻台,http://v2h.jdshipin.com/enew/enew.stream/chunklist.m3u8$IPV4『线路1』
-TVB娱乐新闻台,http://v2h.jdshipin.com/enew/enew.stream/chunklist.m3u8$IPV4『线路2』
+TVB娱乐新闻台,mitv://135.148.104.228:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路1』
+TVB娱乐新闻台,mitv://135.148.104.228:19806/05e767dba8fa48e9ba386ed231c94318$IPV4『线路2』
 TVB娱乐新闻台,http://v2h.jdshipin.com/enew/enew.stream/chunklist.m3u8$IPV4『线路3』
 TVB娱乐新闻台,http://v2h.jdshipin.com/enew/enew.stream/chunklist.m3u8$IPV4『线路4』
-TVB娱乐新闻台,P2p://generationnexxxt.com:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路5』
-TVB娱乐新闻台,P2p://generationnexxxt.com:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路6』
-TVB娱乐新闻台,mitv://135.148.104.228:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路7』
-TVB娱乐新闻台,mitv://135.148.104.228:19806/05e767dba8fa48e9ba386ed231c94318$IPV4『线路8』
-TVB娱乐新闻台,P2p://generationnexxxt.com:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路9』
+TVB娱乐新闻台,http://v2h.jdshipin.com/enew/enew.stream/chunklist.m3u8$IPV4『线路5』
+TVB娱乐新闻台,http://v2h.jdshipin.com/enew/enew.stream/chunklist.m3u8$IPV4『线路6』
+TVB娱乐新闻台,P2p://generationnexxxt.com:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路7』
+TVB娱乐新闻台,P2p://generationnexxxt.com:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路8』
+TVB娱乐新闻台,mitv://135.148.104.228:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路9』
+TVB娱乐新闻台,mitv://135.148.104.228:19806/05e767dba8fa48e9ba386ed231c94318$IPV4『线路10』
+TVB娱乐新闻台,P2p://generationnexxxt.com:19806/e77d39049c07479ab0ff57800c6e5b06$IPV4『线路11』
 TVB功夫台,https://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8$IPV4『线路1』
-TVB功夫台,http://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8$IPV4『线路2』
+TVB功夫台,https://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8$IPV4『线路2』
 TVB功夫台,http://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8$IPV4『线路3』
 TVB功夫台,http://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8$IPV4『线路4』
-TVB功夫台,p3p://108.181.20.159:40159/653e4a3f000b1abb0c85815c35fa0803$IPV4『线路5』
-TVB经典台,http://php.jdshipin.com:8880/smt.php?id=Tvbclassic$IPV4
+TVB功夫台,http://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8$IPV4『线路5』
+TVB功夫台,p3p://108.181.20.159:40159/653e4a3f000b1abb0c85815c35fa0803$IPV4『线路6』
+TVB经典台,http://php.jdshipin.com:8880/smt.php?id=Tvbclassic$IPV4『线路1』
+TVB经典台,http://php.jdshipin.com:8880/smt.php?id=Tvbclassic$IPV4『线路2』
 VIUTV,http://php.jdshipin.com:8880/smt.php?id=viu1_twn$IPV4『线路1』
 VIUTV,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv$IPV4『线路2』
 VIUTV,http://php.jdshipin.com:8880/smt.php?id=viu1_twn$IPV4『线路3』
-VIUTV,http://php.jdshipin.com:8880/smt.php?id=viu1_twn$IPV4『线路4』
+VIUTV,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv$IPV4『线路4』
 VIUTV,http://php.jdshipin.com:8880/smt.php?id=viu1_twn$IPV4『线路5』
+VIUTV,http://php.jdshipin.com:8880/smt.php?id=viu1_twn$IPV4『线路6』
+VIUTV,http://php.jdshipin.com:8880/smt.php?id=viu1_twn$IPV4『线路7』
 VIUTV6,http://php.jdshipin.com:8880/smt.php?id=viusix_twn$IPV4『线路1』
 VIUTV6,http://php.jdshipin.com:8880/smt.php?id=viusix_twn$IPV4『线路2』
 VIUTV6,http://php.jdshipin.com:8880/smt.php?id=viusix_twn$IPV4『线路3』
+VIUTV6,http://php.jdshipin.com:8880/smt.php?id=viusix_twn$IPV4『线路4』
 ViuTVsix,http://nz171l122.bb60246.ctm.net:8889/bysid/96.m3u8$IPV4『线路1』
 ViuTVsix,http://124.244.149.194:65530/bysid/96.m3u8$IPV4『线路2』
 ViuTVsix,http://nz171l122.bb60246.ctm.net:8889/bysid/96.m3u8$IPV4『线路3』
 ViuTVsix,http://124.244.149.194:65530/bysid/96.m3u8$IPV4『线路4』
-ViuTVsix,http://zsntlqj.xicp.net:8895/bysid/96.m3u8$IPV4『线路5』
-ViuTVsix,http://beishan008.asuscomm.com:8889/bysid/96.m3u8$IPV4『线路6』
-ViuTVsix,http://grandprix2023.asuscomm.com:8889/bysid/96.m3u8$IPV4『线路7』
-ViuTVsix,http://61.238.177.254:30261/stream/channelid/995464347$IPV4『线路8』
-ViuTVsix,http://timmy789.x3322.net:9081/stream/channelid/247585885?profile=pass$IPV4『线路9』
-ViuTVsix,http://119.136.122.61:8000/bysid/96.m3u8$IPV4『线路10』
-ViuTVsix,http://zsntlqj.xicp.net:8895/bysid/96.m3u8$IPV4『线路11』
-ViuTVsix,http://grandprix2023.asuscomm.com:8889/bysid/96.m3u8$IPV4『线路12』
-ViuTVsix,http://nz171l122.bb60246.ctm.net:8889/bysid/96.m3u8$IPV4『线路13』
-ViuTVsix,http://124.244.149.194:65530/bysid/96.m3u8$IPV4『线路14』
-ViuTVsix,http://m.glx008.com:8000/bysid/96.m3u8$IPV4『线路15』
-ViuTVsix,P2p://generationnexxxt.com:19806/b6f920891ad9473ca6f839df7616f580$IPV4『线路16』
-ViuTVsix,mitv://135.148.104.228:19806/b6f920891ad9473ca6f839df7616f580$IPV4『线路17』
-ViuTVsix,mitv://135.148.104.228:19806/ea75ceca822f454bb858845559d5fc55$IPV4『线路18』
-RTHK31,http://php.jdshipin.com:8880/smt.php?id=rhk31_twn$IPV4『线路1』
+ViuTVsix,mitv://135.148.104.228:19806/b6f920891ad9473ca6f839df7616f580$IPV4『线路5』
+ViuTVsix,mitv://135.148.104.228:19806/ea75ceca822f454bb858845559d5fc55$IPV4『线路6』
+ViuTVsix,http://zsntlqj.xicp.net:8895/bysid/96.m3u8$IPV4『线路7』
+ViuTVsix,http://beishan008.asuscomm.com:8889/bysid/96.m3u8$IPV4『线路8』
+ViuTVsix,http://grandprix2023.asuscomm.com:8889/bysid/96.m3u8$IPV4『线路9』
+ViuTVsix,http://61.238.177.254:30261/stream/channelid/995464347$IPV4『线路10』
+ViuTVsix,http://timmy789.x3322.net:9081/stream/channelid/247585885?profile=pass$IPV4『线路11』
+ViuTVsix,http://119.136.122.61:8000/bysid/96.m3u8$IPV4『线路12』
+ViuTVsix,http://zsntlqj.xicp.net:8895/bysid/96.m3u8$IPV4『线路13』
+ViuTVsix,http://grandprix2023.asuscomm.com:8889/bysid/96.m3u8$IPV4『线路14』
+ViuTVsix,http://nz171l122.bb60246.ctm.net:8889/bysid/96.m3u8$IPV4『线路15』
+ViuTVsix,http://124.244.149.194:65530/bysid/96.m3u8$IPV4『线路16』
+ViuTVsix,http://zsntlqj.xicp.net:8895/bysid/96.m3u8$IPV4『线路17』
+ViuTVsix,http://beishan008.asuscomm.com:8889/bysid/96.m3u8$IPV4『线路18』
+ViuTVsix,http://grandprix2023.asuscomm.com:8889/bysid/96.m3u8$IPV4『线路19』
+ViuTVsix,http://61.238.177.254:30261/stream/channelid/995464347$IPV4『线路20』
+RTHK31,mitv://135.148.104.228:19806/c7cd517a9e5b44a9b6037c90f998627f$IPV4『线路1』
 RTHK31,http://php.jdshipin.com:8880/smt.php?id=rhk31_twn$IPV4『线路2』
 RTHK31,http://php.jdshipin.com:8880/smt.php?id=rhk31_twn$IPV4『线路3』
 RTHK31,http://php.jdshipin.com:8880/smt.php?id=rhk31_twn$IPV4『线路4』
+RTHK31,http://php.jdshipin.com:8880/smt.php?id=rhk31_twn$IPV4『线路5』
+RTHK31,http://php.jdshipin.com:8880/smt.php?id=rhk31_twn$IPV4『线路6』
 RTHK32,http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32$IPV4『线路1』
 RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路2』
 RTHK32,https://stream1.freetv.fun/rthk32-2.m3u8$IPV4『线路3』
 RTHK32,http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32$IPV4『线路4』
 RTHK32,https://stream1.freetv.fun/rthk32-2.m3u8$IPV4『线路5』
 RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路6』
-RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路7』
-RTHK32,https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/stream2/streamPlaylist.m3u8$IPV4『线路8』
-RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路9』
+RTHK32,mitv://135.148.104.228:19806/8ef4a2b7bac54aba8b17dfd2071df91f$IPV4『线路7』
+RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路8』
+RTHK32,https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/stream2/streamPlaylist.m3u8$IPV4『线路9』
 RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路10』
-RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路11』
-RTHK32,http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32$IPV4『线路12』
+RTHK32,https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/stream2/streamPlaylist.m3u8$IPV4『线路11』
+RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路12』
 RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路13』
-RTHK32,https://stream1.freetv.fun/rthk32-2.m3u8$IPV4『线路14』
+RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路14』
 RTHK32,http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32$IPV4『线路15』
-RTHK32,https://stream1.freetv.fun/rthk32-2.m3u8$IPV4『线路16』
-RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路17』
-RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路18』
-RTHK32,https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/stream2/streamPlaylist.m3u8$IPV4『线路19』
+RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路16』
+RTHK32,https://stream1.freetv.fun/rthk32-2.m3u8$IPV4『线路17』
+RTHK32,http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32$IPV4『线路18』
+RTHK32,https://stream1.freetv.fun/rthk32-2.m3u8$IPV4『线路19』
 RTHK32,http://php.jdshipin.com:8880/smt.php?id=rhk32_twn$IPV4『线路20』
-RTHK33,https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/stream03/streamPlaylist.m3u8$IPV4
-RTHK34,https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8$IPV4
-RTHK35,https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/stream02/streamPlaylist.m3u8$IPV4
+RTHK33,https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/stream03/streamPlaylist.m3u8$IPV4『线路1』
+RTHK33,https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/stream03/streamPlaylist.m3u8$IPV4『线路2』
+RTHK34,https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8$IPV4『线路1』
+RTHK34,https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8$IPV4『线路2』
+RTHK35,https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/stream02/streamPlaylist.m3u8$IPV4『线路1』
+RTHK35,https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/stream02/streamPlaylist.m3u8$IPV4『线路2』
 星空卫视,http://histar-proxy.isus.cc/star-xing-kong$IPV4『线路1』
-星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193$IPV4『线路2』
-星空卫视,http://125.71.58.184:4022/rtp/239.93.0.156:2193$IPV4『线路3』
-星空卫视,http://125.71.58.184:4022/rtp/239.93.1.10:2193$IPV4『线路4』
-星空卫视,http://118.114.168.57:666/udp/239.93.0.156:2193$IPV4『线路5』
-星空卫视,http://118.122.103.228:4022/udp/239.93.0.156:2193$IPV4『线路6』
-星空卫视,http://171.108.239.127:8181/tsfile/live/1012_1.m3u8?key=txiptv$IPV4『线路7』
-星空卫视,http://219.137.203.101:8081/hls/18/index.m3u8$IPV4『线路8』
-星空卫视,https://test.zapi.us.kg/?id=star-xing-kong$IPV4『线路9』
-星空卫视,http://117.114.153.18:8180/TV00000000000000000071@HHZT$IPV4『线路10』
-星空卫视,http://wouu.net:9977/rtp/239.93.1.10:2193$IPV4『线路11』
-星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193$IPV4『线路12』
-星空卫视,http://1b6467f415.iok.la:9931/tsfile/live/1039_1.m3u8$IPV4『线路13』
+星空卫视,http://wouu.net:9977/rtp/239.93.1.10:2193$IPV4『线路2』
+星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193$IPV4『线路3』
+星空卫视,http://113.64.147.112:8811/hls/31/index.m3u8$IPV4『线路4』
+星空卫视,http://119.129.172.208:8081/hls/18/index.m3u8$IPV4『线路5』
+星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193$IPV4『线路6』
+星空卫视,http://125.71.58.184:4022/rtp/239.93.0.156:2193$IPV4『线路7』
+星空卫视,http://125.71.58.184:4022/rtp/239.93.1.10:2193$IPV4『线路8』
+星空卫视,http://118.114.168.57:666/udp/239.93.0.156:2193$IPV4『线路9』
+星空卫视,http://118.122.103.228:4022/udp/239.93.0.156:2193$IPV4『线路10』
+星空卫视,http://119.129.172.208:8081/hls/18/index.m3u8$IPV4『线路11』
+星空卫视,http://171.108.239.127:8181/tsfile/live/1012_1.m3u8?key=txiptv$IPV4『线路12』
+星空卫视,http://219.137.203.101:8081/hls/18/index.m3u8$IPV4『线路13』
 星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193$IPV4『线路14』
-星空卫视,http://1b6467f415.iok.la:9931/tsfile/live/1039_1.m3u8$IPV4『线路15』
-星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193$IPV4『线路16』
-星空卫视,http://13457610200.8866.org:2018/live/星空卫视/index.m3u8$IPV4『线路17』
-星空卫视,http://171.108.239.79:8181/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路18』
-星空卫视,http://171.108.239.99:8181/tsfile/live/1012_1.m3u8?key=txiptv$IPV4『线路19』
-星空卫视,http://13457610200.8866.org:2018/live/%E6%98%9F%E7%A9%BA%E5%8D%AB%E8%A7%86/index.m3u8$IPV4『线路20』
+星空卫视,http://125.71.58.184:4022/rtp/239.93.0.156:2193$IPV4『线路15』
+星空卫视,http://125.71.58.184:4022/rtp/239.93.1.10:2193$IPV4『线路16』
+星空卫视,http://118.114.168.57:666/udp/239.93.0.156:2193$IPV4『线路17』
+星空卫视,http://118.122.103.228:4022/udp/239.93.0.156:2193$IPV4『线路18』
+星空卫视,http://171.108.239.127:8181/tsfile/live/1012_1.m3u8?key=txiptv$IPV4『线路19』
+星空卫视,http://219.137.203.101:8081/hls/18/index.m3u8$IPV4『线路20』
 星空国际,http://13457610200.8866.org:2018/live/星空国际/index.m3u8$IPV4『线路1』
 星空国际,http://13457610200.8866.org:2018/live/星空国际/index.m3u8$IPV4『线路2』
+星空国际,http://13457610200.8866.org:2018/live/星空国际/index.m3u8$IPV4『线路3』
 NOW 星影,http://123.150.5.131:9000/NOW星影/香蕉哥专用-易發TV.live.ts$IPV4『线路1』
 NOW 星影,http://123.150.5.131:9000/NOW星影/香蕉哥专用-易發TV.live.ts$IPV4『线路2』
 NOW 爆谷,http://123.150.5.131:9000/NOW爆谷/香蕉哥专用-易發TV.live.ts$IPV4『线路1』
 NOW 爆谷,http://123.150.5.131:9000/NOW爆谷/香蕉哥专用-易發TV.live.ts$IPV4『线路2』
-HOY TV,http://beishan008.asuscomm.com:8891/bysid/77.m3u8$IPV4『线路1』
-HOY TV,http://123.202.245.120:8009/bysid/77.m3u8$IPV4『线路2』
-HOY TV,http://61.238.177.254:30261/stream/channelid/459949264$IPV4『线路3』
-HOY TV,http://61.238.177.254:30261/stream/channelid/1478933474$IPV4『线路4』
-HOY TV,http://timmy789.x3322.net:9081/stream/channelid/1316620486?profile=pass$IPV4『线路5』
-HOY TV,http://119.136.122.61:8003/bysid/77.m3u8$IPV4『线路6』
-HOY TV,https://test.zapi.us.kg/?id=hoytv$IPV4『线路7』
-HOY TV,https://api.btbt.im/live?id=hoytv$IPV4『线路8』
-HOY TV,https://api.btbt.im/live?id=hoytv$IPV4『线路9』
-HOY TV,P2p://generationnexxxt.com:19806/532d47eca340456a814ba21cc5e68a52$IPV4『线路10』
-HOY TV,mitv://135.148.104.228:19806/532d47eca340456a814ba21cc5e68a52$IPV4『线路11』
-HOY TV,p3p://108.181.20.159:40159/62184bc3000cd48f11e47b06202b7e18$IPV4『线路12』
+HOY TV,P2p://generationnexxxt.com:19806/66b0affc0000b2eff273015566865bd4$IPV4『线路1』
+HOY TV,mitv://135.148.104.228:19806/532d47eca340456a814ba21cc5e68a52$IPV4『线路2』
+HOY TV,http://beishan008.asuscomm.com:8891/bysid/77.m3u8$IPV4『线路3』
+HOY TV,http://123.202.245.120:8009/bysid/77.m3u8$IPV4『线路4』
+HOY TV,http://61.238.177.254:30261/stream/channelid/459949264$IPV4『线路5』
+HOY TV,http://61.238.177.254:30261/stream/channelid/1478933474$IPV4『线路6』
+HOY TV,http://timmy789.x3322.net:9081/stream/channelid/1316620486?profile=pass$IPV4『线路7』
+HOY TV,http://119.136.122.61:8003/bysid/77.m3u8$IPV4『线路8』
+HOY TV,http://beishan008.asuscomm.com:8891/bysid/77.m3u8$IPV4『线路9』
+HOY TV,http://123.202.245.120:8009/bysid/77.m3u8$IPV4『线路10』
+HOY TV,http://61.238.177.254:30261/stream/channelid/459949264$IPV4『线路11』
+HOY TV,http://61.238.177.254:30261/stream/channelid/1478933474$IPV4『线路12』
+HOY TV,http://timmy789.x3322.net:9081/stream/channelid/1316620486?profile=pass$IPV4『线路13』
+HOY TV,http://119.136.122.61:8003/bysid/77.m3u8$IPV4『线路14』
+HOY TV,https://test.zapi.us.kg/?id=hoytv$IPV4『线路15』
+HOY TV,https://api.btbt.im/live?id=hoytv$IPV4『线路16』
+HOY TV,https://api.btbt.im/live?id=hoytv$IPV4『线路17』
+HOY TV,P2p://generationnexxxt.com:19806/532d47eca340456a814ba21cc5e68a52$IPV4『线路18』
+HOY TV,mitv://135.148.104.228:19806/532d47eca340456a814ba21cc5e68a52$IPV4『线路19』
+HOY TV,p3p://108.181.20.159:40159/62184bc3000cd48f11e47b06202b7e18$IPV4『线路20』
 HOY 77,http://60.208.140.180:5544/HOY77/香蕉哥专用-易發TV.live.flv$IPV4『线路1』
 HOY 77,http://60.208.140.180:5544/HOY77/香蕉哥专用-易發TV.live.flv$IPV4『线路2』
 HOY 78,http://60.208.140.180:5544/hoy78/香蕉哥专用-易發TV.live.flv$IPV4『线路1』
@@ -3603,17 +3670,30 @@ HOY 國際財經台,http://61.238.177.254:30261/stream/channelid/153374972$IPV4�
 HOY 國際財經台,http://61.238.177.254:30261/stream/channelid/537195735$IPV4『线路4』
 HOY 國際財經台,http://timmy789.x3322.net:9081/stream/channelid/401058379?profile=pass$IPV4『线路5』
 HOY 國際財經台,http://119.136.122.61:8003/bysid/76.m3u8$IPV4『线路6』
+HOY 國際財經台,http://beishan008.asuscomm.com:8891/bysid/76.m3u8$IPV4『线路7』
+HOY 國際財經台,http://123.202.245.120:8009/bysid/76.m3u8$IPV4『线路8』
+HOY 國際財經台,http://61.238.177.254:30261/stream/channelid/153374972$IPV4『线路9』
+HOY 國際財經台,http://61.238.177.254:30261/stream/channelid/537195735$IPV4『线路10』
+HOY 國際財經台,http://timmy789.x3322.net:9081/stream/channelid/401058379?profile=pass$IPV4『线路11』
+HOY 國際財經台,http://119.136.122.61:8003/bysid/76.m3u8$IPV4『线路12』
 HOY 資訊台,http://beishan008.asuscomm.com:8891/bysid/78.m3u8$IPV4『线路1』
 HOY 資訊台,http://123.202.245.120:8009/bysid/78.m3u8$IPV4『线路2』
 HOY 資訊台,http://61.238.177.254:30261/stream/channelid/1328960581$IPV4『线路3』
 HOY 資訊台,http://61.238.177.254:30261/stream/channelid/1207995756$IPV4『线路4』
 HOY 資訊台,http://timmy789.x3322.net:9081/stream/channelid/1243239921?profile=pass$IPV4『线路5』
 HOY 資訊台,http://119.136.122.61:8003/bysid/78.m3u8$IPV4『线路6』
+HOY 資訊台,http://beishan008.asuscomm.com:8891/bysid/78.m3u8$IPV4『线路7』
+HOY 資訊台,http://123.202.245.120:8009/bysid/78.m3u8$IPV4『线路8』
+HOY 資訊台,http://61.238.177.254:30261/stream/channelid/1328960581$IPV4『线路9』
+HOY 資訊台,http://61.238.177.254:30261/stream/channelid/1207995756$IPV4『线路10』
+HOY 資訊台,http://timmy789.x3322.net:9081/stream/channelid/1243239921?profile=pass$IPV4『线路11』
+HOY 資訊台,http://119.136.122.61:8003/bysid/78.m3u8$IPV4『线路12』
 天映频道,http://1b6467f415.iok.la:9931/tsfile/live/1043_1.m3u8$IPV4『线路1』
-天映频道,https://test.zapi.us.kg/?id=celestial$IPV4『线路2』
-天映频道,P2p://generationnexxxt.com:19806/179f2b9026a9449198a6486cb1bc8481$IPV4『线路3』
+天映频道,http://1b6467f415.iok.la:9931/tsfile/live/1043_1.m3u8$IPV4『线路2』
+天映频道,https://test.zapi.us.kg/?id=celestial$IPV4『线路3』
 天映频道,P2p://generationnexxxt.com:19806/179f2b9026a9449198a6486cb1bc8481$IPV4『线路4』
 天映频道,P2p://generationnexxxt.com:19806/179f2b9026a9449198a6486cb1bc8481$IPV4『线路5』
+天映频道,P2p://generationnexxxt.com:19806/179f2b9026a9449198a6486cb1bc8481$IPV4『线路6』
 香港佛陀,http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8#https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8$IPV4『线路1』
 香港佛陀,http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8$IPV4『线路2』
 香港佛陀,https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8$IPV4『线路3』
@@ -3632,7 +3712,8 @@ HOY 資訊台,http://119.136.122.61:8003/bysid/78.m3u8$IPV4『线路6』
 香港佛陀,https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8$IPV4『线路16』
 香港佛陀,https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8$IPV4『线路17』
 香港佛陀,https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8$IPV4『线路18』
-香港佛陀,http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8$IPV4『线路19』
+香港佛陀,https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8$IPV4『线路19』
+香港佛陀,http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8$IPV4『线路20』
 耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路1』
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路2』
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-mobile/playlist.m3u8$IPV4『线路3』
@@ -3641,13 +3722,16 @@ HOY 資訊台,http://119.136.122.61:8003/bysid/78.m3u8$IPV4『线路6』
 耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路6』
 耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w99771165.m3u8$IPV4『线路7』
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路8』
-耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路9』
+耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w99771165.m3u8$IPV4『线路9』
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路10』
 耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路11』
-耀才财经,http://202.69.67.66:443/webcast/bshdlive-mobile/playlist.m3u8$IPV4『线路12』
-耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8?wowzasessionid=64000$IPV4『线路13』
-耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8?wowzasessionid=64000?zgangd$IPV4『线路14』
-耀才财经,http://202.69.67.66/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路15』
+耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路12』
+耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路13』
+耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路14』
+耀才财经,http://202.69.67.66:443/webcast/bshdlive-mobile/playlist.m3u8$IPV4『线路15』
+耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8?wowzasessionid=64000$IPV4『线路16』
+耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8?wowzasessionid=64000?zgangd$IPV4『线路17』
+耀才财经,http://202.69.67.66/webcast/bshdlive-pc/playlist.m3u8$IPV4『线路18』
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8$IPV4『线路1』
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8$IPV4『线路2』
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8$IPV4『线路3』
@@ -3657,15 +3741,20 @@ HOY 資訊台,http://119.136.122.61:8003/bysid/78.m3u8$IPV4『线路6』
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8$IPV4『线路7』
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8$IPV4『线路8』
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8$IPV4『线路9』
+环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8$IPV4『线路10』
 美亚电影台,http://php.jdshipin.com:8880/smt.php?id=meiyamovie_twn$IPV4『线路1』
-美亚电影台,https://test.zapi.us.kg/?id=meiah-movies$IPV4『线路2』
-美亚电影台,http://php.jdshipin.com:8880/smt.php?id=meiyamovie_twn$IPV4『线路3』
-美亚电影台,p3p://108.181.32.169:54101/642525310003ad3cea72ca2155c734c3$IPV4『线路4』
+美亚电影台,http://php.jdshipin.com:8880/smt.php?id=meiyamovie_twn$IPV4『线路2』
+美亚电影台,https://test.zapi.us.kg/?id=meiah-movies$IPV4『线路3』
+美亚电影台,http://php.jdshipin.com:8880/smt.php?id=meiyamovie_twn$IPV4『线路4』
 美亚电影台,p3p://108.181.32.169:54101/642525310003ad3cea72ca2155c734c3$IPV4『线路5』
-亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u8?zbid=2046370057&tpid=330913109&type=0$IPV4
+美亚电影台,p3p://108.181.32.169:54101/642525310003ad3cea72ca2155c734c3$IPV4『线路6』
+亚洲卫视,https://p2hs.vzan.com/slowlive/821481626725612417/live.m3u8$IPV4『线路1』
+亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u8?zbid=2046370057&tpid=330913109&type=0$IPV4『线路2』
+亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u8?zbid=2046370057&tpid=330913109&type=0$IPV4『线路3』
 有线18,http://dl.mytvzhibo.top/1.php$IPV4『线路1』
-有线18,http://60.208.140.180:5544/yx18备1/香蕉哥专用-易發TV.live.flv$IPV4『线路2』
+有线18,http://dl.mytvzhibo.top/1.php$IPV4『线路2』
 有线18,http://60.208.140.180:5544/yx18备1/香蕉哥专用-易發TV.live.flv$IPV4『线路3』
+有线18,http://60.208.140.180:5544/yx18备1/香蕉哥专用-易發TV.live.flv$IPV4『线路4』
 台湾,#genre#
 中天新闻,http://4gtv.mumi.rip:9877/30/4gtv-4gtv009/index.m3u8$IPV4『线路1』
 中天新闻,http://us1.qqvr.online:9000/live.m3u8?c=3$IPV4『线路2』
@@ -3727,16 +3816,17 @@ TVBS,http://38.64.72.148/hls/modn/list/4005/chunklist0.m3u8$IPV4『线路3』
 TVBS,http://125.227.210.55:8188/VideoInput/play.ts$IPV4『线路4』
 TVBS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8$IPV4『线路5』
 TVBS,https://stream1.freetv.fun/5ff69e6b2e5eea60dcf5154d7548e6180b5afa05f43fe358ab4084f11eaadf34.m3u8$IPV4『线路6』
-TVBS,http://8.138.7.223/tv/tw9.php?id=23$IPV4『线路7』
-TVBS,https://tv.iill.top/litv/4gtv-4gtv073$IPV4『线路8』
-TVBS,http://extraott.com:80/live/7921751389/6097373662/5496.m3u8$IPV4『线路9』
-TVBS,http://95.179.139.113:5566/4gtv/183$IPV4『线路10』
+TVBS,http://shuma004.chunfengyun.top:8080/live/23/hls.m3u8$IPV4『线路7』
+TVBS,http://8.138.7.223/tv/tw9.php?id=23$IPV4『线路8』
+TVBS,https://tv.iill.top/litv/4gtv-4gtv073$IPV4『线路9』
+TVBS,http://extraott.com:80/live/7921751389/6097373662/5496.m3u8$IPV4『线路10』
 TVBS,http://95.179.139.113:5566/4gtv/183$IPV4『线路11』
-TVBS,http://209.146.124.22:8891/litv/4gtv-4gtv073$IPV4『线路12』
+TVBS,http://95.179.139.113:5566/4gtv/183$IPV4『线路12』
 TVBS,http://209.146.124.22:8891/litv/4gtv-4gtv073$IPV4『线路13』
-TVBS,P2p://generationnexxxt.com:19806/5fe15c41a5ed4d5f9262ee28464c45c0$IPV4『线路14』
-TVBS,http://154.216.191.38:8500/live.m3u8?c=1$IPV4『线路15』
-TVBS,p3p://108.181.20.159:40159/612ee5ef000f06f58e144b6727ec3efb$IPV4『线路16』
+TVBS,http://209.146.124.22:8891/litv/4gtv-4gtv073$IPV4『线路14』
+TVBS,P2p://generationnexxxt.com:19806/5fe15c41a5ed4d5f9262ee28464c45c0$IPV4『线路15』
+TVBS,http://154.216.191.38:8500/live.m3u8?c=1$IPV4『线路16』
+TVBS,p3p://108.181.20.159:40159/612ee5ef000f06f58e144b6727ec3efb$IPV4『线路17』
 TVBS新闻,http://4gtv.mumi.rip:9877/291/4gtv-4gtv072/index.m3u8$IPV4『线路1』
 TVBS新闻,http://4gtv.mumi.rip:9877/291/4gtv-4gtv072/index.m3u8$IPV4『线路2』
 TVBS新闻,http://4gtv.mumi.rip:9877/291/4gtv-4gtv072/index.m3u8$IPV4『线路3』
@@ -3852,14 +3942,14 @@ TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8?$IPV4『线路
 东森电影,http://171.108.239.77:8181/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路10』
 东森电影,http://1b6467f415.iok.la:9931/tsfile/live/1043_1.m3u8$IPV4『线路11』
 东森电影,http://171.108.239.77:8181/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路12』
-东森电影,http://171.108.239.127:8181/tsfile/live/1010_1.m3u8?key=txiptv$IPV4『线路13』
-东森电影,https://test.zapi.us.kg/?id=ebc-movie$IPV4『线路14』
-东森电影,http://171.108.239.98:8181/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路15』
-东森电影,http://171.108.239.79:8181/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路16』
-东森电影,http://171.108.239.99:8181/tsfile/live/1010_1.m3u8?key=txiptv$IPV4『线路17』
-东森电影,http://171.108.239.99:8181/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路18』
-东森电影,http://171.108.239.36:8181/tsfile/live/1010_1.m3u8$IPV4『线路19』
-东森电影,p3p://108.181.20.159:40159/62c103a5000b5a66a4eacca77822079a$IPV4『线路20』
+东森电影,http://113.64.147.112:8811/hls/58/index.m3u8$IPV4『线路13』
+东森电影,http://171.108.239.127:8181/tsfile/live/1010_1.m3u8?key=txiptv$IPV4『线路14』
+东森电影,http://171.108.239.127:8181/tsfile/live/1010_1.m3u8?key=txiptv$IPV4『线路15』
+东森电影,https://test.zapi.us.kg/?id=ebc-movie$IPV4『线路16』
+东森电影,http://171.108.239.98:8181/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路17』
+东森电影,http://171.108.239.79:8181/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路18』
+东森电影,http://171.108.239.99:8181/tsfile/live/1010_1.m3u8?key=txiptv$IPV4『线路19』
+东森电影,http://171.108.239.99:8181/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0$IPV4『线路20』
 东森美洲,http://38.64.72.148:80/hls/modn/list/2015/chunklist0.m3u8?$IPV4『线路1』
 东森美洲,http://38.64.72.148:80/hls/modn/list/2016/chunklist1.m3u8$IPV4『线路2』
 东森美洲,http://38.64.72.148/hls/modn/list/2015/chunklist0.m3u8$IPV4『线路3』
@@ -3933,20 +4023,22 @@ TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8?$IPV4『线路
 民视第一,http://4gtv.mumi.rip:9877/17/4gtv-4gtv003/index.m3u8$IPV4『线路2』
 民视第一,http://37.27.111.214:8080/live/4/hls.m3u8$IPV4『线路3』
 民视第一,http://shuma004.chunfengyun.top:8080/live/4/hls.m3u8$IPV4『线路4』
-民视第一,http://extraott.com:80/live/7921751389/6097373662/5517.m3u8$IPV4『线路5』
-民视第一,http://37.27.111.214:8080/live/4/hls.m3u8$IPV4『线路6』
-民视第一,p3p://108.181.20.159:40159/5fe0a665000c49bf747c0dbd57ec09a3$IPV4『线路7』
+民视第一,http://shuma004.chunfengyun.top:8080/live/4/hls.m3u8$IPV4『线路5』
+民视第一,http://extraott.com:80/live/7921751389/6097373662/5517.m3u8$IPV4『线路6』
+民视第一,http://37.27.111.214:8080/live/4/hls.m3u8$IPV4『线路7』
+民视第一,p3p://108.181.20.159:40159/5fe0a665000c49bf747c0dbd57ec09a3$IPV4『线路8』
 台视,rtmp://f13h.mine.nu/sat/tv071$IPV4『线路1』
 台视,rtmp://220.130.201.73/sat/tv071$IPV4『线路2』
 台视,rtmp://f13h.mine.nu/sat/tv071$IPV4『线路3』
 台视,http://litv.zapi.us.kg/?id=4gtv-4gtv066$IPV4『线路4』
-台视,rtmp://220.130.201.73/sat/tv071$IPV4『线路5』
-台视,https://test.zapi.us.kg/?id=ttv$IPV4『线路6』
-台视,http://extraott.com:80/live/7921751389/6097373662/5502.m3u8$IPV4『线路7』
-台视,rtmp://f13h.mine.nu/sat/tv071$IPV4『线路8』
+台视,rtmp://f13h.mine.nu/sat/tv071$IPV4『线路5』
+台视,rtmp://220.130.201.73/sat/tv071$IPV4『线路6』
+台视,https://test.zapi.us.kg/?id=ttv$IPV4『线路7』
+台视,http://extraott.com:80/live/7921751389/6097373662/5502.m3u8$IPV4『线路8』
 台视,rtmp://f13h.mine.nu/sat/tv071$IPV4『线路9』
-台视,P2p://generationnexxxt.com:19806/333435199f804b03aad4410d4674aaeb$IPV4『线路10』
-台视,p3p://108.181.20.159:40159/612ee2240008f3db8e0578dc59406f9e$IPV4『线路11』
+台视,rtmp://f13h.mine.nu/sat/tv071$IPV4『线路10』
+台视,P2p://generationnexxxt.com:19806/333435199f804b03aad4410d4674aaeb$IPV4『线路11』
+台视,p3p://108.181.20.159:40159/612ee2240008f3db8e0578dc59406f9e$IPV4『线路12』
 台视综合台,http://extraott.com:80/live/7921751389/6097373662/5500.m3u8$IPV4『线路1』
 台视综合台,P2p://generationnexxxt.com:19806/b8121a70de4c4ce1aa94361a1689297a$IPV4『线路2』
 台视综合台,P2p://generationnexxxt.com:19806/b8121a70de4c4ce1aa94361a1689297a$IPV4『线路3』
@@ -4002,7 +4094,8 @@ TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8?$IPV4『线路
 三立综合,http://4gtv.mumi.rip:9877/169/4gtv-live207/index.m3u8$IPV4『线路1』
 三立综合,http://4gtv.mumi.rip:9877/169/4gtv-live207/index.m3u8$IPV4『线路2』
 三立综合,http://shuma004.chunfengyun.top:8080/live/31/hls.m3u8$IPV4『线路3』
-三立综合,http://extraott.com:80/live/7921751389/6097373662/5503.m3u8$IPV4『线路4』
+三立综合,http://shuma004.chunfengyun.top:8080/live/31/hls.m3u8$IPV4『线路4』
+三立综合,http://extraott.com:80/live/7921751389/6097373662/5503.m3u8$IPV4『线路5』
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=0$IPV4『线路1』
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=2$IPV4『线路2』
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=0$IPV4『线路3』
@@ -4012,10 +4105,12 @@ TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8?$IPV4『线路
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=0$IPV4『线路7』
 无线新闻,http://cdn8.jdshipin.com:8880/smt.php?id=inews_twn$IPV4『线路8』
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=0$IPV4『线路9』
-无线新闻,https://edge6a.v2h-cdn.com/enew/enew.stream/chunklist.m3u8$IPV4『线路10』
-无线新闻,https://edge6a.v2h-cdn.com/enew/enew.stream/chunklist.m3u8$IPV4『线路11』
-无线新闻,mitv://147.135.39.171:9906/66141a3d000c7a12f94c49ad085f4fe9$IPV4『线路12』
-无线新闻,mitv://135.148.104.228:19806/132be793de424970abd09ef9fe09db07$IPV4『线路13』
+无线新闻,mitv://147.135.39.171:9906/66141a3d000c7a12f94c49ad085f4fe9$IPV4『线路10』
+无线新闻,mitv://135.148.104.228:19806/132be793de424970abd09ef9fe09db07$IPV4『线路11』
+无线新闻,https://edge6a.v2h-cdn.com/enew/enew.stream/chunklist.m3u8$IPV4『线路12』
+无线新闻,https://edge6a.v2h-cdn.com/enew/enew.stream/chunklist.m3u8$IPV4『线路13』
+无线新闻,mitv://147.135.39.171:9906/66141a3d000c7a12f94c49ad085f4fe9$IPV4『线路14』
+无线新闻,mitv://135.148.104.228:19806/132be793de424970abd09ef9fe09db07$IPV4『线路15』
 纬来综合,https://test.zapi.us.kg/?id=videoland$IPV4『线路1』
 纬来综合,http://extraott.com:80/live/7921751389/6097373662/5490.m3u8$IPV4『线路2』
 纬来综合,p3p://108.181.20.159:40159/5fe16e690002b73877895ae33a8a2a16$IPV4『线路3』
@@ -4053,9 +4148,10 @@ TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8?$IPV4『线路
 纬来育乐,p3p://108.181.20.159:23520/6214bdc7000061300401d77e20cc43d8$IPV4『线路7』
 纬来育乐,rtmp://f13h.mine.nu/sat/tv701$IPV4『线路8』
 纬来育乐,rtmp://220.130.201.73/sat/tv701$IPV4『线路9』
-纬来育乐,rtmp://220.130.201.73/sat/tv701$IPV4『线路10』
-纬来育乐,rtmp://f13h.mine.nu/sat/tv701$IPV4『线路11』
+纬来育乐,rtmp://f13h.mine.nu/sat/tv701$IPV4『线路10』
+纬来育乐,rtmp://220.130.201.73/sat/tv701$IPV4『线路11』
 纬来育乐,rtmp://f13h.mine.nu/sat/tv701$IPV4『线路12』
+纬来育乐,rtmp://f13h.mine.nu/sat/tv701$IPV4『线路13』
 EYE戏剧,http://extraott.com:80/live/7921751389/6097373662/5532.m3u8$IPV4『线路1』
 EYE戏剧,p3p://108.181.20.159:40159/64c62f0c000d47c0375d8ea3081775da$IPV4『线路2』
 EYE旅游台,http://extraott.com:80/live/7921751389/6097373662/5533.m3u8$IPV4
@@ -4097,12 +4193,13 @@ EYE旅游台,http://extraott.com:80/live/7921751389/6097373662/5533.m3u8$IPV4
 龙华电影,http://4gtv.mumi.rip:9877/121/litv-longturn03/index.m3u8$IPV4『线路1』
 龙华电影,http://4gtv.mumi.rip:9877/121/litv-longturn03/index.m3u8$IPV4『线路2』
 龙华电影,http://litv.zapi.us.kg/?id=litv-longturn03$IPV4『线路3』
-龙华电影,http://8.138.7.223/tv/tw9.php?id=19$IPV4『线路4』
-龙华电影,http://extraott.com:80/live/7921751389/6097373662/5488.m3u8$IPV4『线路5』
-龙华电影,P2p://generationnexxxt.com:19806/40368423d7dc44baaac3fbfc644ee9bf$IPV4『线路6』
+龙华电影,http://shuma004.chunfengyun.top:8080/live/19/hls.m3u8$IPV4『线路4』
+龙华电影,http://8.138.7.223/tv/tw9.php?id=19$IPV4『线路5』
+龙华电影,http://extraott.com:80/live/7921751389/6097373662/5488.m3u8$IPV4『线路6』
 龙华电影,P2p://generationnexxxt.com:19806/40368423d7dc44baaac3fbfc644ee9bf$IPV4『线路7』
-龙华电影,p3p://108.181.20.159:40159/621471310004d28d02d6aeb471c265ec$IPV4『线路8』
+龙华电影,P2p://generationnexxxt.com:19806/40368423d7dc44baaac3fbfc644ee9bf$IPV4『线路8』
 龙华电影,p3p://108.181.20.159:40159/621471310004d28d02d6aeb471c265ec$IPV4『线路9』
+龙华电影,p3p://108.181.20.159:40159/621471310004d28d02d6aeb471c265ec$IPV4『线路10』
 东风37,http://extraott.com:80/live/7921751389/6097373662/5512.m3u8$IPV4
 靖天国际,http://litv.zapi.us.kg/?id=4gtv-4gtv063$IPV4『线路1』
 靖天国际,http://extraott.com:80/live/7921751389/6097373662/5519.m3u8$IPV4『线路2』
@@ -4117,37 +4214,55 @@ ET FINANCIAL NEWS,http://extraott.com:80/live/7921751389/6097373662/473539.m3u8$
 澳门卫视,http://histar-proxy.isus.cc/mstv$IPV4『线路1』
 澳门卫视,http://histar-proxy.isus.cc/mstv$IPV4『线路2』
 澳门卫视,https://live.mastvnet.com/lsdream/MSTV/1500/live.m3u8$IPV4『线路3』
-澳门卫视,https://test.zapi.us.kg/?id=mstv$IPV4『线路4』
+澳门卫视,https://live.mastvnet.com/lsdream/MSTV/1500/live.m3u8$IPV4『线路4』
+澳门卫视,https://test.zapi.us.kg/?id=mstv$IPV4『线路5』
 澳亚卫视,http://histar-proxy.isus.cc/mastv$IPV4『线路1』
 澳亚卫视,http://histar-proxy.isus.cc/mastv$IPV4『线路2』
 澳亚卫视,http://php.jdshipin.com:8880/xsj.php?id=mastv$IPV4『线路3』
 澳亚卫视,https://live.mastvnet.com/lsdream/lY44pmm/2000/live.m3u8$IPV4『线路4』
 澳亚卫视,https://stream1.freetv.fun/272b491cb7edf448a56c75a2677cdfa0f9427bc87d01f02765f5aff658dadeba.m3u8$IPV4『线路5』
 澳亚卫视,http://php.jdshipin.com:8880/xsj.php?id=mastv$IPV4『线路6』
-澳亚卫视,http://219.137.203.101:8081/hls/22/index.m3u8$IPV4『线路7』
-澳亚卫视,https://live.mastvnet.com/lsdream/lY44pmm/2000/live.m3u8$IPV4『线路8』
-澳亚卫视,http://219.137.203.101:8081/hls/22/index.m3u8$IPV4『线路9』
-澳亚卫视,https://test.zapi.us.kg/?id=mastv$IPV4『线路10』
-澳亚卫视,https://stream1.freetv.fun/272b491cb7edf448a56c75a2677cdfa0f9427bc87d01f02765f5aff658dadeba.m3u8$IPV4『线路11』
+澳亚卫视,http://119.129.172.208:8081/hls/22/index.m3u8$IPV4『线路7』
+澳亚卫视,http://219.137.203.101:8081/hls/22/index.m3u8$IPV4『线路8』
+澳亚卫视,https://live.mastvnet.com/lsdream/lY44pmm/2000/live.m3u8$IPV4『线路9』
+澳亚卫视,http://219.137.203.101:8081/hls/22/index.m3u8$IPV4『线路10』
+澳亚卫视,http://219.137.203.101:8081/hls/22/index.m3u8$IPV4『线路11』
+澳亚卫视,https://live.mastvnet.com/lsdream/lY44pmm/2000/live.m3u8$IPV4『线路12』
+澳亚卫视,http://219.137.203.101:8081/hls/22/index.m3u8$IPV4『线路13』
+澳亚卫视,https://test.zapi.us.kg/?id=mastv$IPV4『线路14』
+澳亚卫视,https://stream1.freetv.fun/272b491cb7edf448a56c75a2677cdfa0f9427bc87d01f02765f5aff658dadeba.m3u8$IPV4『线路15』
 澳亚卫视台,http://8.138.7.223/tv/gdmzyd.php?id=5$IPV4『线路1』
-澳亚卫视台,http://119.129.173.161:8081/hls/22/index.m3u8$IPV4『线路2』
-澳亚卫视台,http://1b6467f415.iok.la:9931/tsfile/live/1120_1.m3u8$IPV4『线路3』
+澳亚卫视台,http://8.138.7.223/tv/gdmzyd.php?id=5$IPV4『线路2』
+澳亚卫视台,http://119.129.173.161:8081/hls/22/index.m3u8$IPV4『线路3』
+澳亚卫视台,http://1b6467f415.iok.la:9931/tsfile/live/1120_1.m3u8$IPV4『线路4』
 澳视澳门台,http://61.244.22.5/ch1/ch1.live/playelist.m3u8$IPV4『线路1』
 澳视澳门台,http://8.138.7.223/tv/gdmzyd.php?id=6$IPV4『线路2』
-澳视澳门台,http://119.129.173.161:8081/hls/73/index.m3u8$IPV4『线路3』
-澳视澳门台,http://grandprix2023.asuscomm.com:8891/bysid/91.m3u8$IPV4『线路4』
-澳视葡文台,http://61.244.22.5/ch2/ch2.live/playelist.m3u8$IPV4
-澳视卫星台,http://61.244.22.5/ch3/ch3.live/playelist.m3u8$IPV4
-澳视体育台,http://61.244.22.5/ch4/ch4.live/playelist.m3u8$IPV4
-澳视资讯台,http://61.244.22.5/ch5/info_ch5.live/playlist.m3u8$IPV4
-澳视高清台,http://61.244.22.5/ch6/hd_ch6.live/playerlist.m3u8$IPV4
+澳视澳门台,http://61.244.22.5/ch1/ch1.live/playelist.m3u8$IPV4『线路3』
+澳视澳门台,http://8.138.7.223/tv/gdmzyd.php?id=6$IPV4『线路4』
+澳视澳门台,http://119.129.173.161:8081/hls/73/index.m3u8$IPV4『线路5』
+澳视澳门台,http://grandprix2023.asuscomm.com:8891/bysid/91.m3u8$IPV4『线路6』
+澳视葡文台,http://61.244.22.5/ch2/ch2.live/playelist.m3u8$IPV4『线路1』
+澳视葡文台,http://61.244.22.5/ch2/ch2.live/playelist.m3u8$IPV4『线路2』
+澳视卫星台,http://61.244.22.5/ch3/ch3.live/playelist.m3u8$IPV4『线路1』
+澳视卫星台,http://61.244.22.5/ch3/ch3.live/playelist.m3u8$IPV4『线路2』
+澳视体育台,http://61.244.22.5/ch4/ch4.live/playelist.m3u8$IPV4『线路1』
+澳视体育台,http://61.244.22.5/ch4/ch4.live/playelist.m3u8$IPV4『线路2』
+澳视资讯台,http://61.244.22.5/ch5/info_ch5.live/playlist.m3u8$IPV4『线路1』
+澳视资讯台,http://61.244.22.5/ch5/info_ch5.live/playlist.m3u8$IPV4『线路2』
+澳视高清台,http://61.244.22.5/ch6/hd_ch6.live/playerlist.m3u8$IPV4『线路1』
+澳视高清台,http://61.244.22.5/ch6/hd_ch6.live/playerlist.m3u8$IPV4『线路2』
 莲花卫视,https://www.zhixun.com.mp/zx.php?id=lihua$IPV4『线路1』
 莲花卫视,http://php.jdshipin.com:8880/amlh.php$IPV4『线路2』
 莲花卫视,https://www.zhixun.com.mp/zx.php?id=lihua$IPV4『线路3』
 莲花卫视,http://php.jdshipin.com:8880/amlh.php$IPV4『线路4』
-莲花卫视,http://moss.hk3.345888.xyz.cdn.cloudflare.net/11/lotus.php$IPV4『线路5』
-莲花卫视,https://edge1.laotv.la:443/live/AomenLotus/index.m3u8$IPV4『线路6』
-莲花卫视,http://php.jdshipin.com:8880/amlh.php$IPV4『线路7』
+莲花卫视,http://php.jdshipin.com:8880/amlh.php$IPV4『线路5』
+莲花卫视,http://moss.hk3.345888.xyz.cdn.cloudflare.net/11/lotus.php$IPV4『线路6』
+莲花卫视,https://edge1.laotv.la:443/live/AomenLotus/index.m3u8$IPV4『线路7』
+莲花卫视,http://php.jdshipin.com:8880/amlh.php$IPV4『线路8』
+莲花卫视,http://moss.hk3.345888.xyz.cdn.cloudflare.net/11/lotus.php$IPV4『线路9』
+莲花卫视,https://edge1.laotv.la:443/live/AomenLotus/index.m3u8$IPV4『线路10』
+莲花卫视,http://php.jdshipin.com:8880/amlh.php$IPV4『线路11』
+莲花卫视,http://php.jdshipin.com:8880/amlh.php$IPV4『线路12』
 影视,#genre#
 NewTV惊悚悬疑,http://gslbservzqhsw.itv.cmvideo.cn/1000000004000024282/1.m3u8?channel-id=ystenlive&Contentid=1000000004000024282&livemode=1&stbId=3$IPV4『线路1』
 NewTV惊悚悬疑,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225665/index.m3u8$IPV4『线路2』
