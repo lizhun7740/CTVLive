@@ -5,6 +5,7 @@ from collections import defaultdict, OrderedDict
 from datetime import datetime
 import config
 
+
 # 配置日志记录
 logging.basicConfig(level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s', 
@@ -74,18 +75,18 @@ def fetch_channels(url):
     except requests.RequestException as e:
         logging.error(f"url: {url} 爬取失败❌, Error: {e}")
 
-    return channels    
+    return channels
 
-# 匹配模板中的频道和抓取到的频道
+# 根据模板文件中的频道列表过滤抓取到的频道
 def match_channels(template_channels, all_channels):
-    matched_channels = defaultdict(list)
+    matched_channels = defaultdict(lambda: defaultdict(list))
 
-    for category, channels in template_channels.items():
-        if category in all_channels:
-            for template_channel in channels:
-                for channel_name, channel_url in all_channels[category]:
-                    if template_channel.lower() in channel_name.lower():
-                        matched_channels[category].append((channel_name, channel_url))
+    for category, channel_list in template_channels.items():
+        for channel_name in channel_list:
+            for online_category, online_channel_list in all_channels.items():
+                for online_channel_name, online_channel_url in online_channel_list:
+                    if channel_name == online_channel_name:
+                        matched_channels[category][channel_name].append(online_channel_url)
 
     return matched_channels
 
@@ -104,6 +105,10 @@ def filter_source_urls(template_file):
 
     return matched_channels, template_channels
 
+# 检查URL是否为IPv6
+def is_ipv6(url):
+    return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None
+
 # 将匹配的频道写入M3U和TXT文件
 def updateChannelUrlsM3U(channels, template_channels):
     written_urls = set()
@@ -111,21 +116,45 @@ def updateChannelUrlsM3U(channels, template_channels):
 
     # 写入M3U文件
     with open("live.m3u", "w", encoding="utf-8") as f_m3u:
-        f_m3u.write(f"#EXTM3U x-tvg-url={','.join(f'\"{epg_url}\"' for epg_url in config.epg_urls)}\n")
+        f_m3u.write(f"""#EXTM3U x-tvg-url={",".join(f'"{epg_url}"' for epg_url in config.epg_urls)}\n""")
 
-        for category, channel_list in channels.items():
-            for channel_name, channel_url in channel_list:
-                if channel_url and channel_url not in written_urls:
-                    f_m3u.write(f"#EXTINF:-1 group-title=\"{category}\",{channel_name}\n{channel_url}\n")
-                    written_urls.add(channel_url)
+        # 写入TXT文件
+        with open("live.txt", "w", encoding="utf-8") as f_txt:
+            # 添加更新时间分类
+            f_txt.write(f"更新时间,#genre#\n")
+            f_txt.write(f"更新时间: {current_date}\n\n")
+            f_m3u.write(f"# 更新时间: {current_date}\n\n")
 
-    # 写入TXT文件
-    with open("live.txt", "w", encoding="utf-8") as f_txt:
-        f_txt.write(f"Updated: {current_date}\n")
-        for category, channel_list in channels.items():
-            f_txt.write(f"#genre# {category}\n")
-            for channel_name, channel_url in channel_list:
-                f_txt.write(f"{channel_name},{channel_url}\n")
+            for category, channel_list in template_channels.items():
+                f_txt.write(f"{category},#genre#\n")
+                if category in channels:
+                    for channel_name in channel_list:
+                        if channel_name in channels[category]:
+                            sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
+                            filtered_urls = [url for url in sorted_urls if url and url not in written_urls and not any(blacklist in url for blacklist in config.url_blacklist)]
+                            written_urls.update(filtered_urls)
+
+                            # 提取前20个IPv6和前20个IPv4的直播源
+                            ipv6_streams = [url for url in filtered_urls if is_ipv6(url)][:20]
+                            ipv4_streams = [url for url in filtered_urls if not is_ipv6(url)][:20]
+
+                            # 将IPv6放在前面，IPv4放在后面
+                            combined_streams = ipv6_streams + ipv4_streams
+
+                            total_urls = len(combined_streams)
+                            for index, url in enumerate(combined_streams, start=1):
+                                if is_ipv6(url):
+                                    url_suffix = f"$IPV6" if total_urls == 1 else f"$IPV6『线路{index}』"
+                                else:
+                                    url_suffix = f"$IPV4" if total_urls == 1 else f"$IPV4『线路{index}』"
+                                base_url = url.split('$', 1)[0] if '$' in url else url
+                                new_url = f"{base_url}{url_suffix}"
+
+                                f_m3u.write(f"#EXTINF:-1 tvg-id=\"{index}\" tvg-name=\"{channel_name}\" tvg-logo=\"https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/{channel_name}.png\" group-title=\"{category}\",{channel_name}\n")
+                                f_m3u.write(new_url + "\n")
+                                f_txt.write(f"{channel_name},{new_url}\n")
+
+            f_txt.write("\n")
 
 # 主执行逻辑
 if __name__ == "__main__":
