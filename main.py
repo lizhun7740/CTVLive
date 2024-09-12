@@ -172,7 +172,8 @@ def main(urls, demo_file, blacklist_file):
     write_to_live_file('live_ipv6.txt', ipv6_tested)  # 写入IPv6结果
 
 if __name__ == "__main__":
-    urls = [    "https://9295.kstore.space/ipv6.txt"，
+    urls = [
+    "https://9295.kstore.space/ipv6.txt"，
     "https://9295.kstore.space/ipv4.txt",
     "https://raw.githubusercontent.com/LuckyLearning/TV/master/local.txt",
     "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
@@ -181,5 +182,6 @@ if __name__ == "__main__":
     "https://raw.githubusercontent.com/zhumeng11/IPTV/main/IPTV.m3u",
     "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt",
     "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u",
-    "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",]  # 这里添加你的URL
+    "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",
+    ]  # 这里添加你的URL
     main(urls, 'demo.txt', 'blacklist.txt')
