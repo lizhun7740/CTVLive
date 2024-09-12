@@ -6,16 +6,9 @@ from concurrent.futures import ThreadPoolExecutor  # 导入线程池执行器，
 from datetime import datetime  # 导入datetime库，用于处理日期和时间
 
 def fetch_data(url):
-    "https://9295.kstore.space/ipv6.txt",
-    "https://9295.kstore.space/ipv4.txt",
-    "https://raw.githubusercontent.com/LuckyLearning/TV/master/local.txt",
-    "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
-    "https://gist.githubusercontent.com/inkss/0cf33e9f52fbb1f91bc5eb0144e504cf/raw/ipv6.m3u",
-    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/wwb521/live/main/tv.txt",
-    "https://raw.githubusercontent.com/zhumeng11/IPTV/main/IPTV.m3u",
-    "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt",
-    "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u",
-    "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",
+    """
+    从指定的URL获取数据。
+    """
     try:
         response = requests.get(url)  # 发送HTTP GET请求
         response.raise_for_status()  # 检查请求是否成功
@@ -179,5 +172,14 @@ def main(urls, demo_file, blacklist_file):
     write_to_live_file('live_ipv6.txt', ipv6_tested)  # 写入IPv6结果
 
 if __name__ == "__main__":
-    urls = ["http://example.com/source1.m3u", "http://example.com/source2.txt"]  # 这里添加你的URL
+    urls = [    "https://9295.kstore.space/ipv6.txt"，
+    "https://9295.kstore.space/ipv4.txt",
+    "https://raw.githubusercontent.com/LuckyLearning/TV/master/local.txt",
+    "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+    "https://gist.githubusercontent.com/inkss/0cf33e9f52fbb1f91bc5eb0144e504cf/raw/ipv6.m3u",
+    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/wwb521/live/main/tv.txt",
+    "https://raw.githubusercontent.com/zhumeng11/IPTV/main/IPTV.m3u",
+    "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt",
+    "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u",
+    "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",]  # 这里添加你的URL
     main(urls, 'demo.txt', 'blacklist.txt')
