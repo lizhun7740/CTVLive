@@ -6,9 +6,16 @@ from concurrent.futures import ThreadPoolExecutor  # 导入线程池执行器，
 from datetime import datetime  # 导入datetime库，用于处理日期和时间
 
 def fetch_data(url):
-    """
-    从指定的URL获取数据。
-    """
+    "https://9295.kstore.space/ipv6.txt",
+    "https://9295.kstore.space/ipv4.txt",
+    "https://raw.githubusercontent.com/LuckyLearning/TV/master/local.txt",
+    "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+    "https://gist.githubusercontent.com/inkss/0cf33e9f52fbb1f91bc5eb0144e504cf/raw/ipv6.m3u",
+    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/wwb521/live/main/tv.txt",
+    "https://raw.githubusercontent.com/zhumeng11/IPTV/main/IPTV.m3u",
+    "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt",
+    "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u",
+    "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",
     try:
         response = requests.get(url)  # 发送HTTP GET请求
         response.raise_for_status()  # 检查请求是否成功
@@ -43,7 +50,7 @@ def parse_blacklist(filename):
         print(f"Error reading blacklist file {filename}: {e}")
         return []
 
-def parse_demo(filename):
+def parse_dome(filename):
     """
     解析频道列表文件，返回频道名称列表。
     """
@@ -51,7 +58,7 @@ def parse_demo(filename):
         with open(filename, 'r') as f:
             return [line.strip() for line in f]  # 读取所有频道名称
     except Exception as e:
-        print(f"Error reading demo file {filename}: {e}")
+        print(f"Error reading dome file {filename}: {e}")
         return []
 
 def remove_blacklisted(sources, blacklist):
@@ -141,7 +148,7 @@ def write_to_live_file(filename, sources):
     except Exception as e:
         print(f"Error writing to file {filename}: {e}")
 
-def main(urls, demo_file, blacklist_file):
+def main(urls, dome_file, blacklist_file):
     """
     主函数，处理所有逻辑。
     """
@@ -154,8 +161,8 @@ def main(urls, demo_file, blacklist_file):
                 all_sources[channel] = []
             all_sources[channel].extend(urls)
 
-    demo_channels = parse_demo(demo_file)  # 解析频道列表文件
-    all_sources = {channel: all_sources[channel] for channel in demo_channels if channel in all_sources}
+    dome_channels = parse_dome(dome_file)  # 解析频道列表文件
+    all_sources = {channel: all_sources[channel] for channel in dome_channels if channel in all_sources}
 
     blacklist = parse_blacklist(blacklist_file)  # 解析黑名单文件
     whitelisted_sources = remove_blacklisted(all_sources, blacklist)  # 移除黑名单中的URL
@@ -172,14 +179,5 @@ def main(urls, demo_file, blacklist_file):
     write_to_live_file('live_ipv6.txt', ipv6_tested)  # 写入IPv6结果
 
 if __name__ == "__main__":
-    urls = ["https://9295.kstore.space/ipv6.txt",
-            "https://9295.kstore.space/ipv4.txt",
-            "https://raw.githubusercontent.com/LuckyLearning/TV/master/local.txt",
-            "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
-            "https://gist.githubusercontent.com/inkss/0cf33e9f52fbb1f91bc5eb0144e504cf/raw/ipv6.m3u",
-            "https://mirror.ghproxy.com/https://raw.githubusercontent.com/wwb521/live/main/tv.txt",
-            "https://raw.githubusercontent.com/zhumeng11/IPTV/main/IPTV.m3u",
-            "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt",
-            "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u",
-            "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",]  # 这里添加你的URL
-    main(urls, 'demo.txt', 'blacklist.txt')
+    urls = ["http://example.com/source1.m3u", "http://example.com/source2.txt"]  # 这里添加你的URL
+    main(urls, 'dome.txt', 'blacklist.txt')
