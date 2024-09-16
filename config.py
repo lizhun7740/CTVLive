@@ -2,7 +2,6 @@ ip_version_priority = "ipv6"
 
 source_urls = [
     "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
-    "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
     "https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt",
     "https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt",
 ]
