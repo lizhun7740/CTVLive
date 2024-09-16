@@ -71,6 +71,12 @@ CCTV_风云音乐,
 CCTV_高尔夫网球,
 CCTV_央视台球,
 CCTV_风云足球,
+CGTN英语,
+CGTN记录,
+CGTN俄语,
+CGTN法语,
+CGTN西语,
+CGTN阿语,
 
 卫视,#genre#
 湖南卫视,
