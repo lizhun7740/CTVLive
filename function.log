@@ -1,5 +1,5 @@
-2024-09-17 17:38:17,859 - ERROR - url: https://live.fanmingming.com/tv/m3u/ipv6.m3u 爬取失败❌, Error: 403 Client Error: Forbidden for url: https://live.fanmingming.com/tv/m3u/ipv6.m3u
-2024-09-17 17:38:18,332 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt 获取成功，判断为txt格式
-2024-09-17 17:38:18,442 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt 爬取成功✅，包含频道分类: 🤠雷蒙影视直播, 央视, 高清, 卫视, 香港, 台湾, 澳门, 湖南, 影视, 爱台, 体育, NewTV
-2024-09-17 17:38:18,866 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt 获取成功，判断为txt格式
-2024-09-17 17:38:18,943 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt 爬取成功✅，包含频道分类: 🤠雷蒙影视直播, 央视, 高清, 卫视, 台湾, 香港, 澳门, 湖南, NewTV, Korea
+2024-09-18 05:37:41,684 - ERROR - url: https://live.fanmingming.com/tv/m3u/ipv6.m3u 爬取失败❌, Error: 403 Client Error: Forbidden for url: https://live.fanmingming.com/tv/m3u/ipv6.m3u
+2024-09-18 05:37:41,953 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt 获取成功，判断为txt格式
+2024-09-18 05:37:42,070 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt 爬取成功✅，包含频道分类: 🤠雷蒙影视直播, 央视, 高清, 卫视, 香港, 台湾, 澳门, 湖南, 影视, 爱台, 体育, NewTV
+2024-09-18 05:37:42,392 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt 获取成功，判断为txt格式
+2024-09-18 05:37:42,474 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt 爬取成功✅，包含频道分类: 🤠雷蒙影视直播, 央视, 高清, 卫视, 台湾, 香港, 澳门, 湖南, NewTV, Korea
