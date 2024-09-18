@@ -5,7 +5,6 @@ from collections import defaultdict
 from datetime import datetime
 from urllib.parse import urlparse
 import config
-import time
 
 # 配置日志记录
 logging.basicConfig(level=logging.INFO, 
@@ -121,18 +120,22 @@ def test_streams(playList, delay_threshold):
         tmp_url = playList[i]['url']
         print('Checking[ %s / %s ]: %s' % (i + 1, total, tmp_title))
 
-        # 这里需要根据实际情况修改 netstat 的获取方式
-        netstat = is_stream_valid(tmp_url)  # 需要替换为有效的检查逻辑
-        if netstat:
-            data = {
-                'title': tmp_title,
-                'url': tmp_url,
-                'delay': netstat,  # 这里需要根据实际情况修改
-                'updatetime': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            }
-            add_data(data)  # 调用添加数据的函数
-        else:
-            print(f"{tmp_title} 无效")
+        try:
+            # 发送一个HEAD请求到URL
+            response = requests.head(tmp_url, timeout=10)
+            # 检查响应的状态码是否为200
+            if response.status_code == 200:
+                data = {
+                    'title': tmp_title,
+                    'url': tmp_url,
+                    'delay': response.elapsed.total_seconds(),  # 这里将网络延迟设为响应时间
+                    'updatetime': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                }
+                add_data(data)  # 调用添加数据的函数
+            else:
+                print(f"{tmp_title} 无效")
+        except requests.RequestException as e:  # 捕获请求异常
+            print(f"{tmp_title} 无效, Error: {e}")
 
 def add_data(data):
     sql = "SELECT * FROM %s WHERE title= '%s'" % (config.DB.table, data['title'])
