@@ -3,6 +3,7 @@ import requests
 import logging
 from collections import defaultdict
 from datetime import datetime
+from urllib.parse import urlparse
 import config
 
 # 配置日志记录
@@ -110,12 +111,18 @@ def is_ipv6(url):
 
 # 检查直播源的有效性
 def is_stream_valid(url):
+    # 检查URL格式
+    parsed_url = urlparse(url)
+    if not all([parsed_url.scheme, parsed_url.netloc]):  # 确保有scheme和netloc
+        logging.warning(f"无效的URL格式: {url}")
+        return False
+
     try:
         response = requests.get(url, timeout=5)  # 设置较短的超时时间
         if response.status_code == 200:
             return True  # 如果状态码为200，认为直播源有效
-    except requests.RequestException:
-        pass
+    except requests.RequestException as e:
+        logging.error(f"请求失败: {url}, Error: {e}")
     return False  # 如果请求失败或状态码不是200，认为直播源无效
 
 # 将匹配的频道写入M3U和TXT文件
