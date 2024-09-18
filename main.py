@@ -5,6 +5,7 @@ from collections import defaultdict
 from datetime import datetime
 from urllib.parse import urlparse
 import config
+import time
 
 # 配置日志记录
 logging.basicConfig(level=logging.INFO, 
@@ -109,21 +110,43 @@ def filter_source_urls(template_file):
 def is_ipv6(url):
     return re.match(r'^http:\/\/\[[0-9a-fA-F:]+\]', url) is not None  # 正则匹配IPv6格式
 
-# 检查直播源的有效性
-def is_stream_valid(url):
-    # 检查URL格式
-    parsed_url = urlparse(url)
-    if not all([parsed_url.scheme, parsed_url.netloc]):  # 确保有scheme和netloc
-        logging.warning(f"无效的URL格式: {url}")
+# 测试直播源的有效性
+def test_streams(playList, delay_threshold):
+    total = len(playList)
+    if total <= 0:
         return False
 
+    for i in range(total):
+        tmp_title = playList[i]['title']
+        tmp_url = playList[i]['url']
+        print('Checking[ %s / %s ]: %s' % (i + 1, total, tmp_title))
+
+        # 这里需要根据实际情况修改 netstat 的获取方式
+        netstat = is_stream_valid(tmp_url)  # 需要替换为有效的检查逻辑
+        if netstat:
+            data = {
+                'title': tmp_title,
+                'url': tmp_url,
+                'delay': netstat,  # 这里需要根据实际情况修改
+                'updatetime': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            }
+            add_data(data)  # 调用添加数据的函数
+        else:
+            print(f"{tmp_title} 无效")
+
+def add_data(data):
+    sql = "SELECT * FROM %s WHERE title= '%s'" % (config.DB.table, data['title'])
     try:
-        response = requests.get(url, timeout=5)  # 设置较短的超时时间
-        if response.status_code == 200:
-            return True  # 如果状态码为200，认为直播源有效
-    except requests.RequestException as e:
-        logging.error(f"请求失败: {url}, Error: {e}")
-    return False  # 如果请求失败或状态码不是200，认为直播源无效
+        result = config.DB.query(sql)
+        if len(result) == 0:
+            config.DB.insert(data)
+        else:
+            old_delay = result[0][3]
+            if int(data['delay']) < int(old_delay):
+                id = result[0][0]
+                config.DB.edit(id, data)
+    except Exception as e:
+        print(e)
 
 # 将匹配的频道写入M3U和TXT文件
 def updateChannelUrlsM3U(channels, template_channels):
@@ -149,7 +172,7 @@ def updateChannelUrlsM3U(channels, template_channels):
                             # 根据配置优先级排序URL
                             sorted_urls = sorted(channels[category][channel_name], key=lambda url: not is_ipv6(url) if config.ip_version_priority == "ipv6" else is_ipv6(url))
                             # 过滤无效的直播源
-                            valid_urls = [url for url in sorted_urls if url and url not in written_urls and is_stream_valid(url)]
+                            valid_urls = [url for url in sorted_urls if url and url not in written_urls]  # 这里需要替换为有效的检查逻辑
                             written_urls.update(valid_urls)  # 更新已写入的URL集合
 
                             # 提取前20个IPv6和前20个IPv4的直播源
@@ -179,4 +202,8 @@ def updateChannelUrlsM3U(channels, template_channels):
 if __name__ == "__main__":
     template_file = "demo.txt"  # 模板文件名
     channels, template_channels = filter_source_urls(template_file)  # 过滤源URL并获取频道
-    updateChannelUrlsM3U(channels, template_channels)  # 更新频道URL到M3U和TXT文件
+
+    # 在此处测试直播源有效性
+    playList = [{'title': name, 'url': url} for category in channels for name, url in channels[category].items()]
+    test_streams(playList, delay_threshold=5)  # 传递播放列表和延迟阈值
+    updateChannelUrlsM3U(channels, template_channels)  # 更新频道URL
