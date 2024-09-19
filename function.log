@@ -1,8 +1,8 @@
-2024-09-19 17:38:17,608 - INFO - url: https://m3u.hackserver.net/txt/fmml_ipv6.txt 获取成功，判断为txt格式
-2024-09-19 17:38:17,609 - INFO - url: https://m3u.hackserver.net/txt/fmml_ipv6.txt 爬取成功✅，包含频道分类: 央视频道, 卫视频道, 数字频道, 上海频道, 浙江频道, 内蒙频道
-2024-09-19 17:38:18,021 - INFO - url: https://m3u.hackserver.net/txt/fmml_dv6.txt 获取成功，判断为txt格式
-2024-09-19 17:38:18,022 - INFO - url: https://m3u.hackserver.net/txt/fmml_dv6.txt 爬取成功✅，包含频道分类: 央视频道, 卫视频道, 上海频道, 赛事直播, 购物频道
-2024-09-19 17:38:18,335 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt 获取成功，判断为txt格式
-2024-09-19 17:38:18,453 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt 爬取成功✅，包含频道分类: 🤠雷蒙影视直播, 央视, 高清, 卫视, 香港, 台湾, 澳门, 湖南, 影视, 爱台, 体育, NewTV
-2024-09-19 17:38:18,658 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt 获取成功，判断为txt格式
-2024-09-19 17:38:18,739 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt 爬取成功✅，包含频道分类: 🤠雷蒙影视直播, 央视, 高清, 卫视, 台湾, 香港, 澳门, 湖南, NewTV, Korea
+2024-09-19 21:05:15,899 - INFO - url: https://m3u.hackserver.net/txt/fmml_ipv6.txt 获取成功，判断为txt格式
+2024-09-19 21:05:15,900 - INFO - url: https://m3u.hackserver.net/txt/fmml_ipv6.txt 爬取成功✅，包含频道分类: 央视频道, 卫视频道, 数字频道, 上海频道, 浙江频道, 内蒙频道
+2024-09-19 21:05:16,404 - INFO - url: https://m3u.hackserver.net/txt/fmml_dv6.txt 获取成功，判断为txt格式
+2024-09-19 21:05:16,404 - INFO - url: https://m3u.hackserver.net/txt/fmml_dv6.txt 爬取成功✅，包含频道分类: 央视频道, 卫视频道, 上海频道, 赛事直播, 购物频道
+2024-09-19 21:05:16,720 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt 获取成功，判断为txt格式
+2024-09-19 21:05:16,841 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/live.txt 爬取成功✅，包含频道分类: 🤠雷蒙影视直播, 央视, 高清, 卫视, 香港, 台湾, 澳门, 湖南, 影视, 爱台, 体育, NewTV
+2024-09-19 21:05:17,167 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt 获取成功，判断为txt格式
+2024-09-19 21:05:17,246 - INFO - url: https://raw.githubusercontent.com/frank11311/CTVLive/main/litelive.txt 爬取成功✅，包含频道分类: 🤠雷蒙影视直播, 央视, 高清, 卫视, 台湾, 香港, 澳门, 湖南, NewTV, Korea
