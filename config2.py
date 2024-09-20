@@ -13,26 +13,9 @@ source_urls = [
     "https://tv.youdu.fan:666/live/",
     "https://raw.githubusercontent.com/qingwen07/awesome-iptv/main/tvbox_live_all.txt",
     "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/hd.txt",
-    "https://cdn.jsdelivr.net/gh/YueChan/live@main/IPTV.m3u",
-    "https://raw.githubusercontent.com/cymz6/AutoIPTV-Hotel/main/lives.txt",
-    "https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/live.txt",
-    "https://fm1077.serv00.net/SmartTV.m3u",
     "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt",
     "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt"， #ADDED BY LEM ON 29/07/2024
     "http://ttkx.live:55/lib/kx2024.txt"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"， #ADDED BY LEM ON 29/07/2024
-    "https://raw.githubusercontent.com/Love4vn/love4vn/main/Sport.m3u"， #奥运 ON 29/07/2024
-    "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/iptv_sources.m3u8",
-    "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/sources/home_sources.m3u8",
-    "https://cdn.jsdelivr.net/gh/joevess/IPTV@main/iptv.m3u8",
-    "https://cdn.jsdelivr.net/gh/ssili126/tv@main/itvlist.txt",
-    "https://cdn.jsdelivr.net/gh/YueChan/Live@main/IPTV.m3u",
-    "https://cdn.jsdelivr.net/gh/dxawi/0@main/tvlive.txt",
-    "https://cdn.jsdelivr.net/gh/XiaoZhang5656/xiaozhang-5656.github.io@main/iptv-live.txt",
-    "https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt"，
-    "http://xhztv.top/zbc.txt"
 ]
 
 url_blacklist = [
