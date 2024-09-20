@@ -11,12 +11,9 @@ source_urls = [
     "http://175.178.251.183:6689/live.txt",
     "https://raw.githubusercontent.com/redrainl/iptv/main/speedtest/zubo_fofa.txt",  # ADDED BY LEM ON 01/08/2024
     "https://raw.githubusercontent.com/pxiptv/live/main/iptv.txt",  # ADDED BY LEM ON 08/08/2024
-    "https://raw.githubusercontent.com/hus888yu/app/main/111.m3u",  # ADDED BY LEM ON 06/08/2024
-    "https://raw.githubusercontent.com/hus888yu/app/main/543.m3u",  # ADDED BY LEM ON 13/08/2024
-    "http://175.178.251.183:6689/channel.txt",
     "http://120.79.4.185/new/mdlive.txt",
-    "https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V4.txt",
     "https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V6.txt",
+    "https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V4.txt",
     "https://live.zhoujie218.top/tv/iptv6.txt",
     "https://tv.youdu.fan:666/live/",
     "http://ww.weidonglong.com/dsj.txt",
