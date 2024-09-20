@@ -6,7 +6,7 @@ source_urls = [
     "http://tv.850930.xyz/kdsb.m3u"， #ADDED BY LEM ON 29/07/2024
     "http://tv.850930.xyz/kdsb2.m3u"， #ADDED BY LEM ON 31/07/2024
     "http://tv.850930.xyz/gather.m3u"， #ADDED BY LEM ON 29/07/2024
-    "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+    "http://120.79.4.185/new/mdlive.txt",
     "https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V4.txt",
     "https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V6.txt",
     "https://live.zhoujie218.top/tv/iptv6.txt",
