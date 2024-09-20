@@ -7,7 +7,7 @@ source_urls = [
     "https://raw.githubusercontent.com/FRANKASEE/TV/refs/heads/master/result.txt",
     "https://raw.githubusercontent.com/FRANKASEE/iTV/refs/heads/main/iptv_list.txt",
     "https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/IPTVlive.m3u",
-    "https://raw.githubusercontent.com/FRANKASEE/TV/refs/heads/master/result.txt",
+    "https://raw.githubusercontent.com/FRANKASEE/iptv--/refs/heads/main/speedtest/zubo_fofa.txt",
     
 ]
 
