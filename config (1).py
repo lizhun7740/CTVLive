@@ -8,7 +8,6 @@ source_urls = [
     "https://m3u.hackserver.net/txt/j_iptv.txt",
     "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/merged_output.m3u",
     "https://raw.githubusercontent.com/n3rddd/CTVLive2/main/others_output.txt",
-    "https://raw.githubusercontent.com/yuanzl77/IPTV/main/直播/央视频道.txt",
     "http://175.178.251.183:6689/live.txt",
     "https://raw.githubusercontent.com/redrainl/iptv/main/speedtest/zubo_fofa.txt",  # ADDED BY LEM ON 01/08/2024
     "https://raw.githubusercontent.com/pxiptv/live/main/iptv.txt",  # ADDED BY LEM ON 08/08/2024
