@@ -11,9 +11,6 @@ source_urls = [
     "http://175.178.251.183:6689/live.txt",
     "https://raw.githubusercontent.com/redrainl/iptv/main/speedtest/zubo_fofa.txt",  # ADDED BY LEM ON 01/08/2024
     "https://raw.githubusercontent.com/pxiptv/live/main/iptv.txt",  # ADDED BY LEM ON 08/08/2024
-    "http://tv.850930.xyz/kdsb.m3u",  # ADDED BY LEM ON 29/07/2024
-    "http://tv.850930.xyz/kdsb2.m3u",  # ADDED BY LEM ON 31/07/2024
-    "http://tv.850930.xyz/gather.m3u",  # ADDED BY LEM ON 29/07/2024
     "https://raw.githubusercontent.com/hus888yu/app/main/111.m3u",  # ADDED BY LEM ON 06/08/2024
     "https://raw.githubusercontent.com/hus888yu/app/main/543.m3u",  # ADDED BY LEM ON 13/08/2024
     "http://175.178.251.183:6689/channel.txt",
