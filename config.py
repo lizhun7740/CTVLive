@@ -3,10 +3,7 @@ ip_version_priority = "ipv6"
 source_urls = [
     "https://m3u.hackserver.net/txt/fmml_ipv6.txt",
     "https://iptv.b2og.com/txt/fmml_ipv6.txt",
-    "https://iptv.b2og.com/txt/fmml_dv6.txt",
-    "https://m3u.hackserver.net/txt/fmml_dv6.txt",
     "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
-    "https://tv.iill.top/m3u/Gather",
     "https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/cctv.txt",
     "https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/weishi.txt",
     "https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CNTV.m3u",
