@@ -4,6 +4,12 @@ source_urls = [
     "https://m3u.hackserver.net/txt/fmml_ipv6.txt",
     "https://m3u.hackserver.net/txt/fmml_dv6.txt",
     "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+    "https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/cctv.txt",
+    "https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/weishi.txt",
+    "https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CNTV.m3u",
+    "https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CCTV.m3u",
+    "https://raw.githubusercontent.com/frank11311/TV/refs/heads/master/result.txt",
+    "https://raw.githubusercontent.com/FRANKASEE/TV/refs/heads/master/result.txt",
     
 ]
 
