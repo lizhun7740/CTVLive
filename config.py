@@ -1,7 +1,7 @@
 ip_version_priority = "ipv6"
 
 source_urls = [
-    "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u",
+    "https://iptv.b2og.com/txt/fmml_ipv6.txt",
 
 ]
 
