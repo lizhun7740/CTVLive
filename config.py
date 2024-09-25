@@ -1,13 +1,8 @@
 ip_version_priority = "ipv6"
 
 source_urls = [
-    "https://raw.githubusercontent.com/frank11311/TV/refs/heads/master/result.txt",
-    "https://raw.githubusercontent.com/FRANKASEE/TV/refs/heads/master/result.txt",
-    "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/jxdx_hd.txt",
-    "https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/cctv.txt",
-    "https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/weishi.txt",
-    "https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CNTV.m3u",
-    "https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CCTV.m3u",
+    "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u",
+
 ]
 
 url_blacklist = [
