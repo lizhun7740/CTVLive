@@ -9,6 +9,7 @@ source_urls = [
     "https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/weishi.txt",
     "https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CNTV.m3u",
     "https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CCTV.m3u",
+    "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u",
 ]
 
 url_blacklist = [
