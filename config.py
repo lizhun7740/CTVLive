@@ -1,7 +1,7 @@
 ip_version_priority = "ipv6"
 
 source_urls = [
-    "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+    "https://iptv.b2og.com/txt/fmml_ipv6.txt",
 
 ]
 
