@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml","http://epg.51zmt.top:8000/e.xml","http://epg.aptvapp.com/xml","https://epg.pw/xmltv/epg_CN.xml","https://epg.pw/xmltv/epg_HK.xml","https://epg.pw/xmltv/epg_TW.xml"
-# 更新时间: 2024-10-11 15:05:45
+# 更新时间: 2024-10-11 15:23:52
 
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV-1_综合" tvg-logo="https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/CCTV-1_综合.png" group-title="收藏台",CCTV-1_综合
 http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226016/index.m3u8?$IPV6『线路1』
@@ -2517,3 +2517,11 @@ http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8
 http://ebsonairios.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8$IPV4『线路4』
 #EXTINF:-1 tvg-id="1" tvg-name="SBS" tvg-logo="https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/SBS.png" group-title="Korea",SBS
 http://1.222.207.80:1935/live/cjbtv/chunklist_w1357270949.m3u8$IPV4
+#EXTINF:-1 tvg-id="1" tvg-name="Love Nature" tvg-logo="https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/Love Nature.png" group-title="Taiwan",Love Nature
+https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8$IPV4
+#EXTINF:-1 tvg-id="1" tvg-name="CNA" tvg-logo="https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/CNA.png" group-title="Malaysia",CNA
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8$IPV4
+#EXTINF:-1 tvg-id="1" tvg-name="Fashion TV" tvg-logo="https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/Fashion TV.png" group-title="Documentary",Fashion TV
+http://91.247.68.229:8000/play/Fashion/index.m3u8$IPV4
+#EXTINF:-1 tvg-id="1" tvg-name="NHK World" tvg-logo="https://gitee.com/yuanzl77/TVBox-logo/raw/main/png/NHK World.png" group-title="News",NHK World
+https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index.m3u8$IPV4
