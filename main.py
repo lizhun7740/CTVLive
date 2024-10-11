@@ -122,7 +122,7 @@ def updateChannelUrlsM3U(channels, template_channels):
         with open("live.txt", "w", encoding="utf-8") as f_txt:
             # 添加更新时间分类
             f_txt.write(f"更新时间,#genre#\n")
-            f_txt.write(f"更新时间: {current_date}\n\n")
+            f_txt.write(f"{current_date},http://xhhk.935181.xyz/video/MV/T-ara.flv\n\n")
             f_m3u.write(f"# 更新时间: {current_date}\n\n")
 
             for category, channel_list in template_channels.items():
