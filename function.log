@@ -1,14 +1,14 @@
-2024-12-02 17:39:25,959 - INFO - url: https://live.fanmingming.com/tv/m3u/ipv6.m3u 获取成功，判断为m3u格式
-2024-12-02 17:39:25,960 - INFO - url: https://live.fanmingming.com/tv/m3u/ipv6.m3u 爬取成功✅，包含频道分类: 央视频道, 卫视频道, 数字频道, 上海频道, 浙江频道, 内蒙频道
-2024-12-02 17:39:26,080 - INFO - url: https://raw.githubusercontent.com/frank11311/TV/refs/heads/master/result.txt 获取成功，判断为txt格式
-2024-12-02 17:39:26,081 - INFO - url: https://raw.githubusercontent.com/frank11311/TV/refs/heads/master/result.txt 爬取成功✅，包含频道分类: 收藏台, 央视, 体育, NewTV, 香港, 影视
-2024-12-02 17:39:26,233 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/TV/refs/heads/master/result.txt 获取成功，判断为txt格式
-2024-12-02 17:39:26,238 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/TV/refs/heads/master/result.txt 爬取成功✅，包含频道分类: 更新时间, 收藏台, 央视, 体育, NewTV, 香港, 台湾, 澳门, 影视, Korea
-2024-12-02 17:39:26,354 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/cctv.txt 获取成功，判断为txt格式
-2024-12-02 17:39:26,450 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/weishi.txt 获取成功，判断为txt格式
-2024-12-02 17:39:26,637 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CNTV.m3u 获取成功，判断为m3u格式
-2024-12-02 17:39:26,637 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CNTV.m3u 爬取成功✅，包含频道分类: 卫视频道, 内蒙频道, 数字频道
-2024-12-02 17:39:26,774 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CCTV.m3u 获取成功，判断为m3u格式
-2024-12-02 17:39:26,774 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CCTV.m3u 爬取成功✅，包含频道分类: 央视频道
-2024-12-02 17:39:26,834 - INFO - url: https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u 获取成功，判断为m3u格式
-2024-12-02 17:39:26,835 - INFO - url: https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u 爬取成功✅，包含频道分类: 央视频道, 卫视频道, 数字频道, 港澳台频道, 港澳台AKTV, 动画频道, IHOT频道, NewTV频道, 咪咕直播, 电影轮播, 电视剧轮播, 埋堆堆, 地方频道, 春晚频道, 国际频道
+2024-12-03 05:36:13,576 - INFO - url: https://live.fanmingming.com/tv/m3u/ipv6.m3u 获取成功，判断为m3u格式
+2024-12-03 05:36:13,577 - INFO - url: https://live.fanmingming.com/tv/m3u/ipv6.m3u 爬取成功✅，包含频道分类: 央视频道, 卫视频道, 数字频道, 上海频道, 浙江频道, 内蒙频道
+2024-12-03 05:36:13,802 - INFO - url: https://raw.githubusercontent.com/frank11311/TV/refs/heads/master/result.txt 获取成功，判断为txt格式
+2024-12-03 05:36:13,803 - INFO - url: https://raw.githubusercontent.com/frank11311/TV/refs/heads/master/result.txt 爬取成功✅，包含频道分类: 收藏台
+2024-12-03 05:36:13,956 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/TV/refs/heads/master/result.txt 获取成功，判断为txt格式
+2024-12-03 05:36:13,960 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/TV/refs/heads/master/result.txt 爬取成功✅，包含频道分类: 更新时间, 收藏台, 央视, 体育, NewTV, 香港, 台湾, 澳门, 影视, Korea
+2024-12-03 05:36:14,096 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/cctv.txt 获取成功，判断为txt格式
+2024-12-03 05:36:14,232 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tvk/refs/heads/main/weishi.txt 获取成功，判断为txt格式
+2024-12-03 05:36:14,411 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CNTV.m3u 获取成功，判断为m3u格式
+2024-12-03 05:36:14,411 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CNTV.m3u 爬取成功✅，包含频道分类: 卫视频道, 内蒙频道, 数字频道
+2024-12-03 05:36:14,522 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CCTV.m3u 获取成功，判断为m3u格式
+2024-12-03 05:36:14,522 - INFO - url: https://raw.githubusercontent.com/FRANKASEE/tviptv/refs/heads/Files/CCTV.m3u 爬取成功✅，包含频道分类: 央视频道
+2024-12-03 05:36:14,655 - INFO - url: https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u 获取成功，判断为m3u格式
+2024-12-03 05:36:14,657 - INFO - url: https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u 爬取成功✅，包含频道分类: 央视频道, 卫视频道, 数字频道, 港澳台频道, 港澳台AKTV, 动画频道, IHOT频道, NewTV频道, 咪咕直播, 电影轮播, 电视剧轮播, 埋堆堆, 地方频道, 春晚频道, 国际频道
